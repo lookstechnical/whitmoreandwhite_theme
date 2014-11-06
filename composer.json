@@ -1,5 +1,5 @@
 {
-  "name": "webtise/whitmoreandwhite_theme",
+  "name": "webtise/whitemoreandwhite_theme",
   "type": "magento-module",
   "require": {
     "magento-hackathon/magento-composer-installer": "*"
