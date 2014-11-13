@@ -1,0 +1,110 @@
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-small)  { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-medium) { @content; }
+  }
+  @else if $media == desktop-large {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+
+@mixin col($width,$padding) {
+	width: $width;
+	padding:$padding;
+	position: relative;
+	float:left;
+}
+
+@mixin center($width){
+	width: 100%;
+	margin: 0 auto;
+	
+	@include respond-to(desktop){
+		width:$width;
+	}
+}
+
+
+ @mixin ribbon($color, $ribbon-thickness, $notch-color, $notch-side) {
+      
+    
+      padding-#{$notch-side}: $ribbon-thickness;
+      @if $notch-side == left {
+        height: $ribbon-thickness;
+        line-height: $ribbon-thickness;
+        padding-right: 10px;
+        text-align: right;
+      } @else if $notch-side == right {
+        height: $ribbon-thickness;
+        line-height: $ribbon-thickness;
+        padding-left: 10px;
+      } @else if $notch-side == bottom {
+        text-align: center;
+        width: $ribbon-thickness;
+        padding-top: 10px;
+      } @else if $notch-side == left-right{
+      	text-align: center;
+        line-height: $ribbon-thickness;
+        padding-left: 10px;
+        position: relative;
+        padding-right: 10px;
+      }@else {
+        text-align: center;
+        width: $ribbon-thickness;
+        padding-bottom: 10px;
+      }
+      
+      @if($notch-side != left-right) {
+	      &:before {
+	        content: '';
+	        display: block;
+	        height: 0;
+	        width: 0;
+	        border-style: solid;
+	        border-width: $ribbon-thickness/2;
+	        border-color: transparent;
+	        border-#{$notch-side}-color: $notch-color;
+	        position: absolute;
+	        #{$notch-side}: -1px;
+	        background: $color;
+	      }
+      }
+      
+      @if($notch-side == left-right) {
+	      &:after {
+	        content: '';
+	        display: block;
+	        height: 0;
+	        width: 0;
+	        border-style: solid;
+	        border-width: $ribbon-thickness/2;
+	        border-color: transparent;
+	        border-left-color: $notch-color;
+	        position: absolute;
+	        left: -1px;
+	        top:0px;
+	        background: $color;
+	      }
+	      
+	      
+	       &:before {
+	        content: '';
+	        display: block;
+	        height: 0;
+	        width: 0;
+	        border-style: solid;
+	        border-width: $ribbon-thickness/2;
+	        border-color: transparent;
+	        border-right-color: $notch-color;
+	        position: absolute;
+	        right: -1px;
+	        background: $color;
+	      }
+	   }
+    }

@@ -1,0 +1,19 @@
+@import "foundation/scss/foundation/settings";
+@import "foundation/scss/foundation";
+@import "font-awsome/scss/font-awesome";
+
+@import "mixins";
+@import "normalize";
+@import "variables";
+@import "typography";
+
+
+@import "all";
+@import "header";
+@import "footer";
+@import "form";
+@import "navigation";
+@import "list";
+
+@import "home";
+@import "slick";

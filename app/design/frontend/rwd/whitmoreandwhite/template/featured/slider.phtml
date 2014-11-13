@@ -1,0 +1,32 @@
+<div class="featured-slider">
+	<?php $products = $this->getProducts(); ?>
+	<span>Our Favorites</span>
+	<h3>Pick of the week</h3>
+	<ul>
+		<?php foreach($products as $_product): ?>
+		
+			<li class="item">
+				<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+                    <?php $_imgSize = 300; ?>
+                    
+                    <?php 
+                    $product = Mage::getModel("catalog/product")->load($_product->getId());
+                    
+                    ?>
+
+                    <img id="product-collection-image-<?php echo $product->getId(); ?>"
+                         src="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(300); ?>"
+                         class="product-list-image"/>
+                </a>
+                <div class="">
+                 	
+	                <h2 class="product-name"><a href="<?php echo $product->getProductUrl() ?>" title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $product->getName(); ?></a></h2>
+                </div>
+                
+                <?php echo $this->getPriceHtml($product, true) ?>
+			</li>
+		
+		<?php endforeach; ?>
+	
+	</ul>
+</div>

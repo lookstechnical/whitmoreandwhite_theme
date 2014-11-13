@@ -1,0 +1,148 @@
+.banner{
+	article{
+		height:536px;
+		background-size: cover;
+		background-position-x: center;
+		background-position-y: center;
+	}
+}
+
+.welcome{
+	@include center(1191px);
+	padding:95px 0px;
+	
+	.intro-image{
+		@include col(40%,0px 20px);
+	}	
+	
+	.intro{
+		@include col(60%,23px 20px);
+		h1{
+			margin-bottom: 12px;
+		}
+		
+		.black-fancy-btn{
+			color:white;
+			background: black;
+			display: block;
+			text-align: center;
+			
+			font-family: $TabletGothicCondensed;
+			font-size: 1.06rem;
+			font-weight: 300;
+			letter-spacing: 0.16rem;
+			text-transform: uppercase;
+			width:260px;
+			margin-right:20px;
+			float:left;
+			@include ribbon(black, 2.667em, white, left-right);
+		}
+		
+		.green-fancy-btn{
+			color:white;
+			background: $green;
+			display: block;
+			text-align: center;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.06rem;
+			font-weight: 300;
+			letter-spacing: 0.16rem;
+			text-transform: uppercase;
+			width:260px;
+			float:left;
+			@include ribbon($green, 2.667em, white, left-right);
+		}
+	}
+}
+
+.pick-of-the-week{
+	@include center(1191px);
+	padding:50px 0px 0px;
+	clear:both;
+	text-align: center;
+	
+	span{
+		font-family: $KeplerStd;
+		font-size: 1.125rem;
+		font-weight: 200;
+		font-style: italic;
+		line-height: 2;
+		text-align: center;
+    }
+
+    h3{
+		font-family: $TabletGothicCondensed;
+		font-size: 1.875rem; 
+		font-weight: 700;
+		line-height: 0.5; 
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+    }
+	
+	
+	.slick-prev{
+		background: url(../images/prev.png) no-repeat top left;
+		position:absolute;
+		top:50%;
+		left:0px;
+		width:11px;
+		height:19px;
+		margin-top:-6px;
+	}
+	
+	.slick-next{
+		background: url(../images/next.png) no-repeat top left;
+		position:absolute;
+		top:50%;
+		right:0px;
+		width:11px;
+		height:19px;
+		margin-top:-6px;
+	}
+	
+	ul{
+		list-style: none;
+		border-top:1px solid #ccc;
+		padding:20px 30px;
+		li{
+			@include col(25%,0px);
+			border-bottom: 1px dotted #ccc;
+			border-right: 1px dotted #ccc;
+			height: 341px;
+			overflow: hidden;
+			margin-bottom:20px;
+			
+			.brand-name{
+				a{
+					font-family: $TabletGothicCondensed;
+					color:  #050101;
+					font-size: 1.125rem; 
+					font-weight: 700;
+				}
+			}
+			
+			.product-name{
+				a{
+					font-family: $ProximaNova;
+					color:  #050101;
+					font-size: 0.875rem;
+					font-weight: 400;
+				}	
+			}
+		}
+		li:nth-child(4n+4){
+			border-right: none;
+		}
+		
+		
+	}
+	
+	ul:after{
+		clear:both;
+		content: "";
+		display: block;
+	}
+}

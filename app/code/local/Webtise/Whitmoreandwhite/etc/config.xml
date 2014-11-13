@@ -8,13 +8,11 @@
   <global>
 	  
 	 <blocks>
-		<alyaka>
+		<whitmoreandwhite>
 		    <class>Webtise_Whitmoreandwhite_Block</class>
-		</alyaka>
-		
-		
+		</whitmoreandwhite>
 	</blocks>
-	
+	<!--
 	<helpers>
 		<alyaka>
 		    <class>Webtise_Whitmoreandwhite_Helper</class>
@@ -23,20 +21,20 @@
 	</helpers>
 	
 	
-  	
+  	-->
     <page>
       <layouts>
-        Webtise_Whitmoreandwhite_home translate="label">
+        <Webtise_Whitmoreandwhite_home translate="label">
           <label>Home</label>
           <template>page/home.phtml</template>
           <layout_handle>home</layout_handle>
         </Webtise_Whitmoreandwhite_home>
         
-               <!-- add more layouts here -->
+               
       </layouts>
     </page>
     
-     <resources>
+    <!-- <resources>
             <whitmoreandwhite_setup>
                 <setup>
                     <module>Webtise_Whitmoreandwhite</module>
@@ -56,11 +54,11 @@
                     <use>core_read</use>
                 </connection>
             </whitmoreandwhite_read>
-        </resources>
+        </resources>-->
   	
   </global>
-   <adminhtml>
-  <acl>
+  <adminhtml>
+      <acl>
 			<resources>
 				<all>
 					<title>Allow Everything</title>
@@ -83,9 +81,8 @@
 	                        </children>
 	                    </system>
 					</children>
-					
 				</admin>
 			</resources>
 		</acl>
-		 </adminhtml>
+   </adminhtml>
 </config>

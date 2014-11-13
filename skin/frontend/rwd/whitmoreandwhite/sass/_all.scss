@@ -1,0 +1,30 @@
+*{box-sizing: border-box}
+
+body{
+	font-size: 16px;
+}
+
+.center{
+	width:1191px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.col-wrapper{
+	@include center(1191px);
+}
+.col-main{
+	@include col(75%,15px);
+}
+
+.col-left{
+	@include col(25%,15px);
+	padding-right: 30px;
+}
+
+.col-right{
+	@include col(25%,15px);
+	
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <whitmoreandwhite translate="label" module="cms">
+            <label>Whitemore and white Theme</label>
+            <sort_order>100</sort_order>
+        </whitmoreandwhite>
+    </tabs>
+    <sections>
+        <whitmoreandwhite translate="label" module="cms">
+            <label>Theme Options</label>
+            <tab>whitmoreandwhite</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <home_group translate="label" module="cms">
+                    <label>Home Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <featured_cat_id translate="label">
+                            <label>Featured Category Id </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </featured_cat_id>
+                        <instagram_tag translate="label">
+                            <label>Instagram Tag </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_tag>
+                        <instagram_api translate="label">
+                            <label>Instagram Api Key </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_api>
+                    </fields>
+                </home_group>
+            </groups>
+        </whitmoreandwhite>
+    </sections>
+</config>

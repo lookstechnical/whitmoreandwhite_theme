@@ -1,0 +1,6 @@
+{
+    "name": "whitmoreandwhite",
+    "dependencies": {
+       "foundation": "~5.1.0"
+    }
+}
