@@ -50,4 +50,13 @@ jQuery(document).ready(function($) {
 			    }
 		   ]
 	   });
+	   
+	   
+	   $("#nav ol li").hover(function () {
+		     $(this).siblings().find('ul').hide();
+		     $(this).find('ul').show();        
+		}, function () {
+		   $(this).find('ul').hide();
+		});
+
 });

@@ -1,15 +1,21 @@
 .banner{
+	margin-bottom:60px;
 	article{
 		height:536px;
 		background-size: cover;
 		background-position-x: center;
 		background-position-y: center;
 	}
+	
 }
-
+.welcome:after{
+	clear:both;
+	content:"";
+	display: block;
+}
 .welcome{
 	@include center(1191px);
-	padding:95px 0px;
+	margin-bottom:95px;
 	
 	.intro-image{
 		@include col(40%,0px 20px);
@@ -144,5 +150,73 @@
 		clear:both;
 		content: "";
 		display: block;
+	}
+}
+
+.promo-categories:after{
+	clear:both;
+	display: block;
+	content: ""; 
+}
+.promo-categories{
+	@include center(1900px);
+	margin-bottom:50px;
+	clear:both;
+	img{
+		
+		max-width: 100%;
+		width: 100%;
+		vertical-align: top;
+		font-size: 0 ;
+		float:left;
+	}
+	
+	
+		
+	article{
+		float:left;
+		line-height: 0;
+		margin-bottom: 10px;
+		padding:0px 5px;
+	}
+	.promo-column-one{
+		@include col(100%,0px);
+		
+		@include respond-to(tablet){
+		  @include col(50%,0px);
+		}
+		@include respond-to(desktop){
+		  @include col(33.3%,0px);
+		}
+	}
+	
+	.promo-column-two{
+		@include col(100%,0px);
+		
+		@include respond-to(tablet){
+		  @include col(50%,0px);
+		}
+		@include respond-to(desktop){
+		  @include col(33.3%,0px);
+		}
+	}
+	
+	.promo-column-three{
+		@include col(100%,0px);
+		article{
+			width:100%;
+			@include respond-to(tablet){
+			  @include col(50%,0px);
+			  padding:0px 5px;
+			}
+			
+			@include respond-to(desktop){
+			  @include col(100%,0px);
+			  padding:0px 5px;
+			}
+		}
+		@include respond-to(desktop){
+		  	@include col(33.3%,0px);
+		}
 	}
 }

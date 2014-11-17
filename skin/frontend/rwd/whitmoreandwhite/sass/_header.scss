@@ -4,7 +4,6 @@ header{
 	background: $black;
 	height: 125px;
 	padding: 15px 0px;
-	overflow: hidden;
 	.header-wrapper{
 		@include center(1191px);
 		margin: 0 auto;
@@ -129,6 +128,26 @@ header{
 					
 					ul{
 						display: none;
+						position: absolute;
+						background-color: rgba(0, 0, 0, 0.9);
+						width: 239px;
+						position: absolute;
+						z-index: 10;
+						text-align: left;
+						padding: 20px;
+						margin-left: 0px;
+						li{
+							display: block;
+							float:none;
+							
+							a{
+								font-family: $ProximaNova;
+								font-size: 0.813rem;
+								font-weight: 400;
+								line-height: 2.769; 
+								display: inline;
+							}
+						}
 					}
 				}
 				

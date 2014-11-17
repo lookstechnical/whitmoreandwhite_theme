@@ -8,8 +8,8 @@
   @else if $media == desktop {
     @media only screen and (min-width: $break-medium) { @content; }
   }
-  @else if $media == desktop-large {
-    @media only screen and (min-width: $break-large) { @content; }
+  @else  {
+    @media only screen and (min-width: $media) { @content; }
   }
 }
 
@@ -25,7 +25,17 @@
 	width: 100%;
 	margin: 0 auto;
 	
+	
+	@include respond-to(mobile){
+		padding:0px 10px;
+	}
+	@include respond-to(tablet){
+		padding:0px 10px;
+	}
 	@include respond-to(desktop){
+		padding:0px 10px;
+	}
+	@include respond-to($width){
 		width:$width;
 	}
 }
