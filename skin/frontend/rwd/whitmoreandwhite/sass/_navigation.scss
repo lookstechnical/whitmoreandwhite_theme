@@ -7,6 +7,10 @@
 	line-height: 2;
 	background: none;
 	border: none;
+	
+	@include respond-to(desktop){
+	  padding:20px 15px;
+	}
 	a{
 		color: $green;
 	}

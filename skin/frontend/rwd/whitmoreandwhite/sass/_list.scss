@@ -1,5 +1,13 @@
 .category-title{
 	text-align: center;
+	
+	h1{
+		font-family: $TabletGothicCondensed;
+		font-size: 1.875rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
 }
 
 .category-description{
@@ -8,6 +16,8 @@
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.714;
+	width: 549px;
+	margin: 0 auto;
 }
 .products-grid{
 
