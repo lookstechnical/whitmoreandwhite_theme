@@ -15,17 +15,22 @@ body{
 	text-align: center;
 }
 
-
+.page .main-container{
+	font-family: $ProximaNova;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 2
+}
 
 .col-wrapper{
 	@include center(1191px);
 }
 .col-main{
-	@include col(75%,15px);
+	@include col(75%,0px 0px 0px 20px);
 }
 
 .col-left{
-	@include col(25%,15px);
+	@include col(25%,0px 20px 0px 0px);
 	padding-right: 30px;
 }
 

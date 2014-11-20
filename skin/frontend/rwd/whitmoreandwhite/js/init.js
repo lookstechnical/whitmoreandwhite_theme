@@ -58,5 +58,14 @@ jQuery(document).ready(function($) {
 		}, function () {
 		   $(this).find('ul').hide();
 		});
+		
+		
+		// product list //
+		$('.amshopby-advanced li.active').parent().show();
+		
+		$('.amshopby-advanced .level0 a').click(function(e){
+			e.preventDefault();
+			$(this).parent().find('ul').slideToggle();
+		});
 
 });

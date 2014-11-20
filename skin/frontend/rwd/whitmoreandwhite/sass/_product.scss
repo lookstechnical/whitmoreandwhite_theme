@@ -12,13 +12,151 @@
 			.product-shop{
 				width:100%;
 				@include respond-to(tablet){
-				  @include col(40%,0px 10px);
+				  @include col(40%,0px 20px 0px 20px);
+				}
+				
+				.add-to-cart{
+					float:left;
+					width: 214px;
+				}
+				
+				.product-options{
+					dl{
+						width:50%;
+						dt{
+							
+							label{
+								font-family: $ProximaNova;
+								font-size: 0.95rem; 	
+								font-weight: 400;
+								line-height: 1.5;
+								text-transform: uppercase;
+								display: inline;
+								
+								em{
+									float: right;
+								}
+							}
+						}
+						
+					}
+					
+					textarea{
+						width:100%;
+					}
+					
+					select{
+						border:1px solid #ccc;
+				    	padding:5px;
+				    	font-family: $ProximaNova;
+				    	font-size: 0.75rem;
+				    	text-transform: uppercase;
+				    	
+				    	
+
+					}
 				}
 				
 				.add-to-cart-buttons{
 					.button{
 						background: $green;
 						text-transform: uppercase;
+						width: 214px;
+						height: 45px;
+						font-family: $TabletGothicCondensed;
+					    font-size: 1rem; 
+					    letter-spacing: 0.1rem;
+						font-weight: 700;
+						line-height: 1.667; 
+						padding: 0px;
+						
+					}
+				}
+				
+				.add-to-links{
+					float:left;
+					list-style: none;
+					padding-top:60px;
+					li{
+						a{
+							font-family: $TabletGothicCondensed;
+							color:  $green;
+							font-size: 1rem;
+							font-weight: 700;
+							line-height: 1.5;
+							text-transform: uppercase;
+						}
+					}
+				}
+				
+				.brand-name{
+					h2{
+						font-family: $TabletGothicCondensed;
+						font-size: 1.5rem;
+    					font-weight: 700;
+						line-height: 1.5;
+						text-transform: uppercase;
+						margin:0px;
+					}
+				}
+				
+				.product-name{
+					h1{
+						font-family: $ProximaNova;
+						font-size: 1.375rem;
+						font-weight: 400;
+						line-height: 1.182;
+						margin:0px;
+						text-transform: none;
+					}
+				}
+				
+				.price-info{
+					margin-bottom:25px;
+					.price{
+						font-family: $ProximaNova;
+						font-size: 1.5rem; 
+						font-weight: 400;
+						line-height: 1.25;
+						
+					}
+				}
+				
+				.availability{
+					font-family: $ProximaNova;
+					font-size: 0.75rem; 	
+					font-weight: 400;
+					line-height: 1.5;
+					text-transform: uppercase;
+					
+					.label{
+						display:none;
+					}
+				}
+				
+				.product-options-bottom{
+					.price-box{
+						display:none;
+					}
+				}
+				.add-to-cart{
+					
+					.qty-wrapper{
+					   	margin-bottom:20px;
+					   	label{
+						   	display: inline-block;
+						   	text-transform: uppercase;
+						   	font-family: $ProximaNova;
+						   	font-size: 0.875rem; 
+						   	font-weight: 400;
+						   	line-height: 1.286;
+					   	}
+					   	select{
+						   	width:60px;
+						   	border:1px solid #ccc;
+						   	padding:5px;
+						   	
+					   	}
 					}
 				}
 			}
@@ -27,7 +165,7 @@
 				width:100%;
 				
 				@include respond-to(tablet){
-				  @include col(40%,0px 10px);
+				  @include col(40%,0px 20px 0px 20px);
 				}
 				
 				.product-name{
@@ -40,6 +178,74 @@
 					}
 					.visible{
 						display: block;
+					}
+				}
+				
+				.zoom-msg{
+					font-family: $ProximaNova;
+					color:  #000000;
+					font-size: 0.75rem; /* Approximation due to font substitution */
+					font-weight: 400;
+					line-height: 2
+				}
+				
+				.more-views:after{
+					clear:both;
+					content:"";
+					display: block;
+					
+				}
+				
+				.more-views{
+					margin:0px;
+					padding:10px 0px;
+					border-top:1px solid #ccc;
+					border-bottom:1px solid #ccc;
+					margin-bottom: 20px;
+					li{
+						list-style: none;
+						float:left;
+						padding:0px;
+						margin: 0px;
+					}
+				}
+				
+				.share{
+					
+					h4{
+						font-family: $KeplerStd;
+						font-size: 1.125rem;
+						font-weight: 700;
+						font-style: italic;
+						line-height: 1.333;
+						display: inline-block;
+						padding-left:20px
+					}
+					a{
+						color:white;
+						background: #333;
+						display: inline-block;
+						width:30px;
+						height: 30px;
+						font-size: 1.5rem;
+						text-align: center;
+						padding-top:3px
+					}
+					
+					.facebook{
+						background: #3b5998;
+					}
+					
+					.twitter{
+						background: #00aced;
+					}
+					
+					.linkedin{
+						background: #007bb6;
+					}
+					
+					.instagram{
+						background: #517fa4;
 					}
 				}
 			}

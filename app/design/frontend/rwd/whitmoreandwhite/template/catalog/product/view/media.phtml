@@ -36,53 +36,69 @@
     $_product = $this->getProduct();
     $_helper = $this->helper('catalog/output');
 ?>
-<div class="product-image product-image-zoom">
-    <div class="product-image-gallery">
-        <img id="image-main"
-             class="gallery-image visible"
-             src="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>"
+<div class="product-images ">
+    <div class="product-image-gallerys">
+        <img id="product-image-main"
+             class="gallery-image visible gallery"
+             src="<?php 
+             
+             /*echo $this->helper('adaptiveResize/image')->init($_product, 'image')->keepAspectRatio(true)->backgroundcolor('000', '000', '000')->adaptiveResize(600);*/
+
+             echo $this->helper('catalog/image')
+                                  ->init($_product, 'small_image')
+                                  ->keepFrame(true)
+                                  ->constrainOnly(true)
+                                  ->keepAspectRatio(true)
+                                  ->resize(600,600); ?>"
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
              title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
 
         <?php
-            $i=0;
+        /*    $i=0;
             foreach ($this->getGalleryImages() as $_image):
                 $_imageUrl = $this->helper('catalog/image')
-                                  ->init($_product, 'image', $_image->getFile())
-                                  ->keepFrame(false)
+                                  ->init($_product, 'small_image')
+                                  ->keepFrame(true)
                                   ->constrainOnly(true)
-                                  ->resize(1200);
-        ?>
+                                  ->keepAspectRatio(true)
+                                  ->resize(600,600);        ?>
             <img id="image-<?php echo $i; ?>"
                  class="gallery-image"
                  src="<?php echo $_imageUrl; ?>"
                  data-zoom-image="<?php echo  $_imageUrl; ?>" />
         <?php
             $i++;
-            endforeach;
+            endforeach;*/
         ?>
     </div>
+    <p class="zoom-msg">ROLLOVER IMAGE TO ZOOM</p>
 </div>
 
 <?php if (count($this->getGalleryImages()) > 0): ?>
-<div class="more-views">
-    <h2><?php echo $this->__('More Views') ?></h2>
-    <ul class="product-image-thumbs">
-    <?php $i=0; foreach ($this->getGalleryImages() as $_image): ?>
-        <?php
-        if (($filterClass = $this->getGalleryFilterHelper()) && ($filterMethod = $this->getGalleryFilterMethod()) && !Mage::helper($filterClass)->$filterMethod($_product, $_image)):
-            continue;
-        endif;
-        ?>
-        <li>
-            <a class="thumb-link" href="#" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>" data-image-index="<?php echo $i; ?>">
-                <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(75); ?>"
-                     width="75" height="75" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
-            </a>
-        </li>
-    <?php $i++; endforeach; ?>
-    </ul>
-</div>
+
+<div id="more-views" class="more-views"> 
+	<ul>
+	
+        	 <?php $i=0; foreach ($this->getGalleryImages() as $_image): 
+	        	  $_imageUrl = $this->helper('catalog/image')
+                                  ->init($_product, 'image', $_image->getFile())
+                                  ->keepFrame(false)
+                                  ->constrainOnly(true)
+                                  ->resize(1200);
+        	 ?>
+        	 <li>
+        		<a href="#" data-image="<?php echo $_imageUrl ?>" data-zoom-image="<?php echo $_imageUrl ?>"> 
+        			<img id="product-image-main" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(77); ?>" /> 
+	        		
+        		</a> 
+	</li>
+	
+        	<?php endforeach; ?>
+        	</ul>
+        </div>
+
+
 <?php endif; ?>
+
 
 <?php echo $this->getChildHtml('after'); ?>

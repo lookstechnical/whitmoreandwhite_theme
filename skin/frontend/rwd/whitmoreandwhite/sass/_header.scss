@@ -189,6 +189,7 @@ header{
 		.input-box{
 			position: relative;
 			top:-5px;
+			
 		}
 		label{
 			display: none;
@@ -202,6 +203,9 @@ header{
 			border-bottom:1px dotted white;
 			float:left;
 			height:15px;
+			margin-top:15px;
+			color:white;
+			outline:none;
 		}
 		button{
 			width: 30px;

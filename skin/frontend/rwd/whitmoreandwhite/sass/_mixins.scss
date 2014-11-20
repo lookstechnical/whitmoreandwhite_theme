@@ -77,7 +77,7 @@
 	        height: 0;
 	        width: 0;
 	        border-style: solid;
-	        border-width: $ribbon-thickness/2;
+	        border-width: $ribbon-thickness/2 $ribbon-thickness/3;
 	        border-color: transparent;
 	        border-#{$notch-side}-color: $notch-color;
 	        position: absolute;
@@ -93,7 +93,7 @@
 	        height: 0;
 	        width: 0;
 	        border-style: solid;
-	        border-width: $ribbon-thickness/2;
+	        border-width: $ribbon-thickness/2  $ribbon-thickness/3;
 	        border-color: transparent;
 	        border-left-color: $notch-color;
 	        position: absolute;
@@ -109,7 +109,7 @@
 	        height: 0;
 	        width: 0;
 	        border-style: solid;
-	        border-width: $ribbon-thickness/2;
+	        border-width: $ribbon-thickness/2  $ribbon-thickness/3;
 	        border-color: transparent;
 	        border-right-color: $notch-color;
 	        position: absolute;

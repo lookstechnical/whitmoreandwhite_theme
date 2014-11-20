@@ -31,11 +31,19 @@
 
 
 select{
-	background: none;
-	border:none;
-	border-bottom: 1px dotted #333;
+	background: url(../images/dropdown-arrow.png) no-repeat right 5px center;
+	appearance:none;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none;
+	border-style: solid;
+	border-width: 0px 0px 2px;
+	-moz-border-image: url(../images/select-border.png) 0 0 2 round ;
+	-webkit-border-image: url(../images/select-border.png) 0 0 2 round ;
+	-o-border-image: url(../images/select-border.png) 0 0 2 round ;
+	border-image: url(../images/select-border.png) 0 0 2 round ;
 	position: relative;
 	outline:none;
+	border-radius: 0px;
 }
 
 select:after{
