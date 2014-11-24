@@ -1,3 +1,11 @@
+.catalog-category-view{
+	
+	
+	.breadcrumbs{
+		padding:20px 10px;
+	}
+}
+
 .category-title{
 	text-align: center;
 	
@@ -16,7 +24,8 @@
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.714;
-	width: 549px;
+	width:60%;
+	max-width: 549px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
@@ -26,6 +35,11 @@
 	display: block;
 	content:"";
 }
+
+.category-products{
+	float:left;
+}
+
 .products-grid{
 
 	ol{
@@ -34,13 +48,17 @@
 		margin: 0px;
 	}
 	.item{
-		@include col(33.3%,0px);
+		@include col(100%,0px);
+		@include respond-to(tablet){
+		  @include col(33.3%,0px);
+		  border-right: 1px dotted #ccc;
+		}
 		text-align: center;
 		border-bottom: 1px dotted #ccc;
-		border-right: 1px dotted #ccc;
+		
 		height: 341px;
 		overflow: hidden;
-		padding:15px;
+		padding:15px 25px;
 		
 		.brand-name{
 			margin:	10px 0px 0px;
@@ -105,8 +123,33 @@
 		border-bottom: 1px solid #ccc;
 		border-top: 1px solid #ccc;
 		padding:5px 0px;
+		display: none;
+		@include respond-to(tablet){
+		  display: block;
+		}
 	}
 	
+	.mobile-toggle{
+		background: $green;
+		color:white;
+		font-family: $ProximaNova;
+		padding:10px;
+		text-transform: uppercase;
+		width:100%;
+		margin-bottom: 10px;
+		cursor: pointer;
+		@include respond-to(tablet){
+		  display: none;;
+		}
+	}
+	
+	.toggle-content{
+		display: none;
+		
+		@include respond-to(tablet){
+		  display: block;
+		}
+	}
 
 	.block-subtitle--filter{
 		display: none;
@@ -195,7 +238,7 @@
 		@include col(50%,0px);
 		
 		.sort-by{
-			@include col(215px,0px);
+			@include col(168px,0px);
 			
 			label{
 				float: left;
@@ -216,6 +259,10 @@
 			}
 		}
 		.view-mode{
+			display: none;
+			@include respond-to(tablet){
+			  display: block;
+			}
 			@include col(183px,0px);
 			margin-bottom: 0px;
 		}
@@ -226,13 +273,73 @@
 		@include col(50%,0px);
 		text-align: right;
 		
-		.amount--no-pages{
+		.amount--no-pages,.amount--has-pages{
 			display: none;
 		}
 		.limiter{
+			display: none;
+			@include respond-to(tablet){
+			  display: block;
+			}
 			select{
 				width:48px;
 				margin:0px 10px;
+			}
+		}
+		
+		
+		
+		.pages{
+			float:left;
+			strong{
+				display: none;
+			}
+			ol{
+				list-style: none;
+				margin: 0px;
+				padding:0px;
+				li{
+					display: inline;
+					
+					a{
+						display: inline-block;
+						width:20px;
+						height:20px;
+						color:$green ;
+						text-align: center;
+						font-size: 0.75rem;
+					}
+					.i-next{
+						display: inline-block;
+						width:20px;
+						height:20px;
+						color:white;
+						background: $green;
+						text-align: center;
+						color:white;
+						padding-top: 2px;
+					}
+					.i-previous{
+						display: inline-block;
+						width:20px;
+						height:20px;
+						color:white;
+						background: $green;
+						text-align: center;
+						color:white;
+						padding-top: 2px;
+					}
+				}
+				
+				.current{
+					display: inline-block;
+					width:20px;
+					height:20px;
+					color:white;
+					background: $green;
+					text-align: center;
+					font-size: 0.75rem;
+				}
 			}
 		}
 	}

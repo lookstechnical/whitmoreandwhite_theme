@@ -26,15 +26,46 @@ body{
 	@include center(1191px);
 }
 .col-main{
-	@include col(75%,0px 0px 0px 20px);
+    @include col(100%,0px 10px);
+    
+	@include respond-to(tablet){
+	  @include col(75%,0px 0px 0px 20px);
+	}
 }
 
 .col-left{
-	@include col(25%,0px 20px 0px 0px);
-	padding-right: 30px;
+	@include col(100%,0px 0px);
+	@include respond-to(tablet){
+	  @include col(25%,0px 20px 0px 0px);
+	  padding-right: 30px;
+	}
+	
 }
 
 .col-right{
 	@include col(25%,15px);
 	
+}
+
+.col2-right-layout{
+	@include center(1191px);
+	
+	.col-main{
+		@include col(100%,0px 10px);
+    
+		@include respond-to(tablet){
+		  @include col(75%,0px 0px 0px 0px);
+		}
+	}
+}
+
+a{
+	color: $green;
+}
+
+.nomobile{
+	display: none;
+	@include respond-to(tablet){
+	  display: block;
+	}
 }

@@ -1,10 +1,18 @@
 .banner{
 	margin-bottom:60px;
 	article{
-		height:536px;
+		height:300px;
 		background-size: cover;
 		background-position-x: center;
 		background-position-y: center;
+		
+		@include respond-to(tablet){
+		  height:449px;
+		}
+		
+		@include respond-to(desktop){
+		  height:536px;
+		}
 	}
 	
 }
@@ -41,6 +49,7 @@
 			width:260px;
 			margin-right:20px;
 			float:left;
+			margin-bottom: 15px;
 			@include ribbon(black, 2.667em, white, left-right);
 		}
 		
@@ -97,6 +106,7 @@
 		width:11px;
 		height:19px;
 		margin-top:-6px;
+		text-indent: -9999px;
 	}
 	
 	.slick-next{
@@ -107,6 +117,7 @@
 		width:11px;
 		height:19px;
 		margin-top:-6px;
+		text-indent: -9999px;
 	}
 	
 	ul{
@@ -140,7 +151,7 @@
 			}
 		}
 		li:nth-child(4n+4){
-			border-right: none;
+			border-right:  1px dotted #ccc;
 		}
 		
 		
@@ -177,7 +188,7 @@
 		float:left;
 		line-height: 0;
 		margin-bottom: 10px;
-		padding:0px 5px;
+		padding:0px 0px;
 	}
 	.promo-column-one{
 		@include col(100%,0px);
@@ -207,12 +218,12 @@
 			width:100%;
 			@include respond-to(tablet){
 			  @include col(50%,0px);
-			  padding:0px 5px;
+			  padding:0px 0px;
 			}
 			
 			@include respond-to(desktop){
 			  @include col(100%,0px);
-			  padding:0px 5px;
+			  padding:0px 0px;
 			}
 		}
 		@include respond-to(desktop){

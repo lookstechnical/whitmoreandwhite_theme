@@ -1,23 +1,37 @@
 .catalog-product-view{
-	
+	.breadcrumbs{
+		padding:20px 15px;
+	}
 	.col-main{
 		width:100%;
 		padding-top:0px;
 	}
 	.product-view{
+		@include center(1191px);
 		
+		.product-essential:after{
+			clear:both;
+			content: "";
+			display: block;
+		}
 		
 		.product-essential{
-			
+			margin-bottom: 40px;
 			.product-shop{
 				width:100%;
 				@include respond-to(tablet){
+				  @include col(50%,0px 20px 0px 20px);
+				}
+				@include respond-to(desktop){
 				  @include col(40%,0px 20px 0px 20px);
 				}
 				
 				.add-to-cart{
 					float:left;
-					width: 214px;
+					width:100%;
+					@include respond-to(tablet){
+					  width: 224px;
+					}
 				}
 				
 				.product-options{
@@ -69,6 +83,7 @@
 						font-weight: 700;
 						line-height: 1.667; 
 						padding: 0px;
+						margin-bottom: 0px;
 						
 					}
 				}
@@ -76,7 +91,12 @@
 				.add-to-links{
 					float:left;
 					list-style: none;
-					padding-top:60px;
+					padding: 10px 0px;
+					margin: 0px;
+					padding-left: 0px;
+					@include respond-to(tablet){
+					  padding-top:60px;
+					}
 					li{
 						a{
 							font-family: $TabletGothicCondensed;
@@ -135,9 +155,16 @@
 				}
 				
 				.product-options-bottom{
+					padding-bottom:20px;
+					border-bottom: 1px dotted black;
 					.price-box{
 						display:none;
 					}
+				}
+				.product-options-bottom:after{
+					clear: both;
+					content: "";
+					display: block;
 				}
 				.add-to-cart{
 					
@@ -159,12 +186,79 @@
 					   	}
 					}
 				}
+				
+				
+				.toggle-tabs{
+					display: none;
+					li{
+						
+						
+			
+					}
+				}
+				
+				.collateral-tabs{
+					clear:both;
+					.tab{
+						clear:both;
+						padding:0px;
+						margin:0px;
+						
+						span{
+							border-bottom:1px solid #ccc;
+							padding:20px 0px;
+							width: 100%;
+							display: block;
+							font-family: $TabletGothicCondensed;
+							font-size: 1.125rem; /* Approximation due to font substitution */
+							font-weight: 700;
+							line-height: 1.667;
+							text-transform: uppercase;
+							background: url(../images/next.png) no-repeat center right 10px;
+							
+						}
+					}	
+					
+									
+					
+					.tab-container{
+						display: none;
+						width:100%;
+						border: none;
+						
+						.tab-content{
+							padding:15px 0px;
+							font-family: $ProximaNova;
+							font-size: 0.875rem; /* Approximation due to font substitution */
+							font-weight: 400;
+							line-height: 1.714;
+							
+							h2{
+								display: none;
+							}
+						}
+					}
+					
+					.current{
+						display: block;
+						span{
+							
+						}
+					}
+					
+				}
+				
 			}
 			
 			.product-img-box{
 				width:100%;
+				@include col(100%,0px);
 				
 				@include respond-to(tablet){
+				  @include col(50%,0px 20px 0px 20px);
+				}
+
+				@include respond-to(desktop){
 				  @include col(40%,0px 20px 0px 20px);
 				}
 				
@@ -211,15 +305,22 @@
 				}
 				
 				.share{
-					
+					text-align: center;
+					@include respond-to(tablet){
+					  text-align: left;
+					}
 					h4{
 						font-family: $KeplerStd;
 						font-size: 1.125rem;
 						font-weight: 700;
 						font-style: italic;
 						line-height: 1.333;
-						display: inline-block;
-						padding-left:20px
+						padding-right:20px;
+						
+						@include respond-to(tablet){
+						  display: inline-block;
+						  font-size: 1.025rem;
+						}
 					}
 					a{
 						color:white;
@@ -229,7 +330,9 @@
 						height: 30px;
 						font-size: 1.5rem;
 						text-align: center;
-						padding-top:3px
+						padding-top:3px;
+						margin-bottom: 35px;
+						
 					}
 					
 					.facebook{
@@ -253,9 +356,188 @@
 			.block-related{
 				width:100%;
 				@include respond-to(tablet){
+				  @include col(100%,0px 10px);
+				}
+				
+				@include respond-to(desktop){
 				  @include col(20%,0px 10px);
 				}
+				
+				
+				h2{
+					font-family: $KeplerStd;
+					color:  #050101;
+					font-size: 1.5rem;
+					font-weight: 700;
+					font-style: italic;
+					line-height: 1.9;
+					border-top:1px solid #ccc;
+					border-bottom:1px solid #ccc;
+					text-align: center;
+				}
+				
+				
+				.slick-prev{
+					background: url(../images/prev.png) no-repeat top left;
+					position:absolute;
+					top:50%;
+					left:2px;
+					width:11px;
+					height:19px;
+					margin-top:-6px;
+					text-indent: -9999px;
+					
+					@include respond-to(desktop){
+					  top:0px;
+					  left:50%;
+					   -webkit-transform: rotate(90deg);
+					 -moz-transform: rotate(90deg);
+					 -ms-transform: rotate(90deg);
+					 -o-transform: rotate(90deg);
+					 transform: rotate(90deg);
+					}
+				}
+				
+				.slick-next{
+					background: url(../images/next.png) no-repeat top left;
+					position:absolute;
+					top:50%;
+					right:2px;
+					width:11px;
+					height:19px;
+					margin-top:-6px;
+					text-indent: -9999px;
+					
+					@include respond-to(desktop){
+					  top:105%;
+					  left:50%;
+					 -webkit-transform: rotate(90deg);
+					 -moz-transform: rotate(90deg);
+					 -ms-transform: rotate(90deg);
+					 -o-transform: rotate(90deg);
+					 transform: rotate(90deg);
+					}
+				}
+				
+				.mini-products-list{
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					.item{
+					    text-align: center;
+						padding:20px 10px;
+						min-height: 240px;
+						border-right: 1px dotted #ccc; 
+						@include respond-to(desktop){
+						  border-bottom: 1px dotted #ccc; 
+						  border-right: none; 
+						}
+						.brand-name{
+							margin:	10px 0px 0px;
+								font-family: $TabletGothicCondensed;
+								color:  #050101;
+								font-size: 1.125rem; 
+								font-weight: 700;
+								text-transform: uppercase;
+						}
+						
+						img{
+							margin-bottom: 15px;
+							text-align: center;
+							display: inline-block;
+						}
+						
+						.link-wishlist{
+							display: none;
+						}
+						
+						.product-name{
+							margin:0px;
+							line-height: 0rem;
+							a{
+								font-family: $ProximaNova;
+								color:  #050101;
+								font-size: 0.875rem;
+								font-weight: 400;
+								line-height: 1;
+								
+							}	
+						}
+						
+						.price{
+							font-family: $ProximaNova;
+							color:  #050101;
+							font-size: 0.875rem;
+							font-weight: 400;
+							line-height: 1.714; 
+						}
+					}
+				}
 			}
+		}
+	}
+	
+	
+	.box-up-sell{
+	   width:100%;
+		clear:both;
+		text-align: center;
+		padding: 0px;
+		margin-bottom: 60px;
+		
+		.slick-prev{
+			background: url(../images/prev.png) no-repeat top left;
+			position:absolute;
+			top:50%;
+			left:2px;
+			width:11px;
+			height:19px;
+			margin-top:-6px;
+			text-indent: -9999px;
+		}
+		
+		.slick-next{
+			background: url(../images/next.png) no-repeat top left;
+			position:absolute;
+			top:50%;
+			right:2px;
+			width:11px;
+			height:19px;
+			margin-top:-6px;
+			text-indent: -9999px;
+		}
+		
+		#upsell-product-table{
+			padding: 0px;
+			margin: 0px;
+		}
+		.company-title{
+			line-height: 0rem;
+			margin: 0px;
+			padding:10px 0px 5px;
+			font-family: $KeplerStd;
+			font-size: 1.125rem;
+			font-weight: 700;
+			font-style: italic;
+		}
+		
+		.item{
+			width:25%;
+			
+		}
+		
+		.item:nth-child(3n+3){
+			border-right:1px dotted #ccc;
+		}
+		
+		h2{
+			font-family: $TabletGothicCondensed;
+			font-size: 1.875rem; /* Approximation due to font substitution */
+			font-weight: 700;
+			line-height: 1.2;
+			text-transform: uppercase;
+
+			margin:0px 0px 10px;
 		}
 	}
 }

@@ -33,6 +33,7 @@
 ?>
 <?php if($this->canShowBlock()): ?>
 <div class="block block-layered-nav<?php if (!$this->getLayer()->getState()->getFilters()): ?> block-layered-nav--no-filters<?php endif; ?>">
+	<div class="mobile-toggle">filter</div>
     <div class="block-title">
         <strong><span><?php echo $this->__('Shop By ...') ?></span></strong>
     </div>

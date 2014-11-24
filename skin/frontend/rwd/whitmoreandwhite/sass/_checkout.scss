@@ -1,0 +1,521 @@
+.checkout-cart-index{
+	.cart-empty{
+		background: white;
+		padding:25px;
+		text-align: center;
+		margin:0px;
+	}	
+	
+	
+
+	
+	.sidebar {
+				
+		h3{
+			font-family: $ProximaNova;
+			font-size: 0.75rem; 
+			font-weight: 300;
+			line-height: 1.5;
+			text-transform: uppercase;
+			border-top:1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			letter-spacing: 0.16rem;
+			padding:18px 0px;
+			margin:0px 0px 15px;
+		}
+		
+		hr{
+			display: block; 
+			height: 1px;
+			border: 0; 
+			border-top: 1px solid #ccc;
+			margin: 1em 0 2em; 
+			padding: 0;
+		}
+		
+		a{
+			color:$green;
+		}
+
+	}
+	
+	.cart{
+		background: white;
+		margin-bottom: 35px;
+		position: relative;
+		
+		
+	}
+	
+	.checkout-types.top{
+		display: none;
+	}
+	#shopping-cart-table{
+		width: 100%;
+		font-size: 0.75rem;
+		font-family: Arial;
+		.product-cart-image{
+			max-width:125px;
+		}
+		td{
+			vertical-align: top;
+			padding-top:10px;
+		}
+		
+		.product-cart-info{
+			vertical-align: top;
+		}
+		th{
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+			font-family: $TabletGothicCondensed;
+			font-size: 0.75rem;
+			font-weight: 200;
+			text-transform: uppercase;
+			font-size: 0.63rem;
+			text-align: left;
+			background: white;
+			
+		}
+		tfoot{
+		    display: none;
+		}
+		.product-name{
+			font-family: $TabletGothicCondensed;
+			font-weight: 200;
+			text-transform: uppercase;
+			font-size:0.65rem;
+			
+		}
+		
+		.brand-name{
+			font-family: $ProximaNova;
+			color:  #202021;
+			font-size: 0.75rem;
+			font-weight: 400;
+			line-height: 2.5;
+			text-transform: uppercase;
+		}
+		
+		.qty-wrapper{
+			margin-bottom: 0px;
+			background: url(../images/per-page-dropdown.png) no-repeat 0px center;
+			position: relative;
+			select{
+				 background: transparent;
+				   border: none;
+				   height: 29px;
+				   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+				   width: 74px;
+				   text-transform: uppercase;
+				   height: 34px;
+				   font-size: 0.69rem;
+				   font-family: Arial;
+				   line-height: 2.182;
+				   text-align: left;
+				   margin-top:10px;
+				   -moz-appearance: window;
+				   -webkit-appearance: none;
+				   appearance: none;
+			}
+		}
+		
+		.product-cart-sku{
+			display: none;
+		}
+		
+		.btn-remove{
+			color:$green;
+			font-size:1rem;
+			margin-top:10px;
+			display: inline-block;
+		}
+		
+		.cart-price{
+			margin-top:10px;
+			display:inline-block;
+		}
+		
+		.btn-update{
+			background: none;
+			border:none;
+			font-family: Arial;
+			font-size: 0.75rem;
+			display: inline-block;
+			color: $green;
+			text-transform: uppercase;
+			text-align: left;
+			padding:0px;
+			margin:0px;
+			
+			
+		}
+		
+		.cart-links{
+			display: block;
+			
+			.link-wishlist{
+				text-transform: uppercase;
+				color:$green;
+				font-size: 0.75rem;
+				font-family: Arial;
+			}
+		}
+		
+		
+		.cart-item-head{
+			@include respond-to(tablet){
+			  width:70%;
+			}
+		}
+		
+		.product-cart-actions,.cart-qty-head{
+			display: none;
+			
+			@include respond-to(tablet){
+			  display:table-cell;
+			  padding: 0px;
+			}
+		}
+		.product-cart-price,.cart-price-head{
+			display: none;
+			@include respond-to(tablet){
+			  display:table-cell;
+			   vertical-align: top;
+			    padding-top:10px;
+			}
+		}
+		.product-cart-total,.cart-total-head{
+			display: none;
+			@include respond-to(tablet){
+			  display:table-cell;
+			   vertical-align: top;
+			   padding-top:10px;
+			}
+		}
+	}
+	
+	
+	.cart-forms{
+		width: 100%;
+		float:left;
+		text-align: right;
+		
+		padding:12px 0px;
+		border-top:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		margin-bottom:15px;
+		
+		@include respond-to(tablet){
+		  height:64px;
+		}
+		
+		.shipping{
+			display: none;
+		}
+		
+		
+		.discount{
+			h2{
+				display: none;
+			}
+			.field-wrapper{
+				position: relative;
+				width: 100%;
+				
+				@include respond-to(tablet){
+				  width:237px;
+				  float:right;
+				}
+			}
+			
+			label{
+				display: none;
+			}
+			
+			.input-text{
+				width:100%;
+				padding-right:70px;
+				position: relative;
+				top:0px;	
+				height: 37px
+			}
+			
+			.product-cart-total{
+				text-align: right;
+			}
+			
+			
+			
+			.button-wrapper{
+				
+				.button2{
+					height: 30px;
+				padding: 0px 20px;
+				position: absolute;
+				top:0px;
+				right:0px;
+				font-family: $TabletGothicCondensed;
+				font-size: 0.875rem; /* Approximation due to font substitution */
+				font-weight: 600;
+				line-height: 1.714; 
+				text-transform: uppercase;
+				width: 117px;
+				background: black;
+				@include ribbon(black,2.6em,white,right);
+				}
+				
+			}
+		}
+		
+		.aw_giftcard{
+			position: relative;
+			width: 100%;
+			border: none;
+			float: left;			
+			@include respond-to(tablet){
+			  width:60%;
+			  float:left;
+			}
+			
+			@include respond-to(desktop){
+			  width:50%;
+			}
+			
+		}	
+		#aw_giftcard-form{
+			
+			
+			fieldset{
+				border: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.input-text{
+				width: 45%;
+				position: relative;
+				top:0px;	
+				height: 37px;
+				float: left;
+				outline: none;
+				border-color: #ccc;
+				padding: 9px 15px;
+				overflow: none;
+				border: 1px solid #ccc;
+				margin-bottom: 11px;
+				font-family: Arial;
+				font-size: 0.75rem;
+				color: #202021;
+				
+				@include respond-to(tablet){
+				  width:45%;
+				}
+			}
+			
+			.buttons-set{
+				
+				.button{
+					background: $green;
+					color:white;
+					text-transform: uppercase;
+					border: none;
+					position: relative;
+					float:left;
+					font-size: 0.75rem;
+					padding:8px 10px;
+					height: 37px
+				}
+				
+			}
+		}
+		
+		
+	}
+	
+	.cart-totals-wrapper{
+		text-align: left;
+		width:100%;
+		float: right;
+		
+		@include respond-to(tablet){
+			width:235px;
+		}
+		
+		.cart-totals{
+			text-align: right;
+		}
+		
+	}
+	
+	.cart:after{
+		
+	}
+	
+	.method-checkout-cart-methods-multishipping{
+		display: none;
+	}
+	
+	.checkout-types{
+		margin: 0px;
+		padding:0px;
+		li{
+			list-style: none;
+		}
+	}
+	
+	#shopping-cart-totals-table{
+		text-transform: uppercase;
+		font-family: Arial;
+		font-size: 0.75rem;
+		width:100%;
+		margin-bottom: 20px;
+		
+		
+		.a-right{
+			text-align: right;
+		}
+		
+		.a-left{
+			text-align: left;
+		}
+		
+		.grand-total{
+			font-size: 1rem;
+			font-weight: normal;
+		}
+	}
+	
+	.btn-proceed-checkout{
+		background: $green;
+		border: none;
+		text-transform: uppercase;
+		font-family: Arial;
+		font-size: 0.75rem;
+		color:white;
+		width:235px;
+		height: 47px;
+		padding:10px 0px;
+		float: left;
+	}
+	
+	.btn-wishlist,.btn-continue{
+		background: $green;
+		color:white;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		font-family: Arial;
+		line-height: 2rem;
+		height:47px;
+		width: 167px;
+		position: relative;
+		border: none;
+		
+		
+	}
+	
+	.btn-wishlist{
+		@include respond-to(tablet){
+		  left:205px;
+		}
+	}
+	
+	.btn-continue{
+		@include respond-to(tablet){
+		  left:25px;
+		}
+	}
+	
+	
+	
+	
+	.crosssell{
+		clear:both;
+		
+		@include respond-to(tablet){
+		  padding:0px 10px;
+		}
+		
+		@include respond-to(desktop){
+		  padding: 0px 15px;
+		}
+		
+		.crosssell{
+			padding:0px;
+		}
+		
+		.slick-prev{
+			position: absolute;
+			top:50%;
+			left:0px;
+			margin-top:-30px;
+			background: url(../images/prev-arrow-slider.png) no-repeat;	
+			width: 15px;
+			height: 29px;
+			text-indent: -9999px;
+			cursor: pointer;
+			display: inline-block;
+		}
+		.slick-next{
+			position: absolute;
+			top:50%;
+			right:0px;	
+			margin-top:-30px;
+			background: url(../images/next-arrow-slider.png) no-repeat;
+			width: 15px;
+			height: 29px;
+			text-indent: -9999px;
+			cursor: pointer;
+			display: inline-block;
+		}
+		
+		#crosssell-products-list{
+			padding:0px 30px;
+			margin-bottom:30px;
+		}
+		
+		
+		ul{
+			margin: 0px;
+		}
+		
+		h2{
+			border-top:1px solid #ccc;
+			width:100%;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: $TabletGothicCondensed;
+			letter-spacing: 0.16rem;
+			font-size: 0.75rem; 
+            font-weight: 300;
+            line-height: 1.5; 
+            padding: 15px 0px;
+            margin: 0px;
+		}
+		
+		.item{
+			padding:0px 3px;
+			width:20%;
+			.product-content{
+				height:314px;
+			}
+			
+			.brand-name{
+				font-family: $ProximaNova;
+				font-size: 0.75rem;
+				font-weight: 400;
+				line-height: 1.5
+			}
+			
+			.product-name{
+				font-size: 0.75rem; 
+				font-weight: 300;
+				line-height: 1.5;
+			}
+			
+			.price-box{
+				padding-bottom:25px;
+			}
+		}
+	}
+}

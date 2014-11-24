@@ -55,7 +55,7 @@ Default layout, loads most of the pages
             <title>My Account</title>
             <prepare/>
             <urlParams/>
-            <position>10</position>
+            <position>20</position>
             </action>
         </reference>
         <reference name="footer_links2">
