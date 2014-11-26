@@ -1,0 +1,629 @@
+.page-title{
+ 	h1{
+	 	font-family: $TabletGothicCondensed;
+	 	font-size: 1.875rem; /* Approximation due to font substitution */
+	 	font-weight: 600;
+	 	line-height: 0.6;
+	 	margin-bottom:30px;
+ 	}
+ }
+
+.customer-account-login{
+	
+	 
+	.breadcrumbs{
+		margin-bottom: 20px;
+	}
+	
+	
+	.col-main{
+		width: 100%;
+	    padding: 0px;	
+		
+		.account-login{
+			background: white;
+			width:100%;
+			font-size: 0.75rem;
+			font-family: $ProximaNova;
+			margin-bottom: 30px;
+			@include respond-to(tablet){
+			   margin-bottom: 50px;
+			}
+			.form-list{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				width:297px;
+				li{
+					
+				}
+			}
+			
+			
+			
+			.page-title{
+				h1{
+					font-family: $TabletGothicCondensed;
+					font-size: 1.875rem;
+					font-weight: 700;
+					line-height: 0.6;
+					margin-bottom:60px;
+					text-transform: uppercase;
+				}
+			}
+			
+			h2{
+				font-family: $TabletGothicCondensed;
+				font-size: 1.125rem; 
+				font-weight: 700;
+				line-height: 0;
+				text-transform: uppercase;
+				padding-bottom:20px;
+
+			}
+			
+			
+			
+			.col-2{
+				float:left;
+				margin-bottom: 20px;
+				
+				@include respond-to(tablet){
+				  width:50%;
+				  padding:0px 10px 0px 40px;
+				}
+				@include respond-to(desktop){
+				  padding:0px 10px 0px 40px;
+				}
+				
+				.button{
+				    width: 190px;
+					height: 42px;
+					font-family: $TabletGothicCondensed;
+					font-size: 1.125rem; 
+					font-weight: 600;
+					line-height: 0.4; 
+				}
+				
+				.content{
+					font-family: $ProximaNova;
+					font-size: 0.75rem;
+					font-weight: 400;
+					line-height: 1.5;
+					margin-bottom: 15px;
+					
+					ul,li{
+						margin:0px;
+						padding:0px;
+						font-family: $ProximaNova;
+						font-size: 0.875rem; 
+						font-weight: 400;
+						line-height: 1.286
+						
+					}
+					ul{
+						margin-left:15px;
+					}
+				}
+			}
+			
+			.col-1{
+				float:left;
+				margin-bottom: 20px;
+				
+				@include respond-to(tablet){
+				  width:50%;
+				  
+				  border-right:1px solid #ccc;
+				}
+				@include respond-to(desktop){
+				  padding:0px 10px 0px 160px;
+				}
+				.buttons-set{
+					margin-top: 15px;
+				}
+				.form-instructions{
+					display: none;
+				}
+				.button{
+				    width: 150px;
+					height: 42px;
+					font-family: $TabletGothicCondensed;
+					font-size: 1.125rem; 
+					font-weight: 600;
+					line-height: 0.4; 
+				}
+				
+				.forgotten-link{
+					color:$green;
+					text-transform: uppercase;
+					font-family: $ProximaNova;
+					font-size: 0.813rem; 
+					font-weight: 400;
+					line-height: 1.385;
+					
+				}
+				
+				input[type=text],input[type=password],input[type=email]{
+					width: 297px;
+				}
+			}
+			
+			p.required{
+				display: none;
+			}
+			.form-instructions{
+				font-family: $ProximaNova;
+				font-size: 0.875rem; 
+				font-weight: 400;
+				line-height: 2.143; 
+			}
+			
+			.remember-me-popup{
+				display: none;
+			}
+			
+			
+			.button{
+				background: $green;
+				color:white;
+				border:none;
+				text-transform: uppercase;
+				display: inline-block;
+				text-align: center;
+				
+				width: 125px;
+				height: 47px;
+				margin-right:10px;
+			}
+			
+			p.welcome{
+				font-family: $KeplerStd;
+				font-size: 1.88rem; 
+				font-weight: 400;
+				line-height: 0.6;
+			}
+			
+		}
+		
+		.account-login:after{
+			clear:both;
+			content: "";
+			display: block
+		}
+	}
+}
+
+.customer-account-create{
+	.breadcrumbs{
+		margin-bottom: 20px;
+	}	
+
+	.form-list{
+		@include respond-to(tablet){
+		  width: 50%;
+		}
+		
+		@include respond-to(desktop){
+		  width: 40%;
+		}
+	}
+	.col-main{
+		width: 100%;
+		padding: 0px;
+		.account-create{
+			background: white;
+			width:100%;
+			font-size: 0.75rem;
+			font-family: $ProximaNova;
+		}
+		
+		.form-list{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li{
+				
+			}
+		}
+		
+		
+		.page-title{
+			h1{
+				font-family: $TabletGothicCondensed;
+				font-size: 1.875rem;
+				font-weight: 700;
+				line-height: 0.6;
+				text-transform: uppercase;
+				
+			}
+		}
+		
+		p.required{
+			display: none;
+		}
+		
+		.remember-me-popup{
+			display: none;
+		}
+		
+		.button{
+			background: $green;
+			color:white;
+			border:none;
+			text-transform: uppercase;
+			display: inline-block;
+			text-align: center;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.125rem;			font-weight: 600;
+			line-height: 1;
+		}
+	}	
+}
+
+.customer-account,.customer-account-index{
+
+
+	.breadcrumbs{
+		margin-bottom: 20px;
+	}
+	
+	.buttons-set{
+			button{
+				background: $green;
+				color:white;
+				padding:10px 20px;
+				text-transform: uppercase;
+				font-family: $TabletGothicCondensed;
+				font-size: 1.125rem; 
+			    font-weight: 600;
+			    line-height: 0.889;
+				height: 47px;
+				width:185px;
+				border: none;
+				margin-right:10px;
+	
+		    }
+	    }
+	
+	.col-1,.col-2{
+		@include respond-to(tablet){
+	      width:50%;
+	      float:left;
+		  position: relative;
+		  padding:0px 0px;
+		}
+		
+		.contact-info{
+			padding-right:30px;
+		}
+		.newsletter{
+			padding-left: 30px;
+		}
+		
+	}
+	
+	.col2-set:after{
+		clear:both;
+			content: "";
+			display: block
+	}
+	.col-main{
+		width: 100%;
+		font-family: $ProximaNova;
+		font-size: 0.75rem;
+		font-weight: 400;
+		line-height: 1.5;
+		padding: 0px;
+
+		@include respond-to(tablet){
+	      width:70%;
+	      float:left;
+		  position: relative;
+		}
+		
+		
+		
+		.page-title{
+			h1{
+				text-transform: uppercase;
+				font-family: $TabletGothicCondensed,sans-serif;
+				font-size: 1.38rem;
+				font-weight: 700;
+				margin-bottom: 10px;
+			}
+		}
+		
+		h2{
+			font-family: $ProximaNova;
+			color:  #000000;
+			font-size: 1.5rem; /* Approximation due to font substitution */
+			font-weight: 300;
+			line-height: 1;			
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		
+				
+		.box{
+			font-family: $ProximaNova;
+			font-size: 0.875rem; /* Approximation due to font substitution */
+			font-weight: 400;
+			line-height: 1.714;
+			
+			a{
+				color: $green;
+			}
+			
+			
+			.box-title{
+				border-top:1px solid #ccc;
+				border-bottom:1px solid #ccc;
+				text-transform: uppercase;
+				padding:0px;
+				position: relative;
+				margin:10px 0px;
+				a{
+					display: none;
+					color:$green;
+					position: absolute;
+					right:0px;
+					top:14px;
+					
+					@include respond-to(tablet){
+					  display: block;
+					}
+				}
+				
+				h3{
+					
+					padding:10px 0px;
+					font-family: $TabletGothicCondensed;
+					font-size: 1.125rem; /* Approximation due to font substitution */
+					font-weight: 600;
+					line-height: 1.333;
+				}
+			}
+		}
+	}
+	
+	.col-main:after{
+		clear:both;
+			content: "";
+			display: block
+	}
+	.col-left{
+		width: 100%;
+		margin-bottom: 25px;
+		@include respond-to(tablet){
+		  padding:0px 15px 0px 0px;
+		  width:30%;
+		  float:left;
+		  position: relative;
+		}
+		@include respond-to(desktop){
+		  padding:0px 15px 0px 0px;
+		}
+		
+		.block-account{
+			.block-title{
+				
+				background: $green;
+				font-family: $ProximaNova;
+				color:  #050101;
+				font-size: 1.125rem;				
+				font-weight: 300;
+				line-height: 1.667;
+				padding:5px 10px;
+				color:white;
+				text-transform: uppercase;
+			
+				letter-spacing: 0.16rem;
+				
+				@include respond-to(tablet){
+				   font-family: $TabletGothicCondensed;
+				   color:  #050101;
+					font-size: 1.125rem;				
+					font-weight: 700;
+					line-height: 1.667;
+
+				    text-transform: uppercase;
+				    color:black;
+				    margin-bottom:0px;
+				    background: none;
+				}
+				
+			}
+			
+			.no-display{
+				display:none;
+			}
+			
+			.block-content{
+				margin-bottom: 25px;
+			}
+			
+			ul{
+				padding: 0px 0px 0px 10px;
+				margin: 0px;
+				li{
+					list-style: none;
+					
+					a{
+						font-family: $ProximaNova;
+						color:  black;
+						font-size: 0.875rem;
+						font-weight: 400;
+						text-transform: none;
+						
+		 				strong{
+							font-weight: 400;
+							color:$green;
+						}
+					}
+					a:hover{
+						color:$green;
+					}
+				}
+			}
+		}
+	}
+	
+	.main-container a{
+		text-transform: uppercase;
+	}	
+		
+	.title{
+			font-weight: normal;
+			font-family: $ProximaNova;
+			font-size: 0.75rem;
+			font-weight: 400;
+			line-height: 2;
+		h3{
+			text-transform: uppercase;
+			font-family: $ProximaNova;
+			font-size: 0.875rem; /* Approximation due to font substitution */
+			font-weight: 400;
+			line-height: 1.714;
+			margin:0px;
+		}
+	}
+	
+	address{
+		font-family: $ProximaNova;
+		font-size: 0.875rem; /* Approximation due to font substitution */
+		font-weight: 400;
+		line-height: 1.714;
+	}
+	
+	a{
+		font-family: $ProximaNova;
+		color:  $green;
+		font-size: 0.75rem; /* Approximation due to font substitution */
+		font-weight: 400;
+		line-height: 2; 
+	}
+	.my-account:after{
+		clear:both;
+			content: "";
+			display: block
+	}
+	
+	.my-account{
+		background: white;
+		padding: 0px;
+		margin-bottom:60px;
+		
+		@include respond-to(tablet){
+			padding:0px 25px 25px;
+		  margin:0px 10px 60px;
+		}
+		
+		@include respond-to(desktop){
+		  margin:0px 15px 60px;
+		}
+	}
+    .form-list{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li{
+			
+		}
+	}
+	
+	p.required{
+		display: none;
+	}
+	
+	.remember-me-popup{
+		display: none;
+	}
+	
+	p.welcome{
+		font-family: $KeplerStd;
+		font-size: 1.88rem; 
+		font-weight: 200;
+		line-height: 0.6;
+	}
+	
+}
+
+
+
+#wishlist-view-form{
+	width:100%;
+	#wishlist-table{
+		width: 100%;
+	}
+	.product-name{
+		font-family: $ProximaNova;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+	}
+	.wishlist-sku{
+		font-family: $ProximaNova;
+		font-size: 0.54rem;
+		text-transform: uppercase;
+	}
+	
+	.add-to-cart-alt{
+		.qty{
+			width:40px;
+		}
+	}
+	
+	.customer-wishlist-item-price {
+		text-align: right;
+		.price-box{
+			padding:10px 0px;
+			.price{
+				font-weight: bold;
+			}
+		}
+	}
+	
+	.btn-remove{
+		color:$green;
+	}
+	.btn-cart{
+		background: $green;
+		color:white;
+		padding:10px 20px;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		height: 47px;
+		width:125px;
+		border: none;
+		margin-right:10px;
+		float: right;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	table{
+		border:none;
+	}
+	thead{
+		background: none;
+	}
+	td{
+		border-bottom:1px solid #ccc;
+	}
+	
+	th{
+		border-top:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		padding:10px 0px;
+		text-transform: uppercase;
+		font-family: $TabletGothicCondensed;
+		font-size: 1rem;
+		background: none;
+	}
+	
+	.buttons-set{
+		width:100%;
+		border-top:1px solid #ccc;
+		padding:10px 0px;
+		margin:10px 0px;
+	}
+}

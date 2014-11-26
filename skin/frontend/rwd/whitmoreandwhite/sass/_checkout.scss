@@ -1,521 +1,601 @@
-.checkout-cart-index{
-	.cart-empty{
-		background: white;
-		padding:25px;
-		text-align: center;
-		margin:0px;
-	}	
-	
-	
+.checkout-onepage-index{
 
 	
-	.sidebar {
-				
-		h3{
-			font-family: $ProximaNova;
-			font-size: 0.75rem; 
-			font-weight: 300;
-			line-height: 1.5;
-			text-transform: uppercase;
-			border-top:1px solid #ccc;
-			border-bottom: 1px solid #ccc;
-			letter-spacing: 0.16rem;
-			padding:18px 0px;
-			margin:0px 0px 15px;
+	.main-container{
+		margin-top: 20px;
+	}
+	
+	
+	.col-main{
+		width:100%;
+		float:left;
+		
+		@include respond-to(tablet){
+		   padding:0px 10px;
+		}
+		@include respond-to(desktop){
+		  padding:0px 15px;
+		  width: 75%;
 		}
 		
-		hr{
-			display: block; 
-			height: 1px;
-			border: 0; 
-			border-top: 1px solid #ccc;
-			margin: 1em 0 2em; 
-			padding: 0;
+		
+		
+		
+	}
+	
+	select{
+		border:1px solid #ccc;
+		margin-bottom: 5px;
+		padding: 5px 10px;;
+	}
+	
+	
+	.col-right{
+		display: none;
+		width:25%;
+		float:left;
+		padding:0px 15px;
+		
+		@include respond-to(desktop){
+		  display: block;
+		}
+		
+		#checkout-progress-wrapper{
+			display: none;
+		}
+		
+		.order-sumary{
+			background: white;
+			font-size: 0.75rem;
+			margin-bottom: 25px;
+			
+			h2{
+				border-top:3px solid black;
+				border-bottom:1px solid black;
+				padding:18px 0px;
+				font-family: $TabletGothicCondensed;
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 300;
+			}
+			
+			
+					
+			.cart-contents:after{
+				;
+			}	
+			.cart-contents{
+				padding:15px;
+				
+				
+				ul{
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					li{
+						font-size: 0.69rem;
+						
+						.brand-name{
+							font-family: $KeplerStd;
+							font-size: 0.58rem
+						}
+						.product-image{
+							float:left;
+							padding-right:10px;
+							width:30%;
+						}
+						.product-details{
+							float:right;
+							width:70%;
+							padding-bottom:10px;
+						}
+						.product-name{
+							font-family: $TabletGothicCondensed;
+							font-size: 0.58rem;
+							text-transform: uppercase;
+						}
+						
+						.price{
+							font-size: 0.75rem;
+							font-family: $TabletGothicCondensed;
+							font-size: 0.69rem;
+							font-weight: 400;
+							line-height: 1.636;
+						}
+						
+						
+						.btn-remove,.btn-edit{
+							display: none;
+						}
+						
+						.price{
+							
+						}
+					}
+				}
+			}
+			
+			.total{
+				padding:10px 15px 15px;
+				clear: both;
+				border-top:1px solid #ccc;
+				.label{
+					text-align: left;
+					text-transform: uppercase;
+				}
+				.price{
+					text-align: right;
+					text-align: right;
+						font-weight: bold;
+						display: inline-block;
+						float:right;
+				}
+			}
+		}
+	}
+	
+	#checkoutSteps{
+		list-style: none;
+		margin: 0px 0px 30px 0px;
+		padding: 0px;
+		
+		.sp-methods{
+			dt{
+				padding-bottom:10px;
+				font-family: $TabletGothicCondensed;
+				font-weight: normal;
+				text-transform: uppercase;
+				font-size: 0.75rem;
+			}
+			
+			input[type=checbox],input[type=radio]{
+					width:20px;
+					margin-top:4px;
+				}
+		}
+		
+		input[type=text],input[type=password],input[type=email],input[type=tel]{
+			width: 297px;
+		}
+		
+		
+		.required-indicator{
+			color:$green;
+		}
+		
+		li{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.step-title{
+			padding:5px 0px;
+			border-top:1px solid #ccc;
+			font-size: 0.63rem;
+			font-family: $TabletGothicCondensed;
+			margin:0px;
+			height:49px;
+			font-weight: 300;
+		}
+		
+		.step{
+			padding:20px;
+			
+			ul{
+				list-style: none;
+				margin: 0px;
+				padding:0px;
+				li{
+					margin: 0px;
+					padding:0px;
+				}
+				
+				.control{
+					margin-bottom: 8px;
+				}
+			}
+			
+			.form-list{
+				width:100%;
+				
+				@include respond-to(tablet){
+				  width:50%;
+				}
+				
+				input,select{
+					width:100%;
+				}
+				
+				input[type=checbox],input[type=radio]{
+					width:20px;
+					margin-top:4px;
+				}
+			}
+		}
+		
+		.step:after{
+			;
+		}
+		
+		.remember-me-popup{
+			display: none;
+		}
+		
+		.active{
+			display: block;
+			
+			.step-title{
+				text-transform: uppercase;
+				margin:0px;
+				border-bottom: 1px solid #ccc;
+			}
+		}
+		
+		
+		#opc-review{
+			.step-title{
+				text-transform: uppercase;
+				margin:0px;
+				border-bottom: 1px solid #ccc;
+			}
+		}
+		
+		
+		h2{
+			font-family: $TabletGothicCondensed;
+			color:  #000000;
+			font-size: 1.125rem; /* Approximation due to font substitution */
+			font-weight: 700;
+			line-height: 1.667; 
+			text-transform: uppercase;
+			display: inline-block;
+		}
+		
+		h3{
+			font-family: $TabletGothicCondensed;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+		}
+		
+		p{
+			font-size: 0.75rem;
+		}
+		.number{
+			font-family: $TabletGothicCondensed;
+			color:  #000000;
+			font-size: 1.125rem; /* Approximation due to font substitution */
+			font-weight: 700;
+			line-height: 1.667; 
+			text-transform: uppercase;
+			display: inline;
+		}
+		
+		
+		
+		a{
+			display: none;
+		}
+		.forgotten-link{
+			display: inline-block;
+			color:$green;
+			font-size: 0.6rem;
+			font-family: Arial;
+		}
+		.col-1{
+			
+			float:left;
+			margin-bottom:20px;
+			@include respond-to(tablet){
+			  width: 50%;
+			}
+			
+			.description{
+				display: none;
+			}
+		}
+
+		.col-2{
+			float:left;
+			margin-bottom:20px;
+			@include respond-to(tablet){
+			  width: 50%;
+			}
+			.description{
+				display: none;
+			}
+		}
+		
+		.form-list{
+			margin-bottom: 20px;
+		}
+		
+		p.required{
+			display: none;
+		}
+		
+		.button{
+			background: $green;
+			color:white;
+			padding:10px 20px;
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			height: 47px;
+			width:125px;
+			border: none;
+			margin-right:10px;
+		}
+		
+		
+	}
+	
+	#checkout-step-shipping_method{
+		dd{
+			margin: 0px;
+			padding:0px;
+			ul{
+				padding:0px;
+				margin: 0px;
+				li{
+					
+				}
+			}
+		}
+	}
+	
+	table tr.even, table tr.alt, table tr:nth-of-type(even){background: none}
+	#checkout-totals{
+		border: none;
+		th{
+			background: none;
+			
+		}
+		thead,tfoot{
+			background: none;
+		}
+	}
+	#checkout-review-table{
+		width:100%;
+		text-align: left;
+		border: none;
+		
+		th{
+			background: none;
+			
+		}
+		thead,tfoot{
+			background: none;
+		}
+		
+		.image-col{
+			width:50px;
+		}
+		.name-col{
+			width:auto;
+		}
+		.qty-col{
+			width:20px;
+		}
+		.price-col{
+			width:40px;
 		}
 		
 		a{
-			color:$green;
-		}
-
-	}
-	
-	.cart{
-		background: white;
-		margin-bottom: 35px;
-		position: relative;
-		
-		
-	}
-	
-	.checkout-types.top{
-		display: none;
-	}
-	#shopping-cart-table{
-		width: 100%;
-		font-size: 0.75rem;
-		font-family: Arial;
-		.product-cart-image{
-			max-width:125px;
-		}
-		td{
-			vertical-align: top;
-			padding-top:10px;
-		}
-		
-		.product-cart-info{
-			vertical-align: top;
+			display: inline;
 		}
 		th{
-			border-top:1px solid #ccc;
-			border-bottom:1px solid #ccc;
+			border-top:3px solid black;
+			border-bottom:1px solid black;
+			padding:16px 0px;
 			font-family: $TabletGothicCondensed;
-			font-size: 0.75rem;
 			font-weight: 200;
 			text-transform: uppercase;
 			font-size: 0.63rem;
 			text-align: left;
-			background: white;
-			
-		}
-		tfoot{
-		    display: none;
-		}
-		.product-name{
-			font-family: $TabletGothicCondensed;
-			font-weight: 200;
-			text-transform: uppercase;
-			font-size:0.65rem;
-			
 		}
 		
-		.brand-name{
-			font-family: $ProximaNova;
-			color:  #202021;
+		td{
+			font-family: Arial;
 			font-size: 0.75rem;
 			font-weight: 400;
 			line-height: 2.5;
-			text-transform: uppercase;
+			width: 37px;
+			height: 9px;
 		}
 		
-		.qty-wrapper{
-			margin-bottom: 0px;
-			background: url(../images/per-page-dropdown.png) no-repeat 0px center;
-			position: relative;
-			select{
-				 background: transparent;
-				   border: none;
-				   height: 29px;
-				   padding: 5px; /* If you add too much padding here, the options won't show in IE */
-				   width: 74px;
-				   text-transform: uppercase;
-				   height: 34px;
-				   font-size: 0.69rem;
-				   font-family: Arial;
-				   line-height: 2.182;
-				   text-align: left;
-				   margin-top:10px;
-				   -moz-appearance: window;
-				   -webkit-appearance: none;
-				   appearance: none;
-			}
+		tfoot{
+			tr{
+				border:none;
+			}	
 		}
-		
-		.product-cart-sku{
-			display: none;
-		}
-		
-		.btn-remove{
-			color:$green;
-			font-size:1rem;
-			margin-top:10px;
-			display: inline-block;
-		}
-		
-		.cart-price{
-			margin-top:10px;
-			display:inline-block;
-		}
-		
-		.btn-update{
-			background: none;
-			border:none;
-			font-family: Arial;
+		.brand-name{
+			font-family: $KeplerStd;
 			font-size: 0.75rem;
-			display: inline-block;
-			color: $green;
-			text-transform: uppercase;
-			text-align: left;
-			padding:0px;
-			margin:0px;
-			
-			
+			font-weight: 400;
+			line-height: 2.5;
 		}
-		
-		.cart-links{
-			display: block;
-			
-			.link-wishlist{
-				text-transform: uppercase;
-				color:$green;
-				font-size: 0.75rem;
-				font-family: Arial;
-			}
+		.product-name{
+			font-family: $TabletGothicCondensed;
+			font-size: 0.75rem; 
+			font-weight: 300;
+			line-height: 2; 
 		}
 		
 		
-		.cart-item-head{
-			@include respond-to(tablet){
-			  width:70%;
-			}
-		}
+	}
+	
+	#checkout-review-submit{
+		float:right;
 		
-		.product-cart-actions,.cart-qty-head{
-			display: none;
-			
-			@include respond-to(tablet){
-			  display:table-cell;
-			  padding: 0px;
-			}
-		}
-		.product-cart-price,.cart-price-head{
-			display: none;
-			@include respond-to(tablet){
-			  display:table-cell;
-			   vertical-align: top;
-			    padding-top:10px;
-			}
-		}
-		.product-cart-total,.cart-total-head{
-			display: none;
-			@include respond-to(tablet){
-			  display:table-cell;
-			   vertical-align: top;
-			   padding-top:10px;
-			}
+		@include respond-to(tablet){
+		  width:55%;
 		}
 	}
 	
+
 	
-	.cart-forms{
-		width: 100%;
-		float:left;
-		text-align: right;
-		
-		padding:12px 0px;
-		border-top:1px solid #ccc;
-		border-bottom:1px solid #ccc;
-		margin-bottom:15px;
-		
-		@include respond-to(tablet){
-		  height:64px;
-		}
-		
-		.shipping{
-			display: none;
-		}
-		
-		
-		.discount{
-			h2{
-				display: none;
+	#review-buttons-container{
+			.btn-checkout{
+				background-color:  $green;
+				width: 235px;
+				height: 47px;	
+				float:right;
+				margin-left:20px;
+				font-family: $TabletGothicCondensed;
+				font-size: 1.125rem; 
+				font-weight: 600;
+				line-height: 0.889;
 			}
-			.field-wrapper{
-				position: relative;
-				width: 100%;
+			
+			a{
+				color:$green;
+				display: inline-block;
+				line-height: 2em;
 				
-				@include respond-to(tablet){
-				  width:237px;
-				  float:right;
-				}
 			}
-			
-			label{
-				display: none;
+			.f-left{
+				float:left;
 			}
+		}
+		
+		#checkout-totals{
+			width: 235px;
+			float: right;
 			
-			.input-text{
-				width:100%;
-				padding-right:70px;
-				position: relative;
-				top:0px;	
-				height: 37px
-			}
-			
-			.product-cart-total{
+			.a-right{
 				text-align: right;
 			}
 			
-			
-			
-			.button-wrapper{
-				
-				.button2{
-					height: 30px;
-				padding: 0px 20px;
-				position: absolute;
-				top:0px;
-				right:0px;
-				font-family: $TabletGothicCondensed;
-				font-size: 0.875rem; /* Approximation due to font substitution */
-				font-weight: 600;
-				line-height: 1.714; 
-				text-transform: uppercase;
-				width: 117px;
-				background: black;
-				@include ribbon(black,2.6em,white,right);
-				}
-				
-			}
-		}
-		
-		.aw_giftcard{
-			position: relative;
-			width: 100%;
-			border: none;
-			float: left;			
-			@include respond-to(tablet){
-			  width:60%;
-			  float:left;
+			.a-left{
+				text-align: left;
 			}
 			
-			@include respond-to(desktop){
-			  width:50%;
-			}
 			
-		}	
-		#aw_giftcard-form{
-			
-			
-			fieldset{
-				border: none;
-				padding: 0px;
-				margin: 0px;
-			}
-			
-			.input-text{
-				width: 45%;
-				position: relative;
-				top:0px;	
-				height: 37px;
-				float: left;
-				outline: none;
-				border-color: #ccc;
-				padding: 9px 15px;
-				overflow: none;
-				border: 1px solid #ccc;
-				margin-bottom: 11px;
+			td{
 				font-family: Arial;
 				font-size: 0.75rem;
-				color: #202021;
-				
-				@include respond-to(tablet){
-				  width:45%;
-				}
+				font-weight: 400;
+				line-height: 1.5;
+				text-transform: uppercase;
 			}
 			
-			.buttons-set{
-				
-				.button{
-					background: $green;
-					color:white;
-					text-transform: uppercase;
-					border: none;
-					position: relative;
-					float:left;
-					font-size: 0.75rem;
-					padding:8px 10px;
-					height: 37px
+			.grand-total{
+				td{
+					font-size: 1rem;
 				}
-				
 			}
 		}
-		
-		
-	}
-	
-	.cart-totals-wrapper{
-		text-align: left;
-		width:100%;
-		float: right;
-		
-		@include respond-to(tablet){
-			width:235px;
-		}
-		
-		.cart-totals{
-			text-align: right;
-		}
-		
-	}
-	
-	.cart:after{
-		
-	}
-	
-	.method-checkout-cart-methods-multishipping{
-		display: none;
-	}
-	
-	.checkout-types{
-		margin: 0px;
-		padding:0px;
-		li{
-			list-style: none;
-		}
-	}
-	
-	#shopping-cart-totals-table{
-		text-transform: uppercase;
-		font-family: Arial;
-		font-size: 0.75rem;
-		width:100%;
+}
+
+.checkout-onepage-success,.checkout_onepage_failure{
+	.breadcrumbs{
 		margin-bottom: 20px;
 		
-		
-		.a-right{
-			text-align: right;
-		}
-		
-		.a-left{
-			text-align: left;
-		}
-		
-		.grand-total{
-			font-size: 1rem;
-			font-weight: normal;
-		}
 	}
-	
-	.btn-proceed-checkout{
+	.button{
 		background: $green;
-		border: none;
-		text-transform: uppercase;
-		font-family: Arial;
-		font-size: 0.75rem;
 		color:white;
-		width:235px;
+		padding:10px 20px;
+		text-transform: uppercase;
+		font-size: 0.75rem;
 		height: 47px;
-		padding:10px 0px;
-		float: left;
-	}
-	
-	.btn-wishlist,.btn-continue{
-		background: $green;
-		color:white;
-		text-transform: uppercase;
-		font-size: 0.75rem;
-		font-family: Arial;
-		line-height: 2rem;
-		height:47px;
-		width: 167px;
-		position: relative;
+		width:225px;
 		border: none;
-		
-		
+		margin-right:10px;
 	}
 	
-	.btn-wishlist{
+		
+	.col-left{
+		display:none;
+		
 		@include respond-to(tablet){
-		  left:205px;
+		  width:30%;
+		  float: left;
+		  padding:0px 10px;
+		  display: block;
+		}
+		
+		@include respond-to(desktop){
+		  padding:0px 15px;
+		}
+		
+		
+		h4{
+			border-top:3px solid black;
+			border-bottom:1px solid black;
+			text-transform: uppercase;
+			font-family:$TabletGothicCondensed;
+			font-size: 0.75rem;
+			letter-spacing: 0.16rem;
+			padding:15px 0px;
+			margin: 0px 0px 20px;
+			
+			
+		}
+		
+		ul{
+			padding:0px;
+			margin: 0px;
+			list-style: none;
+			font-size: 0.75rem;
+			margin-bottom: 20px;
+			
+		}
+		
+		a{
+			font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.667rem;
+			text-transform: uppercase;
+		}
+		
+		a:hover{
+			color:$green;
+			
 		}
 	}
 	
-	.btn-continue{
-		@include respond-to(tablet){
-		  left:25px;
-		}
-	}
-	
-	
-	
-	
-	.crosssell{
-		clear:both;
-		
+	.main-container{
+		margin-top: 20px;
 		@include respond-to(tablet){
 		  padding:0px 10px;
 		}
 		
 		@include respond-to(desktop){
-		  padding: 0px 15px;
-		}
-		
-		.crosssell{
-			padding:0px;
-		}
-		
-		.slick-prev{
-			position: absolute;
-			top:50%;
-			left:0px;
-			margin-top:-30px;
-			background: url(../images/prev-arrow-slider.png) no-repeat;	
-			width: 15px;
-			height: 29px;
-			text-indent: -9999px;
-			cursor: pointer;
-			display: inline-block;
-		}
-		.slick-next{
-			position: absolute;
-			top:50%;
-			right:0px;	
-			margin-top:-30px;
-			background: url(../images/next-arrow-slider.png) no-repeat;
-			width: 15px;
-			height: 29px;
-			text-indent: -9999px;
-			cursor: pointer;
-			display: inline-block;
-		}
-		
-		#crosssell-products-list{
-			padding:0px 30px;
-			margin-bottom:30px;
-		}
-		
-		
-		ul{
-			margin: 0px;
-		}
-		
-		h2{
-			border-top:1px solid #ccc;
-			width:100%;
-			text-align: center;
-			text-transform: uppercase;
-			font-family: $TabletGothicCondensed;
-			letter-spacing: 0.16rem;
-			font-size: 0.75rem; 
-            font-weight: 300;
-            line-height: 1.5; 
-            padding: 15px 0px;
-            margin: 0px;
-		}
-		
-		.item{
-			padding:0px 3px;
-			width:20%;
-			.product-content{
-				height:314px;
-			}
-			
-			.brand-name{
-				font-family: $ProximaNova;
-				font-size: 0.75rem;
-				font-weight: 400;
-				line-height: 1.5
-			}
-			
-			.product-name{
-				font-size: 0.75rem; 
-				font-weight: 300;
-				line-height: 1.5;
-			}
-			
-			.price-box{
-				padding-bottom:25px;
-			}
+		  padding:0px 15px;
 		}
 	}
+	.col-main{
+		width:100%;
+		font-size: 0.75rem;
+		font-family: Arial;
+		background: white;
+		text-align: center;
+		padding:40px;
+		
+		
+		.content{
+			background: white;
+			padding:25px;
+			margin-bottom: 40px;
+		}
+		
+		.page-title{
+			h1{
+				text-transform: uppercase;
+				font-family: $TabletGothicCondensed,sans-serif;
+				font-size: 1.38rem;
+				font-weight: 400;
+			}
+		}
+		
+		.sub-title{
+			font-size: 1rem;
+			font-family: Arial ;
+		}
+		
+		
+	}
+	
+	
 }

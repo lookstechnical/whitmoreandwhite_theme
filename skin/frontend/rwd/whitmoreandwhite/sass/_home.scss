@@ -1,5 +1,8 @@
 .banner{
-	margin-bottom:60px;
+	margin-bottom:20px;
+	@include respond-to(tablet){
+	  margin-bottom:60px;
+	}
 	article{
 		height:300px;
 		background-size: cover;
@@ -23,14 +26,26 @@
 }
 .welcome{
 	@include center(1191px);
-	margin-bottom:95px;
-	
+	 @include col(100%,0px 20px);
+	 margin-bottom:30px;
+	 @include respond-to(tablet){
+	   margin-bottom:95px;
+	 }
 	.intro-image{
-		@include col(40%,0px 20px);
+		margin-bottom: 20px;
+		@include respond-to(tablet){
+		  @include col(40%,0px 20px);
+		  margin-bottom: 0px
+		}
+		
 	}	
 	
 	.intro{
-		@include col(60%,23px 20px);
+		@include col(100%,0px 20px);
+		@include respond-to(tablet){
+		  @include col(60%,23px 20px);
+		}
+		
 		h1{
 			margin-bottom: 12px;
 		}

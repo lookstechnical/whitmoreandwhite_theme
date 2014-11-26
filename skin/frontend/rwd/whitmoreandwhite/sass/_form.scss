@@ -1,4 +1,47 @@
+input,textarea,button{
+	outline:none;
+}
 
+input[type=text],input[type=password],input[type=email],input[type=tel]{
+	height: 34px;
+	padding:8px 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+label{
+	display: inline-block;
+	em{
+		float:right;
+	}
+}
+
+.button-set{
+	button,.button,.btn{
+		font-family: $TabletGothicCondensed;
+		font-size: 1.125rem; 
+		font-weight: 600;
+		line-height: 0.889;
+	}
+}
+
+.control{
+	.input-box{
+		float:left;
+		width: 40px;
+		padding-top:5px;
+		input[type=checkbox]{
+			width:30px; 
+			float:left;
+			line-height: 2;
+		}
+	}
+	
+	label{
+		margin-left: 10px;
+	}
+}
 
 
 ::-webkit-input-placeholder {
@@ -6,6 +49,7 @@
   color:  #949494;
   font-size: 0.875rem; /* Approximation due to font substitution */
   font-weight: 400;
+  line-height: 1.5;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -13,6 +57,7 @@
   color:  #949494;
   font-size: 0.875rem; /* Approximation due to font substitution */
   font-weight: 400;
+  line-height: 1.5;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
@@ -20,6 +65,7 @@
   color:  #949494;
   font-size: 0.875rem; /* Approximation due to font substitution */
   font-weight: 400;
+  line-height: 1.5;
 }
 
 :-ms-input-placeholder {  
@@ -27,6 +73,7 @@
   color:  #949494;
   font-size: 0.875rem; /* Approximation due to font substitution */
   font-weight: 400;
+  line-height: 1.5;
 }
 
 

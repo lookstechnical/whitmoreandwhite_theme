@@ -61,6 +61,7 @@ Default layout, loads most of the pages
         <reference name="footer_links2">
             <action method="addLink" translate="label title" module="catalog"><label>My Account</label><url helper="customer/getAccountUrl" /><title>My Account</title></action>
         </reference>
+        
     </default>
 
 <!--
@@ -221,20 +222,28 @@ Customer account pages, rendered for all tabs in dashboard
 
     <customer_account translate="label">
         <label>Customer My Account (All Pages)</label>
-        <!--remove name="catalog.compare.sidebar"/>
-        <remove name="sale.reorder.sidebar"/-->
+        <remove name="catalog.compare.sidebar"/>
+        <remove name="sale.reorder.sidebar"/>
         <!-- Mage_Customer -->
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
             <action method="addBodyClass"><class>customer-account</class></action>
+            <block type="core/template" name="page-title" as="page-title" template="page/html/title.phtml" />
+
         </reference>
+        
+        <reference name="head">
+			<action method="setData" translate="title"><key>title</key><value>My Dashboard</value></action>
+		</reference>
 
         <reference name="content">
             <block type="page/html_wrapper" name="my.account.wrapper" translate="label">
                 <label>My Account Wrapper</label>
                 <action method="setElementClass"><value>my-account</value></action>
             </block>
+            
         </reference>
+        
 
         <reference name="left_first">
             <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
@@ -242,6 +251,9 @@ Customer account pages, rendered for all tabs in dashboard
                 <action method="addLink" translate="label" module="customer"><name>account_edit</name><path>customer/account/edit/</path><label>Account Information</label></action>
                 <action method="addLink" translate="label" module="customer"><name>address_book</name><path>customer/address/</path><label>Address Book</label></action>
             </block>
+            <block type="cms/block" name="dashboard-info-menu">
+				<action method="setBlockId"><block_id>dashboard-info-menu</block_id></action>
+		    </block>  
         </reference>
         <reference name="left">
             <!--<block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">-->
@@ -261,6 +273,7 @@ Customer account home dashboard layout
 
     <customer_account_index translate="label">
         <label>Customer My Account Dashboard</label>
+        
         <update handle="customer_account"/>
         <!-- Mage_Customer -->
         <reference name="root">

@@ -5,8 +5,20 @@
       <version>0.1.0</version>
     </Webtise_Whitmoreandwhite>
   </modules>
+  <frontend>
+	    <routers>
+	        <ajax>
+	            <use>standard</use>
+	            <args>
+	                <module>Webtise_Whitmoreandwhite</module>
+	                <frontName>ajax</frontName>
+	            </args>
+	        </ajax>
+	    </routers>
+  </frontend>   
   <global>
-	  
+	 
+     
 	 <blocks>
 		<whitmoreandwhite>
 		    <class>Webtise_Whitmoreandwhite_Block</class>

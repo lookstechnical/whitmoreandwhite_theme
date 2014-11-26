@@ -1,6 +1,6 @@
 .breadcrumbs{
 	@include center(1191px);
-	padding:20px 0px;
+	padding:15px 0px;
 	font-family: $ProximaNova;
 	font-size: 0.75rem; /* Approximation due to font substitution */
 	font-weight: 400;
@@ -13,7 +13,7 @@
 	}
 	
 	@include respond-to(desktop){
-	  padding:20px 0px;
+	  padding:15px 0px;
 	}
 	a{
 		color: $green;
@@ -27,6 +27,11 @@
 		list-style: none;
 		li{
 			display: inline-block;
+			
+			span{
+				display: inline-block; 
+				padding:0px 5px;
+			}
 		}
 	}
 }

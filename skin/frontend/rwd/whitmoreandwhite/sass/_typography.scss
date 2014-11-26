@@ -1,3 +1,6 @@
+
+
+
 .page{
 	font-family: $ProximaNova;
     font-size: 0.88rem; 
@@ -11,6 +14,11 @@ h1{
 	font-size: 2.25rem; 
 	font-weight: 700;
 	line-height: 1.333;
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $TabletGothicCondensed;
 	text-transform: uppercase;
 }
 

@@ -100,6 +100,9 @@
 
     <?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
     <div class="cart-forms">
+    	<div class="card-types">
+	    	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('card-types')->toHtml(); ?>
+    	</div>
         <?php /* Extensions placeholder */ ?>
         <?php echo $this->getChildHtml('checkout_cart_widget') ?>
         <?php echo $this->getChildHtml('coupon') ?>
@@ -130,7 +133,7 @@
 </div>
 <div class="sidebar">
 	<div class="cart-help">
-		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cart-help')->toHtml(); ?>
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('checkout-help')->toHtml(); ?>
 	</div>
 </div>
 </div>
