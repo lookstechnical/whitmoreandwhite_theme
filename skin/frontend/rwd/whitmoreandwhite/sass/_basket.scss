@@ -35,7 +35,7 @@
 		@include col(100%,0px 0px 0px 0px);
 		@include respond-to(desktop){
 		  @include col(20%,0px 0px 0px 15px);
-		  margin-top:68px;	
+		  margin-top:51px;	
 		}
 		
 			
@@ -115,25 +115,35 @@
 		    display: none;
 		}
 		.product-name{
+			padding: 0px;
+			margin-bottom:5px;
+			line-height: 0.5;
 			a{
-			font-family: $ProximaNova;
-			color:  #050101;
-			font-size: 0.875rem;
-			font-weight: 400;
-			text-transform: uppercase;
+				font-family: $ProximaNova;
+				color:  #050101;
+				font-size: 0.875rem;
+				font-weight: 400;
 			}			
 		}
 		
 		.brand-name{
-			font-family: $TabletGothicCondensed;
-			color:  #050101;
-			font-size: 1.125rem; /* Approximation due to font substitution */
-			font-weight: 700;
-			line-height: 2.5;
-			text-transform: uppercase;
+			padding: 0px;
+			margin-top: 10px;
+			line-height: 0;
+			
+			a{
+				font-family: $TabletGothicCondensed;
+				color:  #050101;
+				font-size: 1.125rem; /* Approximation due to font substitution */
+				font-weight: 700;
+				text-transform: uppercase;
+				padding: 0px;
+				margin: 0px;
+			}
 		}
 		
 		.item-options{
+			padding-top:10px;
 			dt{
 				font-size: 0.75rem;
 				line-height: 1rem;
@@ -272,11 +282,13 @@
 				position: relative;
 				top:0px;	
 				height: 30px;
-				padding : 5px;
+				padding : 0px 5px;
 			}
 			
 			::-webkit-input-placeholder{
 				color:  #ccc;
+				padding: 0px;
+				line-height: 1;
 			}
 			
 			.product-cart-total{
@@ -599,6 +611,7 @@
 	    font-weight: 400;
 		line-height: 1.5; 
 		margin-bottom:20px;
+		padding:10px 0px;
 		width: 100%;
 		img{
 			margin-left:10px;

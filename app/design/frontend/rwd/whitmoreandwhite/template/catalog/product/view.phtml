@@ -173,7 +173,15 @@
                           success: function(data){
                                 var source = jQuery('<div>' + data.cart + '</div>');
                                 var cart = source.find('#header-cart').html();
+                                var count = source.find('.skip-cart .count').html();
                                 if(jQuery('.header-minicart')){
+                                	jQuery('#header-cart').html(cart);
+                                	jQuery('.skip-cart .count').html(count);
+                                	jQuery('.header-minicart').sidr({
+									   name: 'sidr-right',
+									   source: '#header-cart',
+									   side: 'right'
+									});
                                     jQuery.sidr('open', 'sidr-right');
 									setTimeout(function() {
 										jQuery.sidr('close', 'sidr-right');

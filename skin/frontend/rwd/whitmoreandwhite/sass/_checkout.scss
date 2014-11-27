@@ -41,7 +41,45 @@
 		}
 		
 		#checkout-progress-wrapper{
-			display: none;
+			padding-top: 50px;
+			.block-progress{
+				.block-title{
+					font-family: $KeplerStd;
+					color:  #191919;
+					font-size: 1.25rem;
+					font-weight: 700;
+					font-style: italic;
+					line-height: 1.7;
+					border-bottom: 1px solid #ccc;
+					border-top: 1px solid #ccc;
+					text-align: center;
+					padding:7px 0px;
+				}
+				
+				.block-content{
+					padding:10px;
+					text-align: center;
+					dt{
+						color:$green;
+						text-transform: uppercase;
+						font-family: $ProximaNova;
+						font-size: 0.813rem; /* Approximation due to font substitution */
+						font-weight: 400;
+						line-height: 1.846;
+					}
+				}
+				
+				address,dd.complete{
+					font-size: 0.75rem;
+				}
+				
+				dd{
+					strong{
+						font-weight: normal
+					}
+				}
+				
+			}
 		}
 		
 		.order-sumary{
@@ -50,20 +88,26 @@
 			margin-bottom: 25px;
 			
 			h2{
-				border-top:3px solid black;
-				border-bottom:1px solid black;
-				padding:18px 0px;
-				font-family: $TabletGothicCondensed;
-				font-size: 0.75rem;
-				text-transform: uppercase;
+				font-family: $KeplerStd;
+				color:  #191919;
+				font-size: 1.25rem;
+				font-weight: 700;
+				font-style: italic;
+				line-height: 1.7;
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #ccc;
 				text-align: center;
-				font-weight: 300;
+				padding:7px 0px;
+				text-transform: none;
 			}
+			
 			
 			
 					
 			.cart-contents:after{
-				;
+				clear:both;
+				content:"";
+				display: block;
 			}	
 			.cart-contents{
 				padding:15px;
@@ -77,8 +121,11 @@
 						font-size: 0.69rem;
 						
 						.brand-name{
-							font-family: $KeplerStd;
-							font-size: 0.58rem
+							font-family: $TabletGothicCondensed;
+							color:  #050101;
+							font-size: 1.125rem; /* Approximation due to font substitution */
+							font-weight: 700;							
+							line-height: 1;
 						}
 						.product-image{
 							float:left;
@@ -89,19 +136,27 @@
 							float:right;
 							width:70%;
 							padding-bottom:10px;
+							line-height: 1;
 						}
 						.product-name{
-							font-family: $TabletGothicCondensed;
-							font-size: 0.58rem;
-							text-transform: uppercase;
+							a{
+								font-family: $ProximaNova;
+								color:  #050101;
+								font-size: 0.875rem; /* Approximation due to font substitution */
+								font-weight: 400;
+								line-height: 1;
+
+						    }
+							line-height: 1;
+							margin-bottom:0px;
 						}
 						
 						.price{
-							font-size: 0.75rem;
-							font-family: $TabletGothicCondensed;
-							font-size: 0.69rem;
+							font-family: $ProximaNova;
+							color:  #050101;
+							font-size: 0.875rem; /* Approximation due to font substitution */
 							font-weight: 400;
-							line-height: 1.636;
+							line-height: 1.714;
 						}
 						
 						
@@ -123,13 +178,21 @@
 				.label{
 					text-align: left;
 					text-transform: uppercase;
+					font-family: $ProximaNova;
+					font-size: 0.813rem; /* Approximation due to font substitution */	
+					font-weight: 400;
+					line-height: 1.385; 
 				}
 				.price{
 					text-align: right;
 					text-align: right;
-						font-weight: bold;
-						display: inline-block;
-						float:right;
+					font-weight: bold;
+					display: inline-block;
+					float:right;
+					font-family: $ProximaNova;
+					font-size: 0.813rem; /* Approximation due to font substitution */
+					font-weight: 400;
+					line-height: 1.385; 
 				}
 			}
 		}
@@ -143,15 +206,21 @@
 		.sp-methods{
 			dt{
 				padding-bottom:10px;
-				font-family: $TabletGothicCondensed;
+				font-family: $ProximaNova;
 				font-weight: normal;
 				text-transform: uppercase;
-				font-size: 0.75rem;
+				font-size: 1.185rem;
+				
+				label{
+					font-size: 0.85rem;
+					text-transform: none;
+				}
 			}
 			
 			input[type=checbox],input[type=radio]{
 					width:20px;
 					margin-top:4px;
+					float:left;
 				}
 		}
 		
@@ -200,7 +269,11 @@
 				width:100%;
 				
 				@include respond-to(tablet){
-				  width:50%;
+				  width:80%;
+				}
+				
+				@include respond-to(desktop){
+				  width:80%;
 				}
 				
 				input,select{
@@ -210,12 +283,15 @@
 				input[type=checbox],input[type=radio]{
 					width:20px;
 					margin-top:4px;
+					float:left
 				}
 			}
 		}
 		
 		.step:after{
-			;
+			clear:both;
+				content:"";
+				display: block;
 		}
 		
 		.remember-me-popup{
@@ -254,7 +330,9 @@
 		
 		h3{
 			font-family: $TabletGothicCondensed;
-			font-size: 0.75rem;
+			font-size: 1.125rem; /* Approximation due to font substitution */
+			font-weight: 700;
+			line-height: 2.667; 
 			text-transform: uppercase;
 		}
 		
@@ -314,12 +392,21 @@
 			display: none;
 		}
 		
+		.buttons-set{
+			clear:both;
+			padding-top:10px;
+		}
+		
 		.button{
+			clear:both;
 			background: $green;
 			color:white;
 			padding:10px 20px;
 			text-transform: uppercase;
-			font-size: 0.75rem;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.125rem; /* Approximation due to font substitution */
+			font-weight: 600;
+			line-height: 1; 
 			height: 47px;
 			width:125px;
 			border: none;
@@ -359,6 +446,10 @@
 		text-align: left;
 		border: none;
 		
+		.price-col,.last{
+			text-align: right;
+		}
+		
 		th{
 			background: none;
 			
@@ -371,7 +462,7 @@
 			width:50px;
 		}
 		.name-col{
-			width:auto;
+			width:220px;
 		}
 		.qty-col{
 			width:20px;
@@ -384,13 +475,13 @@
 			display: inline;
 		}
 		th{
-			border-top:3px solid black;
-			border-bottom:1px solid black;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
 			padding:16px 0px;
 			font-family: $TabletGothicCondensed;
 			font-weight: 200;
 			text-transform: uppercase;
-			font-size: 0.63rem;
+			font-size: 1.163rem;
 			text-align: left;
 		}
 		
@@ -401,6 +492,14 @@
 			line-height: 2.5;
 			width: 37px;
 			height: 9px;
+			border-bottom: 1px dotted #ccc;
+			text-align: left;
+		}
+		
+		.item-options{
+			font-size: 0.65rem;
+			font-family: $ProximaNova;
+			font-weight: 300;
 		}
 		
 		tfoot{
@@ -409,14 +508,17 @@
 			}	
 		}
 		.brand-name{
-			font-family: $KeplerStd;
-			font-size: 0.75rem;
-			font-weight: 400;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.175rem;
+			font-weight: 700;
 			line-height: 2.5;
+			line-height: 0;
+			padding: 0px;
+			margin-top: 10px;
 		}
 		.product-name{
-			font-family: $TabletGothicCondensed;
-			font-size: 0.75rem; 
+			font-family: $ProximaNova;
+			font-size: 0.85rem; 
 			font-weight: 300;
 			line-height: 2; 
 		}
@@ -437,7 +539,7 @@
 	#review-buttons-container{
 			.btn-checkout{
 				background-color:  $green;
-				width: 235px;
+				width: 247px;;
 				height: 47px;	
 				float:right;
 				margin-left:20px;
@@ -445,12 +547,14 @@
 				font-size: 1.125rem; 
 				font-weight: 600;
 				line-height: 0.889;
+				margin-left: 0px;
+				margin-right: 0px;
 			}
 			
 			a{
 				color:$green;
 				display: inline-block;
-				line-height: 2em;
+				line-height: 4em;
 				
 			}
 			.f-left{
@@ -459,7 +563,7 @@
 		}
 		
 		#checkout-totals{
-			width: 235px;
+			width: 247px;
 			float: right;
 			
 			.a-right{
@@ -470,13 +574,24 @@
 				text-align: left;
 			}
 			
+			tr{
+				td:first-child{
+					text-align: left;
+				}
+			}
 			
+			tr:last-child{
+				td{
+					font-size: 1rem;
+				}
+			}
 			td{
-				font-family: Arial;
+				font-family: $ProximaNova;
 				font-size: 0.75rem;
 				font-weight: 400;
 				line-height: 1.5;
 				text-transform: uppercase;
+				padding: 0px;
 			}
 			
 			.grand-total{
@@ -585,7 +700,8 @@
 				text-transform: uppercase;
 				font-family: $TabletGothicCondensed,sans-serif;
 				font-size: 1.38rem;
-				font-weight: 400;
+				font-weight: 700;
+				padding: 0px;
 			}
 		}
 		

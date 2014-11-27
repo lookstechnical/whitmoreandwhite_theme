@@ -371,6 +371,8 @@ One page checkout main layout
                     <block type="checkout/onepage_progress" name="payment.progress" template="checkout/onepage/progress/payment.phtml"></block>
                 </block>
             </block>
+            <block type="checkout/cart_sidebar" name="cart_sidebar" after="checkout.progress.wrapper" template="checkout/onepage/cart_summary.phtml" />
+
         </reference>
         <reference name="content">
             <block type="checkout/onepage" name="checkout.onepage" template="checkout/onepage.phtml">

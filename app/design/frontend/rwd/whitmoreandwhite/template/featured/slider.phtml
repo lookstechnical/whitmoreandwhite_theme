@@ -19,7 +19,7 @@
                          class="product-list-image"/>
                 </a>
                 <div class="">
-                 	
+                 	<span class="brand-name"><?php echo $product->getBrand(); ?></span>
 	                <h2 class="product-name"><a href="<?php echo $product->getProductUrl() ?>" title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $product->getName(); ?></a></h2>
                 </div>
                 

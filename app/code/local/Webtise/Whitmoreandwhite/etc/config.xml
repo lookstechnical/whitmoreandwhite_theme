@@ -15,15 +15,51 @@
 	            </args>
 	        </ajax>
 	    </routers>
-  </frontend>   
+  </frontend> 
+ 
+  
   <global>
-	 
-     
+	  <sales>
+		<quote>
+			<item>
+            	<product_attributes>
+               		<brand />
+				</product_attributes>
+			</item>
+		</quote>
+	</sales>
+	 <fieldsets>
+        <sales_convert_quote_item>
+            <brand>
+                <to_order_item>*</to_order_item>
+            </brand>
+        </sales_convert_quote_item>
+        <sales_convert_order_item>
+            <brand>
+                <to_quote_item>*</to_quote_item>
+            </brand>
+        </sales_convert_order_item>
+    </fieldsets>
+     <events>
+            <sales_quote_item_set_product>
+                <observers>
+                    <atwix_customattribute>
+                        <class>whitmoreandwhite/observer</class>
+                        <method>salesQuoteItemSetCustomAttribute</method>
+                    </atwix_customattribute>
+                </observers>
+            </sales_quote_item_set_product>
+        </events>
 	 <blocks>
 		<whitmoreandwhite>
 		    <class>Webtise_Whitmoreandwhite_Block</class>
 		</whitmoreandwhite>
 	</blocks>
+	<models>
+		<whitmoreandwhite>
+		    <class>Webtise_Whitmoreandwhite_Model</class>
+		</whitmoreandwhite>
+	</models>
 	<!--
 	<helpers>
 		<alyaka>
@@ -46,7 +82,7 @@
       </layouts>
     </page>
     
-    <!-- <resources>
+    <resources>
             <whitmoreandwhite_setup>
                 <setup>
                     <module>Webtise_Whitmoreandwhite</module>
@@ -66,7 +102,7 @@
                     <use>core_read</use>
                 </connection>
             </whitmoreandwhite_read>
-        </resources>-->
+        </resources>
   	
   </global>
   <adminhtml>

@@ -34,6 +34,10 @@
 					}
 				}
 				
+				p.required{
+					display: none;
+				}
+				
 				.product-options{
 					dl{
 						width:50%;
@@ -214,7 +218,7 @@
 							font-weight: 700;
 							line-height: 1.667;
 							text-transform: uppercase;
-							background: url(../images/next.png) no-repeat center right 10px;
+							background: url(../images/down-arrow.png) no-repeat center right 10px;
 							
 						}
 					}	
@@ -242,7 +246,7 @@
 					.current{
 						display: block;
 						span{
-							
+							background: url(../images/up-arrow.png) no-repeat center right 10px;
 						}
 					}
 					
@@ -374,6 +378,7 @@
 					border-top:1px solid #ccc;
 					border-bottom:1px solid #ccc;
 					text-align: center;
+					text-transform: none;
 				}
 				
 				

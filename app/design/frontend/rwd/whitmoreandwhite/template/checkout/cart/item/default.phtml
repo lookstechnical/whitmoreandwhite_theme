@@ -45,7 +45,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
 
         
 		<h3 class="brand-name">
-			 <a href="<?php echo $this->getProductUrl() ?>"><?php echo $_item->getProduct()->getAttributeText('brand') ?></a>
+			 <a href="<?php echo $this->getProductUrl() ?>"><?php echo $_item->getBrand(); ?></a>
 		</h3>
         <h2 class="product-name">
         <?php if ($this->hasProductUrl()):?>

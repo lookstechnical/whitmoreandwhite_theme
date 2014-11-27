@@ -37,7 +37,7 @@
 
     </td>
     <td>
-    	<p class="brand-name"><?php echo $_item->getProduct()->getAttributeText('brand'); ?></p>
+    	<p class="brand-name"><?php echo $_item->getBrand(); ?></p>
     	<h3 class="product-name"><?php echo $this->escapeHtml($this->getProductName()) ?></h3>
         <?php if ($_options = $this->getOptionList()):?>
         <dl class="item-options">

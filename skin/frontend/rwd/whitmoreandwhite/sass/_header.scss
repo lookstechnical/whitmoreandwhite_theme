@@ -238,6 +238,12 @@ header{
 			
 		}
 		
+		.brand-name{
+			font-weight: 700;
+			font-family: $TabletGothicCondensed;
+			font-size: 0.85rem;	
+		}
+		
 		.label{
 			background: none;
 			font-family: 'Kepler Std';
@@ -466,12 +472,24 @@ header{
 					width:170px;
 					float:left;
 				}
+				
+				.sidr-class-brand-name{
+					font-weight: 700;
+					font-family: $TabletGothicCondensed;
+					font-size: 0.85rem;	
+					line-height: 0;
+					text-transform: uppercase;
+				}
 				.sidr-class-product-name{
+				    line-height: 0.4;
+				    padding-bottom: 0px;
+				    margin: 0px;
 					a{
 						font-family: $ProximaNova;
 						color:black;
 						font-size: 0.75rem;
-						text-transform: uppercase;
+						text-transform: none;
+						
 					}
 				}
 				

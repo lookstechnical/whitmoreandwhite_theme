@@ -30,12 +30,6 @@ jQuery(document).ready(function($) {
 	   source: '#nav'
 	});
 	
-	$('.mobile-cart').sidr({
-	   name: 'sidr-right',
-	   source: '#header-cart',
-	   side: 'right'
-	});
-	
 	$('.header-minicart').sidr({
 	   name: 'sidr-right',
 	   source: '#header-cart',
