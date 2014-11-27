@@ -91,6 +91,7 @@
 	clear:both;
 	text-align: center;
 	
+		
 	span{
 		font-family: $KeplerStd;
 		font-size: 1.125rem;
@@ -184,6 +185,7 @@
 	display: block;
 	content: ""; 
 }
+
 .promo-categories{
 	@include center(1900px);
 	margin-bottom:50px;
@@ -196,6 +198,7 @@
 		font-size: 0 ;
 		float:left;
 	}
+	
 	
 	
 		

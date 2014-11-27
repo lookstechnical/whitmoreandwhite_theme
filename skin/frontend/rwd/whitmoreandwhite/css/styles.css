@@ -6900,7 +6900,7 @@ body {
   @media only screen and (min-width: 40rem) {
     .main-container {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .main-container {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -6921,7 +6921,7 @@ body {
   @media only screen and (min-width: 40rem) {
     .col-wrapper {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .col-wrapper {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -6968,7 +6968,7 @@ body {
   @media only screen and (min-width: 40rem) {
     .col2-right-layout {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .col2-right-layout {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -7003,7 +7003,7 @@ header {
     header {
       height: 107px;
       padding: 15px 0px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     header {
       height: 125px; } }
   header .header-wrapper {
@@ -7018,7 +7018,7 @@ header {
     @media only screen and (min-width: 40rem) {
       header .header-wrapper {
         padding: 0px 10px; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       header .header-wrapper {
         padding: 0px 10px; } }
     @media only screen and (min-width: 1191px) {
@@ -7032,7 +7032,7 @@ header {
       padding: 0px;
       position: relative;
       float: left; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .left {
           display: none; } }
       header .header-wrapper .left .menu {
@@ -7059,7 +7059,7 @@ header {
       position: relative;
       float: left;
       max-width: 499px; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .right {
           width: 50%;
           padding: 0px;
@@ -7071,7 +7071,7 @@ header {
       position: relative;
       float: left;
       text-align: center; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .middle {
           text-align: left;
           width: 50%;
@@ -7080,7 +7080,7 @@ header {
           float: left; } }
     header .header-wrapper .logo .large {
       display: none; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .logo .large {
           display: inline-block; } }
     header .header-wrapper .logo .tablet {
@@ -7088,7 +7088,7 @@ header {
       @media only screen and (min-width: 40rem) {
         header .header-wrapper .logo .tablet {
           display: inline-block; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .logo .tablet {
           display: none; } }
     header .header-wrapper .logo .small {
@@ -7101,7 +7101,7 @@ header {
       padding: 0px 0px 0px 0px;
       height: 43px;
       display: none; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .top {
           display: block; } }
     header .header-wrapper .top:after {
@@ -7136,7 +7136,7 @@ header {
       float: left;
       padding-top: 15px;
       display: none; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper nav#nav {
           display: block; } }
       header .header-wrapper nav#nav ol {
@@ -7237,7 +7237,7 @@ header {
     position: absolute;
     top: 28px;
     right: 0px; }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       header .mobile-items {
         display: none; } }
     header .mobile-items .mobile-account {
@@ -7417,7 +7417,7 @@ header {
   @media only screen and (min-width: 40rem) {
     .footer {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .footer {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -7433,7 +7433,7 @@ header {
     @media only screen and (min-width: 40rem) {
       .footer .block-subscribe {
         margin-bottom: 0px; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .footer .block-subscribe {
         margin-bottom: 20px; } }
     .footer .block-subscribe .block-title {
@@ -7445,7 +7445,7 @@ header {
       padding: 0px 0px;
       text-align: center;
       margin-bottom: 10px; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .footer .block-subscribe .block-content {
           text-align: right;
           width: 747px; } }
@@ -7480,7 +7480,7 @@ header {
           .footer .block-subscribe .block-content input {
             width: 248px;
             float: left; } }
-        @media only screen and (min-width: 46.875rem) {
+        @media only screen and (min-width: 53.125rem) {
           .footer .block-subscribe .block-content input {
             width: 248px;
             float: left; } }
@@ -7529,7 +7529,7 @@ header {
     @media only screen and (min-width: 40rem) {
       .footer .social {
         padding: 0px; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .footer .social {
         padding: 0px 0px 20px 0px; } }
     @media only screen and (min-width: 40rem) {
@@ -7550,7 +7550,7 @@ header {
           text-align: left;
           border-bottom: 1px solid #ccc;
           padding: 20px 0px; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .footer .social .instagram, .footer .social .twitter, .footer .social .facebook {
           width: 33.3%;
           padding: 0px;
@@ -7570,10 +7570,32 @@ header {
       @media only screen and (min-width: 40rem) {
         .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
           float: left;
-          width: 60%; } }
-      @media only screen and (min-width: 46.875rem) {
+          width: 65%;
+          padding-bottom: 10px; } }
+      @media only screen and (min-width: 53.125rem) {
         .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
-          width: 100%; } }
+          width: 100%;
+          padding-bottom: 10px; } }
+      .footer .social .instagram ul .slick-prev, .footer .social .twitter ul .slick-prev, .footer .social .facebook ul .slick-prev {
+        background: url(../images/prev.png) no-repeat top left;
+        width: 11px;
+        height: 19px;
+        position: absolute;
+        top: 95%;
+        right: 40px;
+        padding: 0px 10px;
+        margin-top: -6px;
+        text-indent: -9999px;
+        margin-bottom: 10px; }
+      .footer .social .instagram ul .slick-next, .footer .social .twitter ul .slick-next, .footer .social .facebook ul .slick-next {
+        background: url(../images/next.png) no-repeat top left;
+        height: 19px;
+        position: absolute;
+        right: 0px;
+        top: 95%;
+        margin-top: -6px;
+        text-indent: -9999px;
+        margin-bottom: 10px; }
     @media only screen and (min-width: 40rem) {
       .footer .social .facebook {
         border-bottom: none; } }
@@ -7586,7 +7608,7 @@ header {
           float: left;
           padding-right: 40px;
           width: 200px; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .footer .social header {
           width: 100%;
           padding-right: 0px;
@@ -7642,7 +7664,7 @@ header {
         position: relative;
         float: left;
         float: right; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .footer .footer_links {
         width: 50%;
         padding: 0px;
@@ -7654,7 +7676,7 @@ header {
       margin: 0px; }
     .footer .footer_links ul:first-child {
       display: none; }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .footer .footer_links ul:first-child {
           display: block; } }
     .footer .footer_links ul {
@@ -7669,7 +7691,7 @@ header {
           position: relative;
           float: left;
           text-align: left; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .footer .footer_links ul {
           width: 33.3%;
           padding: 0px;
@@ -7840,7 +7862,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .breadcrumbs {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .breadcrumbs {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -7849,7 +7871,7 @@ select:after {
   @media only screen and (max-width: 40rem) {
     .breadcrumbs {
       padding: 15px 0px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .breadcrumbs {
       padding: 15px 0px; } }
   .breadcrumbs a {
@@ -7935,7 +7957,7 @@ select:after {
     @media only screen and (min-width: 40rem) {
       .banner article {
         height: 449px; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .banner article {
         height: 536px; } }
 
@@ -7958,7 +7980,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .welcome {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .welcome {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -8090,7 +8112,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .pick-of-the-week {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .pick-of-the-week {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -8178,7 +8200,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .promo-categories {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .promo-categories {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1900px) {
@@ -8206,7 +8228,7 @@ select:after {
         padding: 0px;
         position: relative;
         float: left; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .promo-categories .promo-column-one {
         width: 33.3%;
         padding: 0px;
@@ -8223,7 +8245,7 @@ select:after {
         padding: 0px;
         position: relative;
         float: left; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .promo-categories .promo-column-two {
         width: 33.3%;
         padding: 0px;
@@ -8243,14 +8265,14 @@ select:after {
           position: relative;
           float: left;
           padding: 0px 0px; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .promo-categories .promo-column-three article {
           width: 100%;
           padding: 0px;
           position: relative;
           float: left;
           padding: 0px 0px; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .promo-categories .promo-column-three {
         width: 33.3%;
         padding: 0px;
@@ -8271,7 +8293,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .catalog-product-view .product-view {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .catalog-product-view .product-view {
       padding: 0px 10px; } }
   @media only screen and (min-width: 1191px) {
@@ -8291,7 +8313,7 @@ select:after {
           padding: 0px 20px 0px 20px;
           position: relative;
           float: left; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .catalog-product-view .product-view .product-essential .product-shop {
           width: 40%;
           padding: 0px 20px 0px 20px;
@@ -8378,9 +8400,16 @@ select:after {
         font-size: 0.75rem;
         font-weight: 400;
         line-height: 1.5;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        padding-bottom: 0px;
+        margin-bottom: 0px; }
         .catalog-product-view .product-view .product-essential .product-shop .availability .label {
           display: none; }
+      .catalog-product-view .product-view .product-essential .product-shop .yotpo-wrap {
+        font-size: 12px;
+        padding-bottom: 20px; }
+        .catalog-product-view .product-view .product-essential .product-shop .yotpo-wrap .yotpo-stars {
+          margin-right: 10px; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options-bottom {
         padding-bottom: 20px;
         border-bottom: 1px dotted black; }
@@ -8452,7 +8481,7 @@ select:after {
           padding: 0px 20px 0px 20px;
           position: relative;
           float: left; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .catalog-product-view .product-view .product-essential .product-img-box {
           width: 40%;
           padding: 0px 20px 0px 20px;
@@ -8499,7 +8528,8 @@ select:after {
           font-weight: 700;
           font-style: italic;
           line-height: 1.333;
-          padding-right: 20px; }
+          padding-right: 20px;
+          text-transform: none; }
           @media only screen and (min-width: 40rem) {
             .catalog-product-view .product-view .product-essential .product-img-box .share h4 {
               display: inline-block;
@@ -8513,7 +8543,8 @@ select:after {
           font-size: 1.5rem;
           text-align: center;
           padding-top: 3px;
-          margin-bottom: 35px; }
+          margin-bottom: 35px;
+          line-height: 1; }
         .catalog-product-view .product-view .product-essential .product-img-box .share .facebook {
           background: #3b5998; }
         .catalog-product-view .product-view .product-essential .product-img-box .share .twitter {
@@ -8530,7 +8561,7 @@ select:after {
           padding: 0px 10px;
           position: relative;
           float: left; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .catalog-product-view .product-view .product-essential .block-related {
           width: 20%;
           padding: 0px 10px;
@@ -8556,7 +8587,7 @@ select:after {
         height: 19px;
         margin-top: -6px;
         text-indent: -9999px; }
-        @media only screen and (min-width: 46.875rem) {
+        @media only screen and (min-width: 53.125rem) {
           .catalog-product-view .product-view .product-essential .block-related .slick-prev {
             top: 0px;
             left: 50%;
@@ -8574,7 +8605,7 @@ select:after {
         height: 19px;
         margin-top: -6px;
         text-indent: -9999px; }
-        @media only screen and (min-width: 46.875rem) {
+        @media only screen and (min-width: 53.125rem) {
           .catalog-product-view .product-view .product-essential .block-related .slick-next {
             top: 105%;
             left: 50%;
@@ -8592,7 +8623,7 @@ select:after {
           padding: 20px 10px;
           min-height: 240px;
           border-right: 1px dotted #ccc; }
-          @media only screen and (min-width: 46.875rem) {
+          @media only screen and (min-width: 53.125rem) {
             .catalog-product-view .product-view .product-essential .block-related .mini-products-list .item {
               border-bottom: 1px dotted #ccc;
               border-right: none; } }
@@ -8671,6 +8702,20 @@ select:after {
     line-height: 1.2;
     text-transform: uppercase;
     margin: 0px 0px 10px; }
+.catalog-product-view .box-up-sell .products-grid {
+  margin-bottom: 0px;
+  height: 250px; }
+  @media only screen and (min-width: 40rem) {
+    .catalog-product-view .box-up-sell .products-grid {
+      height: auto; } }
+  .catalog-product-view .box-up-sell .products-grid .item {
+    height: 230px; }
+    @media only screen and (min-width: 40rem) {
+      .catalog-product-view .box-up-sell .products-grid .item {
+        height: 341px; } }
+    @media only screen and (min-width: 53.125rem) {
+      .catalog-product-view .box-up-sell .products-grid .item {
+        height: 341px; } }
 
 .checkout-cart-index .col-main {
   padding: 0px;
@@ -8689,7 +8734,7 @@ select:after {
   padding: 0px 0px 20px 0px;
   position: relative;
   float: left; }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-cart-index .cart-left {
       width: 80%;
       padding: 0px 15px 20px 0px;
@@ -8701,7 +8746,7 @@ select:after {
   position: relative;
   float: left;
   text-align: center; }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-cart-index .sidebar {
       width: 20%;
       padding: 0px 0px 0px 15px;
@@ -8928,7 +8973,7 @@ select:after {
       .checkout-cart-index .cart-forms .aw_giftcard {
         width: 60%;
         float: left; } }
-    @media only screen and (min-width: 46.875rem) {
+    @media only screen and (min-width: 53.125rem) {
       .checkout-cart-index .cart-forms .aw_giftcard {
         width: 50%; } }
   .checkout-cart-index .cart-forms #aw_giftcard-form fieldset {
@@ -9046,7 +9091,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .checkout-cart-index .crosssell {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-cart-index .crosssell {
       padding: 0px 15px; } }
   .checkout-cart-index .crosssell .crosssell {
@@ -9133,7 +9178,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .checkout-onepage-index .col-main {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-onepage-index .col-main {
       padding: 0px 15px;
       width: 75%; } }
@@ -9146,7 +9191,7 @@ select:after {
   width: 25%;
   float: left;
   padding: 0px 15px; }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-onepage-index .col-right {
       display: block; } }
   .checkout-onepage-index .col-right #checkout-progress-wrapper {
@@ -9311,7 +9356,7 @@ select:after {
       @media only screen and (min-width: 40rem) {
         .checkout-onepage-index #checkoutSteps .step .form-list {
           width: 80%; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .checkout-onepage-index #checkoutSteps .step .form-list {
           width: 80%; } }
       .checkout-onepage-index #checkoutSteps .step .form-list input, .checkout-onepage-index #checkoutSteps .step .form-list select {
@@ -9543,7 +9588,7 @@ select:after {
       float: left;
       padding: 0px 10px;
       display: block; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-onepage-success .col-left, .checkout_onepage_failure .col-left {
       padding: 0px 15px; } }
   .checkout-onepage-success .col-left h4, .checkout_onepage_failure .col-left h4 {
@@ -9573,7 +9618,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .checkout-onepage-success .main-container, .checkout_onepage_failure .main-container {
       padding: 0px 10px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .checkout-onepage-success .main-container, .checkout_onepage_failure .main-container {
       padding: 0px 15px; } }
 .checkout-onepage-success .col-main, .checkout_onepage_failure .col-main {
@@ -9645,7 +9690,7 @@ select:after {
         .customer-account-login .col-main .account-login .col-2 {
           width: 50%;
           padding: 0px 10px 0px 40px; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .customer-account-login .col-main .account-login .col-2 {
           padding: 0px 10px 0px 40px; } }
       .customer-account-login .col-main .account-login .col-2 .button {
@@ -9677,7 +9722,7 @@ select:after {
         .customer-account-login .col-main .account-login .col-1 {
           width: 50%;
           border-right: 1px solid #ccc; } }
-      @media only screen and (min-width: 46.875rem) {
+      @media only screen and (min-width: 53.125rem) {
         .customer-account-login .col-main .account-login .col-1 {
           padding: 0px 10px 0px 160px; } }
       .customer-account-login .col-main .account-login .col-1 .buttons-set {
@@ -9734,7 +9779,7 @@ select:after {
 @media only screen and (min-width: 40rem) {
   .customer-account-create .form-list {
     width: 50%; } }
-@media only screen and (min-width: 46.875rem) {
+@media only screen and (min-width: 53.125rem) {
   .customer-account-create .form-list {
     width: 40%; } }
 .customer-account-create .col-main {
@@ -9871,7 +9916,7 @@ select:after {
       width: 30%;
       float: left;
       position: relative; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .customer-account .col-left, .customer-account-index .col-left {
       padding: 0px 15px 0px 0px; } }
   .customer-account .col-left .block-account .block-title, .customer-account-index .col-left .block-account .block-title {
@@ -9957,7 +10002,7 @@ select:after {
     .customer-account .my-account, .customer-account-index .my-account {
       padding: 0px 25px 25px;
       margin: 0px 10px 60px; } }
-  @media only screen and (min-width: 46.875rem) {
+  @media only screen and (min-width: 53.125rem) {
     .customer-account .my-account, .customer-account-index .my-account {
       margin: 0px 15px 60px; } }
 .customer-account .form-list, .customer-account-index .form-list {

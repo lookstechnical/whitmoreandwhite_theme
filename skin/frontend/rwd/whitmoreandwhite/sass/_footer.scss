@@ -158,15 +158,44 @@
 			}	
 			
 			ul{
+				
 				@include respond-to(tablet){
 				  float:left;
-				  width: 60%;
+				  width: 65%;
+				  padding-bottom: 10px;
 				}
 				
 				@include respond-to(desktop){
 				  width: 100%;
+				  padding-bottom: 10px;
 				}
+				
+				.slick-prev{
+				background: url(../images/prev.png) no-repeat top left;
+				width:11px;
+				height:19px;
+				position: absolute;
+				top: 95%;
+				right:40px;
+				padding:0px 10px;
+				margin-top:-6px;
+				text-indent: -9999px;
+				margin-bottom: 10px;
 			}
+			
+			.slick-next{
+				background: url(../images/next.png) no-repeat top left;
+				height:19px;
+				position: absolute;
+				right:0px;
+				top: 95%;
+				margin-top:-6px;
+				text-indent: -9999px;
+				margin-bottom: 10px;
+			}
+			}
+			
+			
 		}
 		
 		.facebook{

@@ -152,9 +152,19 @@
 					font-weight: 400;
 					line-height: 1.5;
 					text-transform: uppercase;
+					padding-bottom: 0px;
+					margin-bottom: 0px;
 					
 					.label{
 						display:none;
+					}
+				}
+				
+				.yotpo-wrap{
+					font-size: 12px;
+					padding-bottom:20px;
+					.yotpo-stars{
+						margin-right: 10px;
 					}
 				}
 				
@@ -320,7 +330,7 @@
 						font-style: italic;
 						line-height: 1.333;
 						padding-right:20px;
-						
+						text-transform: none;
 						@include respond-to(tablet){
 						  display: inline-block;
 						  font-size: 1.025rem;
@@ -336,6 +346,7 @@
 						text-align: center;
 						padding-top:3px;
 						margin-bottom: 35px;
+						line-height: 1
 						
 					}
 					
@@ -545,4 +556,27 @@
 			margin:0px 0px 10px;
 		}
 	}
+	
+	.box-up-sell{
+			.products-grid{
+				margin-bottom: 0px;
+				height: 250px;
+				@include respond-to(tablet){
+				  height:auto;
+				}
+				.item{
+					height:230px;
+					@include respond-to(tablet){
+					   height:341px;
+					  
+					}
+					
+					@include respond-to(desktop){
+					  height:341px;
+					  
+					}
+		
+				}
+			}
+		}
 }

@@ -7,9 +7,15 @@
                    after="product.info">
             </block>-->
         </reference>
+        
+       
 
         <reference name="product.info">
             <block type="yotpo/yotpo" name="yotpo.reviews" as="yotpo-reviews" template="yotpo/reviews.phtml"/>
+            <block type="yotpo/yotpo" name="product.reviews" as="yotporeviews" template="yotpo/default_reviews.phtml">
+                    <action method="addToParentGroup"><group>detailed_info</group></action>
+                    <action method="setTitle" translate="value"><value>Reviews</value></action>
+                </block>
         </reference>
     </catalog_product_view>
 

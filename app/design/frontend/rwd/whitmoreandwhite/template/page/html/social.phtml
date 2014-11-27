@@ -24,9 +24,15 @@
 				<a href="" class="nomobile">@whitmoreandwhite</a>
 	     	</header>
 			<ul class="nomobile">
+			<?php $tweets = $this->getTweets(); 
+			foreach($tweets as $tweet): ?>
+			<?php
+				
+			?>
 				<li>
-					Did you know we stock a range of beautiful Olive Wood cheese boards, olive dishes and kitchenalia? #Heswall <a href="">#Wirral pic.twitter.com/ZVJtqW0rwS</a>
+					<?php echo $this->formatTweet($tweet->text); ?>
 				</li>
+			<?php endforeach; ?>
 			</ul>
 	     </div>
 	</div>

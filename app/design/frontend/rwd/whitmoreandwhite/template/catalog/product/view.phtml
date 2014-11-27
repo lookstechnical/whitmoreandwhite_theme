@@ -76,8 +76,11 @@
                 </div>
 
                 <div class="extra-info">
-                    <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
+                   
                     <?php echo $this->getChildHtml('product_type_availability'); ?>
+                    <div class="yotpo-wrap">
+	               	    <?php $this->helper('yotpo')->showBottomline($this, $_product); ?>
+	                </div>
                 </div>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
@@ -178,6 +181,11 @@
                                 	jQuery('#header-cart').html(cart);
                                 	jQuery('.skip-cart .count').html(count);
                                 	jQuery('.header-minicart').sidr({
+									   name: 'sidr-right',
+									   source: '#header-cart',
+									   side: 'right'
+									});
+									jQuery('.mobile-cart').sidr({
 									   name: 'sidr-right',
 									   source: '#header-cart',
 									   side: 'right'
