@@ -66,8 +66,8 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 		return $formatted_text;
 	}
 	
-	public function getFacebook()
+	public function getFacebookFeed()
 	{
-		
+		return array();
 	}
 }
