@@ -37,22 +37,30 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 	
 	public function getTweets()
 	{
-		//$channel = new Zend_Feed_Rss('https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=whitmoreandwhite');
-		$settings = array(
-		    'oauth_access_token' => "100751158-fV9ndpxM8AjA2OBABx8EtI0F1XK5MCdFIRx16lmN",
-		    'oauth_access_token_secret' => "idUYaWToHnXrFr31iE2ifJ1Xz2THfBh9rybNGe7J1bUaG",
-		    'consumer_key' => "jptFEb64QDFJUEVa2wzqL9zR0",
-		    'consumer_secret' => "cQOfeZz7kDRE40mUP4HiueMZvMElqgUjrkOv4alnsHMiOUhI2Q"
-		);
+		$cache = Mage::app()->getCache();
 		
-		$twitter = new Twitter_Api($settings);
-		$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
-		$getfield = '?screen_name=whitmorewhite&count=5';
-		$requestMethod = "GET";
-		$tweets = null;
-		$tweets = $twitter->setGetfield($getfield)
-             ->buildOauth($url, $requestMethod)
-             ->performRequest();
+		$tweets = $cache->load("twitter_feed");
+		if(empty($tweets)){
+		//$channel = new Zend_Feed_Rss('https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=whitmoreandwhite');
+			$settings = array(
+			    'oauth_access_token' => "100751158-fV9ndpxM8AjA2OBABx8EtI0F1XK5MCdFIRx16lmN",
+			    'oauth_access_token_secret' => "idUYaWToHnXrFr31iE2ifJ1Xz2THfBh9rybNGe7J1bUaG",
+			    'consumer_key' => "jptFEb64QDFJUEVa2wzqL9zR0",
+			    'consumer_secret' => "cQOfeZz7kDRE40mUP4HiueMZvMElqgUjrkOv4alnsHMiOUhI2Q"
+			);
+			
+			$twitter = new Twitter_Api($settings);
+			$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
+			$getfield = '?screen_name=whitmorewhite&count=5';
+			$requestMethod = "GET";
+			$tweets = null;
+			$tweets = $twitter->setGetfield($getfield)
+	             ->buildOauth($url, $requestMethod)
+	             ->performRequest();
+	        
+	        $cache->save($tweets, "twitter_feed",array("twitter_feed"), 10);
+
+	    }
              
 		return json_decode($tweets) ;
 	}
