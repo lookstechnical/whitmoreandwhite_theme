@@ -383,8 +383,26 @@
 		font-weight: 400;
 		padding: 20px 0px;
 		text-align: center;
+		
 		@include respond-to(tablet){
 		  text-align: left;
+		  float:left;
 		}
+	}
+	
+	.cards{
+		text-align: center;
+		padding-bottom: 20px;
+		padding-top: 15px;
+		@include respond-to(tablet){
+		  float:right;
+		  
+		}
+		
+	}
+	.cards:after{
+		clear:both;
+		display: block;
+		content:"";
 	}
 }

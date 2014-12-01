@@ -28,5 +28,8 @@
     <div class="footer">
         <?php echo $this->getChildHtml() ?>
         <address class="copyright"><?php echo $this->getCopyright() ?></address>
+        <div class="cards">
+	        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_card_logos')->tohtml(); ?>
+        </div>
     </div>
 </div>

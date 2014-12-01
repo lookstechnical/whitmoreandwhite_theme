@@ -6936,9 +6936,11 @@ body {
   @media only screen and (min-width: 40rem) {
     .col-main {
       width: 75%;
-      padding: 0px 0px 0px 20px;
+      padding: 0px 0px 0px 10px;
       position: relative;
-      float: left; } }
+      float: left;
+      max-width: 875px;
+      float: right; } }
 
 .col-left {
   width: 100%;
@@ -7146,31 +7148,40 @@ header {
         width: 100%;
         display: block; }
         header .header-wrapper nav#nav ol li {
-          display: inline-block;
           float: left;
-          text-align: left; }
+          display: block;
+          text-align: center;
+          position: relative; }
           header .header-wrapper nav#nav ol li a {
-            padding-right: 26px;
+            margin-right: 26px;
+            padding-bottom: 15px;
             display: block;
             font-family: "proxima-nova-alt" helvetica;
             color: #ffffff;
             font-size: 0.81rem;
             font-weight: 400;
             line-height: 2.286;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            text-align: center; }
+          header .header-wrapper nav#nav ol li a:hover {
+            color: #00747b; }
+          header .header-wrapper nav#nav ol li .has-children:hover {
+            background: url(../images/menu-arrow.png) no-repeat center bottom; }
           header .header-wrapper nav#nav ol li ul {
             display: none;
             position: absolute;
             background-color: rgba(0, 0, 0, 0.9);
             width: 239px;
             position: absolute;
+            left: -15px;
             z-index: 10;
             text-align: left;
             padding: 20px;
             margin-left: 0px; }
             header .header-wrapper nav#nav ol li ul li {
               display: block;
-              float: none; }
+              float: none;
+              text-align: left; }
               header .header-wrapper nav#nav ol li ul li a {
                 font-family: "proxima-nova-alt";
                 font-size: 0.813rem;
@@ -7740,7 +7751,19 @@ header {
     text-align: center; }
     @media only screen and (min-width: 40rem) {
       .footer .copyright {
-        text-align: left; } }
+        text-align: left;
+        float: left; } }
+  .footer .cards {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px; }
+    @media only screen and (min-width: 40rem) {
+      .footer .cards {
+        float: right; } }
+  .footer .cards:after {
+    clear: both;
+    display: block;
+    content: ""; }
 
 input, textarea, button {
   outline: none; }
@@ -7969,10 +7992,6 @@ select:after {
 .welcome {
   width: 100%;
   margin: 0 auto;
-  width: 100%;
-  padding: 0px 20px;
-  position: relative;
-  float: left;
   margin-bottom: 30px; }
   @media only screen and (max-width: 40rem) {
     .welcome {
@@ -7988,7 +8007,8 @@ select:after {
       width: 1191px; } }
   @media only screen and (min-width: 40rem) {
     .welcome {
-      margin-bottom: 95px; } }
+      margin-bottom: 95px;
+      padding: 0px; } }
   .welcome .intro-image {
     margin-bottom: 20px; }
     @media only screen and (min-width: 40rem) {
@@ -10092,7 +10112,7 @@ select:after {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.714;
-  width: 60%;
+  width: 80%;
   max-width: 549px;
   margin: 0 auto;
   margin-bottom: 30px; }
@@ -10272,6 +10292,10 @@ select:after {
       @media only screen and (min-width: 40rem) {
         .toolbar .sorter .view-mode {
           display: block; } }
+  .toolbar .pager:after {
+    clear: both;
+    content: "";
+    display: block; }
   .toolbar .pager {
     width: 50%;
     padding: 0px;
@@ -10281,6 +10305,8 @@ select:after {
     .toolbar .pager .amount--no-pages, .toolbar .pager .amount--has-pages {
       display: none; }
     .toolbar .pager .limiter {
+      float: right;
+      margin-left: 20px;
       display: none; }
       @media only screen and (min-width: 40rem) {
         .toolbar .pager .limiter {
@@ -10289,7 +10315,8 @@ select:after {
         width: 48px;
         margin: 0px 10px; }
     .toolbar .pager .pages {
-      float: left; }
+      text-align: right;
+      float: right; }
       .toolbar .pager .pages strong {
         display: none; }
       .toolbar .pager .pages ol {

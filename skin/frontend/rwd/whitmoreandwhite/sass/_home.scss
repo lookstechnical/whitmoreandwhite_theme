@@ -26,10 +26,11 @@
 }
 .welcome{
 	@include center(1191px);
-	 @include col(100%,0px 20px);
+	// @include col(100%,0px 20px);
 	 margin-bottom:30px;
 	 @include respond-to(tablet){
 	   margin-bottom:95px;
+	   padding:0px;
 	 }
 	.intro-image{
 		margin-bottom: 20px;

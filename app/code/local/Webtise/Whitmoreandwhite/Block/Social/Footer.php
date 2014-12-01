@@ -76,6 +76,14 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 	
 	public function getFacebookFeed()
 	{
+	
+		$config = array();
+		$config['appId'] = '705240759516775';
+		$config['secret'] = 'ce46875766ff8565458a59a9a0a928ac';
+		$t = '705240759516775|OtPci9a3EuPnaTR8E7NFKFZld7M';
+		$facebook = new Facebook_Api($config);
+		$feed = $facebook->api('/whitmoreandwhite/feed/', 'get');
+		//var_dump($feed);die();
 		return array();
 	}
 }

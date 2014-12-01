@@ -68,21 +68,10 @@
         </div>
     <?php endif; ?>
     <div class="pager">
-      
-        <?php echo $this->getPagerHtml() ?>
-		  <div class="count-container">
-            <?php if($this->getLastPageNum()>1): ?>
-                <p class="amount amount--has-pages">
-                    <?php echo $this->__('%s-%s of %s', $this->getFirstNum(), $this->getLastNum(), $this->getTotalNum()) ?>
-                </p>
-            <?php else: ?>
-                <p class="amount amount--no-pages">
-                    <strong><?php echo $this->__('%s Item(s)', $this->getTotalNum()) ?></strong>
-                </p>
-            <?php endif; ?>
+        
 
             <div class="limiter">
-                <label><?php echo $this->__('Show') ?></label>
+                <label><?php echo $this->__('View') ?></label>
                 <select onchange="setLocation(this.value)" title="<?php echo $this->__('Results per page'); ?>">
                 <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
                     <option value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> selected="selected"<?php endif ?>>
@@ -91,7 +80,9 @@
                 <?php endforeach; ?>
                 </select>
             </div>
-        </div>
+		
+        <?php echo $this->getPagerHtml() ?>        
+    
 
     </div>
 </div>
