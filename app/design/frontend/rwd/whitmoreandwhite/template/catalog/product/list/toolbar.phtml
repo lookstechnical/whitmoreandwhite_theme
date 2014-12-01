@@ -56,10 +56,23 @@
                     <?php if($_modes && count($_modes)>1): ?>
                         <label><?php echo $this->__('View') ?></label>
                         <?php foreach ($this->getModes() as $_code=>$_label): ?>
+                        	<?php
+                        		switch($_label){
+	                        		case 'Grid':
+	                        			$num = 4;
+	                        		break;
+	                        		case 'List':
+	                        			$num = 3;
+	                        		break;
+	                        		default:
+	                        			$num = 2;
+	                        		break;
+                        		}
+                        	?>
                             <?php if($this->isModeActive($_code)): ?>
-                                <strong title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?>"><?php echo $_label ?></strong>
+                                <strong title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?> grid-icon grid-icon-<?php echo $num ?>"><?php echo $_label ?></strong>
                             <?php else: ?>
-                                <a href="<?php echo $this->getModeUrl($_code) ?>" title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?>"><?php echo $_label ?></a>
+                                <a href="<?php echo $this->getModeUrl($_code) ?>" title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?> grid-icon grid-icon-<?php echo $num ?>"><?php echo $_label ?></a>
                             <?php endif; ?>
                         <?php endforeach; ?>
                     <?php endif; ?>

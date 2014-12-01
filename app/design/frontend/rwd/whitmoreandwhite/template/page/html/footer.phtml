@@ -27,7 +27,7 @@
 <div class="footer-container">
     <div class="footer">
         <?php echo $this->getChildHtml() ?>
-        <address class="copyright"><?php echo $this->getCopyright() ?></address>
+        <address class="copyright"><img src="<?php  echo $this->getSkinUrl('images/footer-logo.png'); ?>"/><?php echo $this->getCopyright() ?></address>
         <div class="cards">
 	        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_card_logos')->tohtml(); ?>
         </div>

@@ -6507,6 +6507,33 @@ th.hide-for-touch {
 .fa-meanpath:before {
   content: "\f20c"; }
 
+.grid-icon {
+  text-align: left;
+  text-indent: -9999px;
+  background-color: green;
+  background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
+  background-position: -1px -1px;
+  display: inline-block;
+  height: 23px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 23px; }
+  .grid-icon:hover {
+    background-color: blue; }
+  .grid-icon:first-of-type {
+    margin-left: 0; }
+  .grid-icon:last-of-type {
+    margin-right: 0; }
+
+.grid-icon-2 {
+  background-size: 12px 12px; }
+
+.grid-icon-3 {
+  background-size: 8px 8px; }
+
+.grid-icon-4 {
+  background-size: 6px 6px; }
+
 /**
  * Magento
  *
@@ -10131,6 +10158,7 @@ select:after {
   padding: 0px;
   position: relative;
   float: left;
+  padding: 0px 10px;
   text-align: center;
   border-bottom: 1px dotted #ccc;
   height: 341px;
@@ -10173,8 +10201,6 @@ select:after {
     display: none; }
   .products-grid .item .actions {
     display: none; }
-.products-grid .item:nth-child(3n+3) {
-  border-right: none; }
 
 .block-layered-nav .block-title {
   font-family: "kepler-std";
@@ -10292,6 +10318,12 @@ select:after {
       @media only screen and (min-width: 40rem) {
         .toolbar .sorter .view-mode {
           display: block; } }
+      .toolbar .sorter .view-mode strong {
+        background-color: #00747b; }
+      .toolbar .sorter .view-mode a {
+        background-color: black; }
+      .toolbar .sorter .view-mode a:hover {
+        background-color: #00747b; }
   .toolbar .pager:after {
     clear: both;
     content: "";
@@ -10428,6 +10460,33 @@ select:after {
 
 div.block-layered-nav.amshopby-collapse-enabled dt {
   background: none; }
+
+@media only screen and (min-width: 40rem) {
+  .products-grid--max-4-col .item {
+    width: 25%;
+    padding: 0px 0px;
+    position: relative;
+    float: left; } }
+.products-grid--max-4-col .item:nth-child(4n+4) {
+  border-right: none; }
+
+@media only screen and (min-width: 40rem) {
+  .products-grid--max-3-col .item {
+    width: 33.3%;
+    padding: 0px 0px;
+    position: relative;
+    float: left; } }
+.products-grid--max-3-col .item:nth-child(3n+3) {
+  border-right: none; }
+
+@media only screen and (min-width: 40rem) {
+  .products-grid--max-2-col .item {
+    width: 50%;
+    padding: 0px 0px;
+    position: relative;
+    float: left; } }
+.products-grid--max-2-col .item:nth-child(2n+2) {
+  border-right: none; }
 
 /* Slider */
 .slick-slider {
