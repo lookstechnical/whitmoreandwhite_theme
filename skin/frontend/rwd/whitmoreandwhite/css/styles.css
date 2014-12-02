@@ -7573,6 +7573,18 @@ header {
     @media only screen and (min-width: 40rem) {
       .footer .social {
         padding: 20px 0px; } }
+    .footer .social .facebook li {
+      height: 85px;
+      margin-bottom: 40px; }
+    .footer .social .facebook .post_picture {
+      float: right;
+      width: 30%; }
+    .footer .social .facebook .post_data {
+      float: left;
+      width: 100%; }
+      .footer .social .facebook .post_data a.p {
+        margin: 0px;
+        padding: 0px; }
     .footer .social .instagram, .footer .social .twitter, .footer .social .facebook {
       text-align: center;
       width: 33.3%;
@@ -7596,6 +7608,8 @@ header {
           float: left;
           text-align: center;
           border-bottom: none; } }
+      .footer .social .instagram .slick-list, .footer .social .twitter .slick-list, .footer .social .facebook .slick-list {
+        margin-bottom: 15px; }
       .footer .social .instagram .content, .footer .social .twitter .content, .footer .social .facebook .content {
         background: #f0f2f5;
         width: 100%;
@@ -7605,35 +7619,40 @@ header {
           .footer .social .instagram .content, .footer .social .twitter .content, .footer .social .facebook .content {
             background: none;
             height: auto; } }
-      @media only screen and (min-width: 40rem) {
-        .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
-          float: left;
-          width: 65%;
-          padding-bottom: 10px; } }
-      @media only screen and (min-width: 53.125rem) {
-        .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
-          width: 100%;
-          padding-bottom: 10px; } }
-      .footer .social .instagram ul .slick-prev, .footer .social .twitter ul .slick-prev, .footer .social .facebook ul .slick-prev {
-        background: url(../images/prev.png) no-repeat top left;
-        width: 11px;
-        height: 19px;
-        position: absolute;
-        top: 95%;
-        right: 40px;
-        padding: 0px 10px;
-        margin-top: -6px;
-        text-indent: -9999px;
-        margin-bottom: 10px; }
-      .footer .social .instagram ul .slick-next, .footer .social .twitter ul .slick-next, .footer .social .facebook ul .slick-next {
-        background: url(../images/next.png) no-repeat top left;
-        height: 19px;
-        position: absolute;
-        right: 0px;
-        top: 95%;
-        margin-top: -6px;
-        text-indent: -9999px;
-        margin-bottom: 10px; }
+      .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
+        list-style: none; }
+        @media only screen and (min-width: 40rem) {
+          .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
+            float: left;
+            width: 65%;
+            padding-bottom: 10px; } }
+        @media only screen and (min-width: 53.125rem) {
+          .footer .social .instagram ul, .footer .social .twitter ul, .footer .social .facebook ul {
+            width: 100%;
+            padding-bottom: 10px; } }
+        .footer .social .instagram ul li, .footer .social .twitter ul li, .footer .social .facebook ul li {
+          padding: 0px 10px;
+          overflow: hidden; }
+        .footer .social .instagram ul .slick-prev, .footer .social .twitter ul .slick-prev, .footer .social .facebook ul .slick-prev {
+          background: url(../images/prev.png) no-repeat top left;
+          width: 11px;
+          height: 19px;
+          position: absolute;
+          top: 95%;
+          right: 40px;
+          padding: 0px 10px;
+          margin-top: -6px;
+          text-indent: -9999px;
+          margin-bottom: 10px; }
+        .footer .social .instagram ul .slick-next, .footer .social .twitter ul .slick-next, .footer .social .facebook ul .slick-next {
+          background: url(../images/next.png) no-repeat top left;
+          height: 19px;
+          position: absolute;
+          right: 0px;
+          top: 95%;
+          margin-top: -6px;
+          text-indent: -9999px;
+          margin-bottom: 10px; }
     @media only screen and (min-width: 40rem) {
       .footer .social .facebook {
         border-bottom: none; } }
@@ -8330,7 +8349,8 @@ select:after {
   padding: 20px 15px; }
 .catalog-product-view .col-main {
   width: 100%;
-  padding-top: 0px; }
+  padding-top: 0px;
+  float: none; }
 .catalog-product-view .product-view {
   width: 100%;
   margin: 0 auto; }

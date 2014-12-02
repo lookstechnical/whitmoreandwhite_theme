@@ -42,8 +42,37 @@
 				<icon class="fa fa-facebook fa-2x"></icon><br/>
 				<a href="" class="nomobile">whitmoreandwhite</a>
 	     	</header>
-	     	<ul>
-	     		<?php $facebook =  $this->getFacebookFeed() ?>
+	     	<ul class="nomobile">
+	     		<?php $facebook =  $this->getFacebookFeed();
+	     		foreach($facebook->data as $fb): ?>
+	     		  <?php if( ($fb->type == 'status' || $fb->type == 'link') && !isset($fb->story)): ?>
+
+	     			<li>
+					    <div class="post_data">
+					        <p><?php  echo $this->formatTweet($fb->message); ?></p>
+					        <?php if( $fb->type == 'link' ): ?>
+					        <div>
+					            <div class="post_picture">
+					                <?php if( isset($fb->picture) ): ?>
+					                <a target="_blank" href="<?php echo $fb->link ?>">
+					                    <img src="<?php echo $fb->picture ?>" width="90" />
+					                </a>
+					                <?php else: ?>
+					                &nbsp;
+					                <?php endif; ?>
+					            </div>
+					            <div class="post_data">
+					                <p><a target="_blank" href="<?php echo $fb->link ?>"><?php echo $fb->name ?></a></p>
+					                <p><small><?php echo $fb->caption; ?></small></p>
+					                <p><?php echo $fb->description; ?></small></p>
+					            </div>
+					        </div>
+					        <?php endif; ?>
+					    </div>
+	     			</li>
+	     			<?php endif; ?>
+	     		<?php endforeach; ?>
+	     		
 	     	</ul>
 	     </div>
 	</div>

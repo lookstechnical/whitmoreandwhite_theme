@@ -68,6 +68,7 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 	public function formatTweet($tweet)
 	{
 		$formatted_text = preg_replace('/(\b(www\.|http\:\/\/)\S+\b)/', "<a target='_blank' href='$1'>$1</a>", $tweet);
+		$formatted_text = preg_replace('/(\b(www\.|https\:\/\/)\S+\b)/', "<a target='_blank' href='$1'>$1</a>", $formatted_text);
 		$formatted_text = preg_replace('/\#(\w+)/', "<a target='_blank' href='http://search.twitter.com/search?q=$1'>#$1</a>", $formatted_text);
 		$formatted_text = preg_replace('/\@(\w+)/', "<a target='_blank' href='http://twitter.com/$1'>@$1</a>", $formatted_text);
 
@@ -77,13 +78,21 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 	public function getFacebookFeed()
 	{
 	
+		$cache = Mage::app()->getCache();
+		
+		$feed = $cache->load("facebook_feed");
+		if(empty($feed)){
+
 		$config = array();
-		$config['appId'] = '705240759516775';
-		$config['secret'] = 'ce46875766ff8565458a59a9a0a928ac';
-		$t = '705240759516775|OtPci9a3EuPnaTR8E7NFKFZld7M';
-		$facebook = new Facebook_Api($config);
-		$feed = $facebook->api('/whitmoreandwhite/feed/', 'get');
-		//var_dump($feed);die();
-		return array();
+			$config['appId'] = '705240759516775';
+			$config['secret'] = 'ce46875766ff8565458a59a9a0a928ac';
+			$t = '705240759516775|OtPci9a3EuPnaTR8E7NFKFZld7M';
+			$facebook = new Facebook_Api($config);
+			$feed = $facebook->api('/whitmoreandwhite/feed/', 'get');
+			$feed = json_encode($feed);
+			$cache->save($feed, "facebook_feed",array("facebook_feed"), 10);
+		}
+
+		return json_decode($feed);
 	}
 }

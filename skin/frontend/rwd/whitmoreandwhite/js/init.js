@@ -48,6 +48,20 @@ jQuery(document).ready(function($) {
 		   slidesToShow: 1,
 		   slidesToScroll: 1,
  	});
+ 	
+ 	$('.facebook .content ul').slick({
+		   slide: 'li',
+		   speed: 300,
+		   slidesToShow: 1,
+		   slidesToScroll: 1,
+ 	});
+ 	
+ 	$('.instagram .content ul').slick({
+		   slide: 'li',
+		   speed: 300,
+		   slidesToShow: 3,
+		   slidesToScroll: 3,
+ 	});
 	   
 
 	$('.featured-slider ul').slick({

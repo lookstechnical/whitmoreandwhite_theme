@@ -128,8 +128,30 @@
 		@include respond-to(tablet){
 		  padding:20px 0px;
 		}
+		.facebook{
+				li{
+					height:85px;
+					margin-bottom:40px;
+					
+				}
+				
+				.post_picture{
+					float:right; 
+					width:30%;
+				}
+				.post_data{
+					float: left;
+					width: 100%;
+					
+					a.p{
+						margin: 0px;
+						padding:0px;
+					}
+				}
+			}
 		.instagram,.twitter,.facebook{
 			text-align: center;
+			
 			
 			
 			@include col(33.3%,5px);
@@ -146,6 +168,10 @@
 				border-bottom: none;
 			}
 			
+			.slick-list{
+				margin-bottom: 15px;
+			}
+			
 			.content{
 				background: #f0f2f5;
 				width: 100%;
@@ -158,7 +184,7 @@
 			}	
 			
 			ul{
-				
+				list-style: none;
 				@include respond-to(tablet){
 				  float:left;
 				  width: 65%;
@@ -170,29 +196,34 @@
 				  padding-bottom: 10px;
 				}
 				
+				li{
+					padding:0px 10px;
+					overflow: hidden;
+				}
+				
 				.slick-prev{
-				background: url(../images/prev.png) no-repeat top left;
-				width:11px;
-				height:19px;
-				position: absolute;
-				top: 95%;
-				right:40px;
-				padding:0px 10px;
-				margin-top:-6px;
-				text-indent: -9999px;
-				margin-bottom: 10px;
-			}
-			
-			.slick-next{
-				background: url(../images/next.png) no-repeat top left;
-				height:19px;
-				position: absolute;
-				right:0px;
-				top: 95%;
-				margin-top:-6px;
-				text-indent: -9999px;
-				margin-bottom: 10px;
-			}
+					background: url(../images/prev.png) no-repeat top left;
+					width:11px;
+					height:19px;
+					position: absolute;
+					top: 95%;
+					right:40px;
+					padding:0px 10px;
+					margin-top:-6px;
+					text-indent: -9999px;
+					margin-bottom: 10px;
+				}
+				
+				.slick-next{
+					background: url(../images/next.png) no-repeat top left;
+					height:19px;
+					position: absolute;
+					right:0px;
+					top: 95%;
+					margin-top:-6px;
+					text-indent: -9999px;
+					margin-bottom: 10px;
+				}
 			}
 			
 			
