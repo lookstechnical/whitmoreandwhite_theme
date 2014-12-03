@@ -8178,7 +8178,8 @@ select:after {
         position: relative;
         float: left; } }
     .welcome .intro h1 {
-      margin-bottom: 12px; }
+      margin-bottom: 12px;
+      margin-top: 15px; }
     .welcome .intro .black-fancy-btn {
       color: white;
       background: black;
@@ -10346,6 +10347,8 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .block-layered-nav .block-title {
       display: block; } }
+  .block-layered-nav .block-title strong {
+    font-weight: 500; }
 .block-layered-nav .mobile-toggle {
   background: #00747b;
   color: white;

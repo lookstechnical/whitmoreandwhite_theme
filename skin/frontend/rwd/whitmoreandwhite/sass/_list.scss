@@ -129,6 +129,10 @@
 		@include respond-to(tablet){
 		  display: block;
 		}
+		
+		strong{
+			font-weight: 500;
+		}
 	}
 	
 	.mobile-toggle{

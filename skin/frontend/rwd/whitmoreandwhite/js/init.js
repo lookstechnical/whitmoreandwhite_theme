@@ -70,11 +70,20 @@ jQuery(document).ready(function($) {
 		   slidesToScroll: 1,
 		   variableWidth: true,
 		   responsive:[
+		  		 {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 1,
+			         variableWidth: true,
+			      }
+			    },
 			    {
 			      breakpoint: 850,
 			      settings: {
 			        slidesToShow: 2,
 			        slidesToScroll: 1
+			         variableWidth: true,
 			      }
 			    },
 			    {
