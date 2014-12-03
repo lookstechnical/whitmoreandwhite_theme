@@ -10847,7 +10847,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
 .cms-contact-us #contactForm .form-list {
   padding: 0px;
   margin: 0px;
-  list-style: none; }
+  list-style: none;
+  text-align: left; }
 .cms-contact-us #contactForm label {
   font-family: "proxima-nova-alt";
   color: #949494;
