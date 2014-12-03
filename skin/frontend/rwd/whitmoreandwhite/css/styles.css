@@ -10847,9 +10847,10 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   width: 260px;
   float: left;
   height: 46px;
-  padding-left-right: 0.8;
+  line-height: 0.8em;
+  padding-left-right: 2.667em;
   text-align: center;
-  line-height: 0.8;
+  line-height: 2.667em;
   padding-left: 10px;
   position: relative;
   padding-right: 10px; }
@@ -10859,7 +10860,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 0.4 0.26667;
+    border-width: 1.3335em 0.889em;
     border-color: transparent;
     border-left-color: white;
     position: absolute;
@@ -10872,7 +10873,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 0.4 0.26667;
+    border-width: 1.3335em 0.889em;
     border-color: transparent;
     border-right-color: white;
     position: absolute;
@@ -10883,7 +10884,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  height: 170px; }
 
 .iframe-rwd {
   position: relative;
