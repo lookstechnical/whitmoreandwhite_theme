@@ -10819,8 +10819,16 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   margin: 0px;
   list-style: none; }
 .cms-contact-us label {
-  color: #ccc; }
+  font-family: "proxima-nova-alt";
+  color: #949494;
+  font-size: 0.875rem;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 1.714;
+  /* Approximation due to font substitution */
+  text-align: center; }
 .cms-contact-us .button {
+  margin-top: 25px;
   color: white;
   background: #00747b;
   display: block;
@@ -10832,9 +10840,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   text-transform: uppercase;
   width: 260px;
   float: left;
-  padding-left-right: 2.667em;
+  padding-left-right: 0.667em;
   text-align: center;
-  line-height: 2.667em;
+  line-height: 0.667em;
   padding-left: 10px;
   position: relative;
   padding-right: 10px; }
@@ -10844,7 +10852,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 1.3335em 0.889em;
+    border-width: 0.3335em 0.22233em;
     border-color: transparent;
     border-left-color: white;
     position: absolute;
@@ -10857,7 +10865,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 1.3335em 0.889em;
+    border-width: 0.3335em 0.22233em;
     border-color: transparent;
     border-right-color: white;
     position: absolute;
@@ -10866,7 +10874,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
 .cms-contact-us textarea {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px; }
+  padding: 10px;
+  border: 1px solid #ccc; }
 
 .iframe-rwd {
   position: relative;

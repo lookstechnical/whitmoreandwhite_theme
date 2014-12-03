@@ -85,9 +85,15 @@
 		list-style: none;
 	}
 	label{
-		color:#ccc;
+		font-family: $ProximaNova;
+		color:  #949494;
+		font-size: 0.875rem; /* Approximation due to font substitution */
+		font-weight: 400;
+		line-height: 1.714; /* Approximation due to font substitution */
+		text-align: center
 	}
 	.button{
+		margin-top: 25px;
 		color:white;
 		background: $green;
 		display: block;
@@ -99,13 +105,14 @@
 		text-transform: uppercase;
 		width:260px;
 		float:left;
-		@include ribbon($green, 2.667em, white, left-right);
+		@include ribbon($green, 0.667em, white, left-right);
 	}
 	
 	textarea{
 		width:100%;
 		box-sizing: border-box;
 		padding:10px;
+		border: 1px solid #ccc;
 	}
 }
 
