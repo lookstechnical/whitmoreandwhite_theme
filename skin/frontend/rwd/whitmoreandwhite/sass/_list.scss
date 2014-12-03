@@ -45,6 +45,11 @@
 		padding: 0px;
 		margin: 0px;
 	}
+	.item:hover{
+		border:1px dotted black;
+		box-shadow: 1px 2px 0px 1px #ccc;
+		z-index:100;
+	}
 	.item{
 		@include col(100%,0px);
 		padding: 0px 10px;

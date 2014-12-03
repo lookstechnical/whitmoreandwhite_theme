@@ -110,7 +110,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <div class="qty-wrapper">
         <?php $maxQty = 10 ?>
          <?php if($maxQty>0): ?>
-		   	<? $i = 0; ?>
+		   	<?php $i = 0; ?>
 		   
 			    <select name="cart[<?php echo $_item->getId() ?>][qty]" id="qty">
 			        <?php while($i<=$maxQty):?>
