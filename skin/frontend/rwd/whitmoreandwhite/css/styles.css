@@ -10869,14 +10869,14 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   width: 260px;
   float: left;
   height: 46px;
-  line-height: 0.8em;
   display: inline-block;
   padding-left-right: 2.667em;
   text-align: center;
   line-height: 2.667em;
   padding-left: 10px;
   position: relative;
-  padding-right: 10px; }
+  padding-right: 10px;
+  line-height: 0.8em; }
   .cms-contact-us #contactForm .button:after {
     content: '';
     display: block;
