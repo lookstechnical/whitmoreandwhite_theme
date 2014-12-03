@@ -60,7 +60,32 @@ jQuery(document).ready(function($) {
 		   slide: 'li',
 		   speed: 300,
 		   slidesToShow: 3,
-		   slidesToScroll: 3,
+		   slidesToScroll: 1,
+ 	});
+ 	
+ 	$('.cms-gallery').slick({
+		   slide: 'img',
+		   speed: 300,
+		   slidesToShow: 3,
+		   slidesToScroll: 1,
+		   variableWidth: true,
+		   responsive:[
+			    {
+			      breakpoint: 850,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 640,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        variableWidth: false
+			      }
+			    }
+		   ]
  	});
 	   
 

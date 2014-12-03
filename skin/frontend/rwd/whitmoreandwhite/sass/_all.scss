@@ -69,6 +69,16 @@ body{
 	}
 }
 
+.col1-layout{
+	.col-main{
+		@include col(100%,0px 10px);
+		max-width: 100%;
+		@include respond-to(tablet){
+		  @include col(100%,0px 0px 0px 0px);
+		}
+	}
+}
+
 a{
 	color: $green;
 }
@@ -77,5 +87,50 @@ a{
 	display: none;
 	@include respond-to(tablet){
 	  display: block;
+	}
+}
+
+
+.border-bottom{
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.border-bottom:after{
+	clear:both;
+	content: "";
+	display: block;
+}
+
+.cms-section{
+	margin-bottom: 40px;
+}
+.third{
+	width:100%;
+	padding:0px;
+	text-align: center;
+		
+	@include respond-to(tablet){
+	  text-align: left;
+	  float:left;
+	  width:33.3%;
+	  padding:0px 15px
+	  
+	}
+	
+	:first-of-type{
+		@include respond-to(tablet){
+	    	padding-left: 0px;
+	    }
+    }
+	:last-of-type{
+		@include respond-to(tablet){
+	    	padding-right: 0px
+	    }
+	}	
+	
+	img{
+		margin-bottom: 30px;
 	}
 }

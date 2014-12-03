@@ -1,3 +1,74 @@
 .title-intro{
 	
 }
+
+
+.cms-header{
+	text-align: center;
+	margin-bottom:40px;
+	@include respond-to(tablet){
+	  width:60%;
+	  margin: 0 auto 40px;
+	}
+	
+	@include respond-to(desktop){
+	  width: 48%;
+	}
+	
+	p{
+		font-family: $ProximaNova;
+		font-size: 0.875rem; /* Approximation due to font substitution */
+		font-weight: 400;
+		line-height: 1.714; /* Approximation due to font substitution */
+		text-align: center;
+	}
+	
+	
+	
+}
+
+.cms-gallery{
+	height:544px;
+	overflow: hidden;
+	position: relative;
+	padding:0px 30px;
+	margin-bottom: 80px;
+	
+	img{
+		margin:0px 2px;
+	}
+	
+	.slick-prev{
+		background: url(../images/prev.png) no-repeat top left;
+		position:absolute;
+		top:50%;
+		left:0px;
+		width:11px;
+		height:19px;
+		margin-top:-6px;
+		text-indent: -9999px;
+	}
+	
+	.slick-next{
+		background: url(../images/next.png) no-repeat top left;
+		position:absolute;
+		top:50%;
+		right:0px;
+		width:11px;
+		height:19px;
+		margin-top:-6px;
+		text-indent: -9999px;
+	}
+
+}
+
+
+.category-food-hall{
+	.category-title{
+		display: none;
+	}
+	
+	.tour{
+		margin-bottom: 40px;
+	}
+}
