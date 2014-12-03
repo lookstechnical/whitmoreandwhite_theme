@@ -87,19 +87,25 @@
 	label{
 		color:#ccc;
 	}
-	button{
+	.button{
 		color:white;
-			background: $green;
-			display: block;
-			text-align: center;
-			font-family: $TabletGothicCondensed;
-			font-size: 1.06rem;
-			font-weight: 300;
-			letter-spacing: 0.16rem;
-			text-transform: uppercase;
-			width:260px;
-			float:left;
-			@include ribbon($green, 2.667em, white, left-right);
+		background: $green;
+		display: block;
+		text-align: center;
+		font-family: $TabletGothicCondensed;
+		font-size: 1.06rem;
+		font-weight: 300;
+		letter-spacing: 0.16rem;
+		text-transform: uppercase;
+		width:260px;
+		float:left;
+		@include ribbon($green, 2.667em, white, left-right);
+	}
+	
+	textarea{
+		width:100%;
+		box-sizing: border-box;
+		padding:10px;
 	}
 }
 

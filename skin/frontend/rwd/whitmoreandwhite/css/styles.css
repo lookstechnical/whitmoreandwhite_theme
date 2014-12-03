@@ -10820,6 +10820,53 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   list-style: none; }
 .cms-contact-us label {
   color: #ccc; }
+.cms-contact-us .button {
+  color: white;
+  background: #00747b;
+  display: block;
+  text-align: center;
+  font-family: "tablet-gothic-condensed";
+  font-size: 1.06rem;
+  font-weight: 300;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  width: 260px;
+  float: left;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .cms-contact-us .button:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00747b; }
+  .cms-contact-us .button:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    background: #00747b; }
+.cms-contact-us textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px; }
 
 .iframe-rwd {
   position: relative;
