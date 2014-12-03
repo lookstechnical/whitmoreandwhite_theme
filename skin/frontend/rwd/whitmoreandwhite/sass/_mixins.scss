@@ -85,6 +85,7 @@
 	        position: absolute;
 	        #{$notch-side}: -1px;
 	        background: $color;
+	        top:0px;
 	      }
       }
       
@@ -116,6 +117,7 @@
 	        border-right-color: $notch-color;
 	        position: absolute;
 	        right: -1px;
+	        top:0px;
 	        background: $color;
 	      }
 	   }

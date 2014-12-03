@@ -109,7 +109,7 @@
 		width:260px;
 		float:left;
 		height: 46px;
-		@include ribbon($green, 46px, white, left-right);
+		@include ribbon($green, 0.8, white, left-right);
 	}
 	
 	textarea{

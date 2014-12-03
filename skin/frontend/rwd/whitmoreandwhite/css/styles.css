@@ -7636,7 +7636,8 @@ header {
           border-right-color: white;
           position: absolute;
           right: -1px;
-          background: #00747b; }
+          background: #00747b;
+          top: 0px; }
         @media only screen and (min-width: 40rem) {
           .footer .block-subscribe .block-content button {
             top: 0px; } }
@@ -8218,6 +8219,7 @@ select:after {
         border-right-color: white;
         position: absolute;
         right: -1px;
+        top: 0px;
         background: black; }
     .welcome .intro .green-fancy-btn {
       color: white;
@@ -8261,6 +8263,7 @@ select:after {
         border-right-color: white;
         position: absolute;
         right: -1px;
+        top: 0px;
         background: #00747b; }
 
 .pick-of-the-week {
@@ -9126,7 +9129,8 @@ select:after {
       border-right-color: white;
       position: absolute;
       right: -1px;
-      background: black; }
+      background: black;
+      top: 0px; }
     @media only screen and (min-width: 40rem) {
       .checkout-cart-index .cart-forms .discount .button-wrapper .button2 {
         top: 0px; } }
@@ -10556,7 +10560,8 @@ select:after {
     border-right-color: white;
     position: absolute;
     right: -1px;
-    background: #00747b; }
+    background: #00747b;
+    top: 0px; }
 
 .input-wrap {
   width: 60px;
@@ -10842,9 +10847,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   width: 260px;
   float: left;
   height: 46px;
-  padding-left-right: 46px;
+  padding-left-right: 0.8;
   text-align: center;
-  line-height: 46px;
+  line-height: 0.8;
   padding-left: 10px;
   position: relative;
   padding-right: 10px; }
@@ -10854,7 +10859,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 23px 15.33333px;
+    border-width: 0.4 0.26667;
     border-color: transparent;
     border-left-color: white;
     position: absolute;
@@ -10867,11 +10872,12 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     height: 0;
     width: 0;
     border-style: solid;
-    border-width: 23px 15.33333px;
+    border-width: 0.4 0.26667;
     border-color: transparent;
     border-right-color: white;
     position: absolute;
     right: -1px;
+    top: 0px;
     background: #00747b; }
 .cms-contact-us #contactForm textarea {
   width: 100%;
