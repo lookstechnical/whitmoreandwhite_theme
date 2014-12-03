@@ -10813,6 +10813,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     line-height: 1.5;
     /* Approximation due to font substitution */
     text-align: left; }
+  .cms-list h2 {
+    padding-bottom: 0px; }
 
 .cms-header {
   text-align: center;

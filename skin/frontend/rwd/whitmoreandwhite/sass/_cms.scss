@@ -34,7 +34,11 @@
 	}
 }
 }
-
+.cms-text{
+	h2{
+		padding-bottom: 0px;
+	}
+}
 .cms-list{
 	font-family: $ProximaNova;
 	color:  #000000;
@@ -52,6 +56,10 @@
 		font-weight: 700;
 		line-height: 1.5; /* Approximation due to font substitution */
 		text-align: left;
+	}
+	
+	h2{
+		padding-bottom: 0px;
 	}
 }
 
