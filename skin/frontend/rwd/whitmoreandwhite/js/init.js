@@ -184,6 +184,7 @@ jQuery(document).ready(function($) {
 	   });
 	   
 	   $('.sidr-class-nav-primary a').click(function(e){
+	   		alert($(this).parent().find('ul').length);
 	   		if($(this).parent().find('ul').length > 0){
 		   		e.preventDefault();
 		   		$(this).parent().find('ul').slideToggle();
@@ -218,8 +219,10 @@ jQuery(document).ready(function($) {
 		$('.amshopby-advanced li.active').parent().show();
 		
 		$('.amshopby-advanced .level0 a').click(function(e){
-			e.preventDefault();
-			$(this).parent().find('ul').slideToggle();
+		    if($(this).parent().find('ul').length > 0){
+			    e.preventDefault();
+			    $(this).parent().find('ul').slideToggle();
+			 }
 		});
 		
 		$('.mobile-toggle').click(function(){
