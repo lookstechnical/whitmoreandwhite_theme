@@ -7081,14 +7081,16 @@ a {
       float: left;
       width: 50%;
       padding: 0px 15px; } }
-  @media only screen and (min-width: 40rem) {
-    .half :first-of-type {
-      padding-left: 0px; } }
-  @media only screen and (min-width: 40rem) {
-    .half :last-of-type {
-      padding-right: 0px; } }
   .half img {
     margin-bottom: 30px; }
+
+@media only screen and (min-width: 40rem) {
+  .half:first-of-type {
+    padding-left: 0px; } }
+
+@media only screen and (min-width: 40rem) {
+  .half:last-of-type {
+    padding-right: 0px; } }
 
 .third {
   width: 100%;
@@ -7100,14 +7102,16 @@ a {
       float: left;
       width: 33.3%;
       padding: 0px 15px; } }
-  @media only screen and (min-width: 40rem) {
-    .third :first-of-type {
-      padding-left: 0px; } }
-  @media only screen and (min-width: 40rem) {
-    .third :last-of-type {
-      padding-right: 0px; } }
   .third img {
     margin-bottom: 30px; }
+
+@media only screen and (min-width: 40rem) {
+  .third:first-of-type {
+    padding-left: 0px; } }
+
+@media only screen and (min-width: 40rem) {
+  .third:last-of-type {
+    padding-right: 0px; } }
 
 header {
   background: black;

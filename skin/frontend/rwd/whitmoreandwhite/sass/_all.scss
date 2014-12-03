@@ -122,21 +122,23 @@ a{
 	  
 	}
 	
-	:first-of-type{
-		@include respond-to(tablet){
-	    	padding-left: 0px;
-	    }
-    }
-	:last-of-type{
-		@include respond-to(tablet){
-	    	padding-right: 0px
-	    }
-	}	
+	
 	
 	img{
 		margin-bottom: 30px;
 	}
 }
+
+.half:first-of-type{
+	@include respond-to(tablet){
+    	padding-left: 0px;
+    }
+}
+.half:last-of-type{
+	@include respond-to(tablet){
+    	padding-right: 0px
+    }
+}	
 
 .third{
 	width:100%;
@@ -151,18 +153,20 @@ a{
 	  
 	}
 	
-	:first-of-type{
-		@include respond-to(tablet){
-	    	padding-left: 0px;
-	    }
-    }
-	:last-of-type{
-		@include respond-to(tablet){
-	    	padding-right: 0px
-	    }
-	}	
+	
 	
 	img{
 		margin-bottom: 30px;
 	}
 }
+
+.third:first-of-type{
+	@include respond-to(tablet){
+    	padding-left: 0px;
+    }
+}
+.third:last-of-type{
+	@include respond-to(tablet){
+    	padding-right: 0px
+    }
+}	
