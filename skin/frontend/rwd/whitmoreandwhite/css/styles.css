@@ -7069,6 +7069,25 @@ a {
 .cms-section {
   margin-bottom: 40px; }
 
+.half {
+  width: 100%;
+  padding: 0px;
+  text-align: center; }
+  @media only screen and (min-width: 40rem) {
+    .half {
+      text-align: left;
+      float: left;
+      width: 50%;
+      padding: 0px 15px; } }
+  @media only screen and (min-width: 40rem) {
+    .half :first-of-type {
+      padding-left: 0px; } }
+  @media only screen and (min-width: 40rem) {
+    .half :last-of-type {
+      padding-right: 0px; } }
+  .half img {
+    margin-bottom: 30px; }
+
 .third {
   width: 100%;
   padding: 0px;
@@ -10739,6 +10758,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+.cms-page-view .page-title {
+  display: none; }
 
 .cms-header {
   text-align: center;
