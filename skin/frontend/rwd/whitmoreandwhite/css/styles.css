@@ -10848,6 +10848,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   float: left;
   height: 46px;
   line-height: 0.8em;
+  display: inline-block;
   padding-left-right: 2.667em;
   text-align: center;
   line-height: 2.667em;
