@@ -10802,6 +10802,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   line-height: 1.714;
   /* Approximation due to font substitution */
   text-align: left; }
+  .cms-list p {
+    padding-bottom: 25px; }
   .cms-list strong {
     text-transform: uppercase;
     font-family: "tablet-gothic-condensed";
