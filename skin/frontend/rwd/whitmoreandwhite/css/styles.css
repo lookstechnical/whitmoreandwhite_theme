@@ -10770,6 +10770,8 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
       color: black;
       opacity: 0.75; }
 
+.cms-page-view .breadcrumbs {
+  padding: 20px 15px; }
 .cms-page-view .page-title {
   display: none; }
 .cms-page-view h1 {
