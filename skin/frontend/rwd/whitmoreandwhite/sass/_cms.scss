@@ -108,7 +108,8 @@
 		text-transform: uppercase;
 		width:260px;
 		float:left;
-		@include ribbon($green, 2.667em, white, left-right);
+		height: 46px;
+		@include ribbon($green, 46px, white, left-right);
 	}
 	
 	textarea{
