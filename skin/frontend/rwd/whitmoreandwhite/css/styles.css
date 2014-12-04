@@ -8157,7 +8157,7 @@ select::-ms-expand {
       width: 1191px; } }
   @media only screen and (min-width: 40rem) {
     .welcome {
-      margin-bottom: 95px;
+      margin-bottom: 45px;
       padding: 0px; } }
   .welcome .intro-image {
     margin-bottom: 20px; }
@@ -8451,6 +8451,25 @@ select::-ms-expand {
         padding: 0px;
         position: relative;
         float: left; } }
+
+.featured-slider .item {
+  padding: 0px 15px 15px; }
+  .featured-slider .item .brand-name {
+    margin: 10px 0px 0px;
+    font-family: "tablet-gothic-condensed";
+    color: #050101;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .featured-slider .item .product-name {
+    margin: 0px;
+    line-height: 0rem; }
+    .featured-slider .item .product-name a {
+      font-family: "proxima-nova-alt";
+      color: #050101;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1; }
 
 .catalog-product-view .breadcrumbs {
   padding: 20px 15px; }
