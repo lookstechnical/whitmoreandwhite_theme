@@ -488,7 +488,15 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 		}
 	}
 	.item:nth-child(4n+4){
-		border-right:none;
+		@include respond-to(desktop){
+			border-right:none;
+		}
+	}
+	
+	.item:nth-child(2n+2){
+		@include respond-to(tablet){
+		    border-right:none;
+		}
 	}
 }
 
@@ -502,7 +510,15 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 		}
 	}
 	.item:nth-child(3n+3){
+		@include respond-to(desktop){
+			border-right:none;
+		}
+	}
+	
+	.item:nth-child(2n+2){
+		@include respond-to(tablet){
 		border-right:none;
+		}
 	}
 }
 
