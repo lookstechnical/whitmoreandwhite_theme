@@ -57,11 +57,11 @@
                         <label><?php echo $this->__('View') ?></label>
                         <?php foreach ($this->getModes() as $_code=>$_label): ?>
                         	<?php
-                        		switch($_label){
-	                        		case 'Grid':
+                        		switch(strtolower($_label)){
+	                        		case 'grid3':
 	                        			$num = 3;
 	                        		break;
-	                        		case 'List':
+	                        		case 'grid4':
 	                        			$num = 4;
 	                        		break;
 	                        		default:
