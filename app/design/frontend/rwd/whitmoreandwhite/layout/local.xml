@@ -21,6 +21,12 @@
 		</reference>
 	</customer_account_index>
 	
+	<customer_account_forgotpassword translate="label">
+		<reference name="breadcrumbs">
+			<action method="addCrumb"><crumbName>Forgot Password</crumbName><crumbInfo><label>Forgot Password</label><title>Forgot Password</title></crumbInfo></action>
+		</reference>
+	</customer_account_forgotpassword>
+	
 	<customer_account_edit translate="label">
 		<reference name="breadcrumbs">
 			<action method="addCrumb"><crumbName>Account Info</crumbName><crumbInfo><label>Account Info</label><title>Account Info</title></crumbInfo></action>
