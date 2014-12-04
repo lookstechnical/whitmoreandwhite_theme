@@ -101,8 +101,8 @@ jQuery(document).ready(function($) {
 	$('.featured-slider ul').slick({
 		   slide: 'li',
 		   speed: 300,
-		   slidesToShow: 1,
-		   slidesToScroll: 1,
+		   slidesToShow: 4,
+		   slidesToScroll: 4,
   		   responsive:[
 			   {
 			      breakpoint: 1024,
@@ -123,8 +123,7 @@ jQuery(document).ready(function($) {
 			      breakpoint: 640,
 			      settings: {
 			        slidesToShow: 1,
-			        slidesToScroll: 1,
-			        infinite: true,
+			        slidesToScroll: 1
 			      }
 			    }
 		   ]
@@ -165,7 +164,7 @@ jQuery(document).ready(function($) {
 			        slidesToScroll: 2,
 			        vertical:false
 			      }
-			    }
+			    },
 		   ]
 	   });
 	   
@@ -194,8 +193,8 @@ jQuery(document).ready(function($) {
 			    {
 			      breakpoint: 640,
 			      settings: {
-			        slidesToShow: 1,
-			        slidesToScroll: 1
+			        slidesToShow: 2,
+			        slidesToScroll: 2
 			      }
 			    }
 		   ]
