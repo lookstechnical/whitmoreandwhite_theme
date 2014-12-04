@@ -623,7 +623,7 @@
 	.box-up-sell{
 			.products-grid{
 				margin-bottom: 0px;
-				height: 250px;
+				max-height: 362px;
 				@include respond-to(tablet){
 				  height:auto;
 				}
