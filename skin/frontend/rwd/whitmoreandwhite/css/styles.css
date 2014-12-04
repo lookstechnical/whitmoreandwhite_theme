@@ -8916,7 +8916,7 @@ select:after {
     margin: 0px 0px 10px; }
 .catalog-product-view .box-up-sell .products-grid {
   margin-bottom: 0px;
-  min-height: 362px;
+  max-height: 362px;
   height: auto; }
   @media only screen and (min-width: 40rem) {
     .catalog-product-view .box-up-sell .products-grid {
@@ -8926,15 +8926,13 @@ select:after {
     height: auto;
     text-align: center;
     float: left;
-    min-height: 362px; }
+    height: 362px; }
     @media only screen and (min-width: 40rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        min-height: 297px;
-        height: auto; } }
+        height: 297px; } }
     @media only screen and (min-width: 53.125rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        min-height: 361px;
-        height: auto; } }
+        height: 361px; } }
 
 .checkout-cart-index .col-main {
   padding: 0px;
