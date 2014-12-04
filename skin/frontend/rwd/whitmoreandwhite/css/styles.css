@@ -10136,6 +10136,7 @@ select:after {
     padding: 5px 10px;
     color: white;
     text-transform: uppercase;
+    padding: 5px 0px;
     letter-spacing: 0.16rem; }
     @media only screen and (min-width: 40rem) {
       .customer-account .col-left .block-account .block-title, .customer-account-index .col-left .block-account .block-title {
