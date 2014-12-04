@@ -395,8 +395,10 @@
 	}
 	.col-left{
 		width: 100%;
+		display: none;
 		margin-bottom: 25px;
 		@include respond-to(tablet){
+		  display: block;
 		  padding:0px 15px 0px 0px;
 		  width:25%;
 		  float:left;

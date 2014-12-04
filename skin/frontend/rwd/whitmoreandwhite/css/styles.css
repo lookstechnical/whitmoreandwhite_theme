@@ -10134,9 +10134,11 @@ select:after {
   display: block; }
 .customer-account .col-left, .customer-account-index .col-left {
   width: 100%;
+  display: none;
   margin-bottom: 25px; }
   @media only screen and (min-width: 40rem) {
     .customer-account .col-left, .customer-account-index .col-left {
+      display: block;
       padding: 0px 15px 0px 0px;
       width: 25%;
       float: left;
