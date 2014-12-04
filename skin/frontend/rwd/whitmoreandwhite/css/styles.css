@@ -8100,7 +8100,6 @@ select:after {
       background: url(../images/mobile-menu-arrow.png) no-repeat right center; }
     #sidr-main ol li ul {
       display: none;
-      background-color: rgba(0, 0, 0, 0.9);
       width: 239px;
       position: relative;
       text-align: left;
