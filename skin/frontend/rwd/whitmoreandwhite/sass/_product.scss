@@ -60,6 +60,11 @@
 						
 					}
 					
+					label.required{
+						display: inline-block;
+					}
+	
+					
 					textarea{
 						width:100%;
 					}
@@ -152,44 +157,40 @@
 						line-height: 1.25;
 						
 					}
-				}
-				
-				.price-from{
-					margin-bottom: 0px;
-					.label{
-						width: 37px;
-						display: inline-block;
+					
+					
+					.price-as-configured{
+						label{
+							display: block;
+						}
 					}
 					
-					.price{
-						font-size: 1rem;
+					.price-from{
+						margin-bottom: 0px;
+						.label{
+							width: 37px;
+							display: inline-block;
+						}
+						
+						.price{
+							font-size: 1rem;
+						}
+					}
+					
+					.price-to{
+						margin-bottom: 0px;
+	
+						.label{
+							width: 37px;
+							display: inline-block;
+						}
+						
+						.price{
+							font-size: 1rem;
+						}
 					}
 				}
-				
-				.price-as-configured{
-					label{
-						display: block;
-					}
-				}
-				
-				
-				
-				label.required{
-					display: inline-block;
-				}
-				
-				.price-to{
-					margin-bottom: 0px;
 
-					.label{
-						width: 37px;
-						display: inline-block;
-					}
-					
-					.price{
-						font-size: 1rem;
-					}
-				}
 				
 				.availability{
 					font-family: $ProximaNova;

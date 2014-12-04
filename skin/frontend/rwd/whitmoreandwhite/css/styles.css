@@ -8509,6 +8509,8 @@ select:after {
           display: inline; }
           .catalog-product-view .product-view .product-essential .product-shop .product-options dl dt label em {
             float: right; }
+      .catalog-product-view .product-view .product-essential .product-shop .product-options label.required {
+        display: inline-block; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options textarea {
         width: 100%; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options select {
@@ -8572,24 +8574,22 @@ select:after {
           font-size: 1.5rem;
           font-weight: 400;
           line-height: 1.25; }
-      .catalog-product-view .product-view .product-essential .product-shop .price-from {
-        margin-bottom: 0px; }
-        .catalog-product-view .product-view .product-essential .product-shop .price-from .label {
-          width: 37px;
-          display: inline-block; }
-        .catalog-product-view .product-view .product-essential .product-shop .price-from .price {
-          font-size: 1rem; }
-      .catalog-product-view .product-view .product-essential .product-shop .price-as-configured label {
-        display: block; }
-      .catalog-product-view .product-view .product-essential .product-shop label.required {
-        display: inline-block; }
-      .catalog-product-view .product-view .product-essential .product-shop .price-to {
-        margin-bottom: 0px; }
-        .catalog-product-view .product-view .product-essential .product-shop .price-to .label {
-          width: 37px;
-          display: inline-block; }
-        .catalog-product-view .product-view .product-essential .product-shop .price-to .price {
-          font-size: 1rem; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-info .price-as-configured label {
+          display: block; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-info .price-from {
+          margin-bottom: 0px; }
+          .catalog-product-view .product-view .product-essential .product-shop .price-info .price-from .label {
+            width: 37px;
+            display: inline-block; }
+          .catalog-product-view .product-view .product-essential .product-shop .price-info .price-from .price {
+            font-size: 1rem; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-info .price-to {
+          margin-bottom: 0px; }
+          .catalog-product-view .product-view .product-essential .product-shop .price-info .price-to .label {
+            width: 37px;
+            display: inline-block; }
+          .catalog-product-view .product-view .product-essential .product-shop .price-info .price-to .price {
+            font-size: 1rem; }
       .catalog-product-view .product-view .product-essential .product-shop .availability {
         font-family: "proxima-nova-alt";
         font-size: 0.75rem;
