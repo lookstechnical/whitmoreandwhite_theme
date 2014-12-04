@@ -7309,8 +7309,8 @@ header {
     display: none; }
   header .header-minicart {
     float: left;
-    width: 94px;
-    padding: 0px 10px; }
+    width: 91px;
+    padding: 0px 0px 0px 10px; }
     header .header-minicart a {
       font-family: 'Kepler Std';
       color: #e7e7e7;
@@ -7341,7 +7341,7 @@ header {
     border-right: none;
     width: 111px;
     border-bottom: 1px dotted white;
-    float: left;
+    float: right;
     height: 15px;
     margin-top: 15px;
     color: white;
