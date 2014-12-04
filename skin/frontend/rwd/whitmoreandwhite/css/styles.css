@@ -8887,7 +8887,7 @@ select:after {
     margin-top: -6px;
     text-indent: -9999px; }
   .catalog-product-view .box-up-sell #upsell-product-table {
-    padding: 0px;
+    padding: 0px 15px;
     margin: 0px; }
   .catalog-product-view .box-up-sell .company-title {
     line-height: 0rem;
