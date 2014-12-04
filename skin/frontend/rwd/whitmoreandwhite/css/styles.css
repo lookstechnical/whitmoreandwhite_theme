@@ -10567,10 +10567,13 @@ select::-ms-expand {
         .toolbar .sorter .view-mode {
           display: block; } }
       .toolbar .sorter .view-mode strong {
-        background-color: #00747b; }
+        background-color: #00747b;
+        margin-right: 0px;
+        margin-left: 0px; }
       .toolbar .sorter .view-mode a {
         background-color: black;
-        margin-right: 0px; }
+        margin-right: 0px;
+        margin-left: 0px; }
       .toolbar .sorter .view-mode a:hover {
         background-color: #00747b; }
       .toolbar .sorter .view-mode .list-grid {
