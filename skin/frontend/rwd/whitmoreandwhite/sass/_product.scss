@@ -623,20 +623,20 @@
 	.box-up-sell{
 			.products-grid{
 				margin-bottom: 0px;
-				max-height: 362px;
+				min-height: 362px;
 				@include respond-to(tablet){
 				  height:auto;
 				}
 				.item{
 				    padding:0px 15px;
-					max-height:362px;
+					min-height:362px;
 					@include respond-to(tablet){
-					   max-height:297px;
+					   min-height:297px;
 					  
 					}
 					
 					@include respond-to(desktop){
-					  max-height:361px;
+					  min-height:361px;
 					  
 					}
 		
