@@ -8862,6 +8862,11 @@ select:after {
             font-size: 0.875rem;
             font-weight: 400;
             line-height: 1.714; }
+        .catalog-product-view .product-view .product-essential .block-related .mini-products-list .item:nth-child(2n+2) {
+          border-right: none; }
+          @media only screen and (min-width: 40rem) {
+            .catalog-product-view .product-view .product-essential .block-related .mini-products-list .item:nth-child(2n+2) {
+              border-right: 1px dotted #ccc; } }
 .catalog-product-view .box-up-sell {
   width: 100%;
   clear: both;
