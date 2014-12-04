@@ -9893,6 +9893,22 @@ select::-ms-expand {
 
 .customer-account-login .breadcrumbs, .customer-account-forgotpassword .breadcrumbs {
   margin-bottom: 20px; }
+.customer-account-login .form-list, .customer-account-forgotpassword .form-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+  .customer-account-login .form-list li, .customer-account-forgotpassword .form-list li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+.customer-account-login .buttons-set .button, .customer-account-forgotpassword .buttons-set .button {
+  background: #00747b;
+  width: 150px;
+  height: 42px;
+  font-family: "tablet-gothic-condensed";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 0.4; }
 .customer-account-login .col-main, .customer-account-forgotpassword .col-main {
   width: 100%;
   padding: 0px; }
