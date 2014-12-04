@@ -613,8 +613,11 @@
 	    font-weight: 400;
 		line-height: 1.5; 
 		margin-bottom:20px;
-		padding:10px 0px;
+		padding:0px 0px;
 		width: 100%;
+		p{
+			margin: 0px;
+		}
 		img{
 			margin-left:10px;
 		}
