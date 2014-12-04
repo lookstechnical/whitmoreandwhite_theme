@@ -9897,6 +9897,9 @@ select::-ms-expand {
   list-style: none;
   padding: 0px;
   margin: 0px; }
+  @media only screen and (min-width: 53.125rem) {
+    .customer-account-login .form-list, .customer-account-forgotpassword .form-list {
+      width: 60%; } }
   .customer-account-login .form-list li, .customer-account-forgotpassword .form-list li {
     list-style: none;
     padding: 0px;

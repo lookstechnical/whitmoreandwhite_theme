@@ -20,6 +20,10 @@
 		list-style: none;
 		padding: 0px;
 		margin: 0px;
+		@include respond-to(desktop){
+		  width:60%
+		}
+		
 		li{
 			list-style: none;
 			padding: 0px;
