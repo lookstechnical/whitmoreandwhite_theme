@@ -8093,10 +8093,11 @@ select:after {
       display: block;
       font-family: "tablet-gothic-condensed";
       color: #ffffff;
-      font-size: 1.81rem;
+      font-size: 1.21rem;
       font-weight: 400;
       line-height: 2.286;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      background: url(../images/mobile-menu-arrow.png) no-repeat right center; }
     #sidr-main ol li ul {
       display: none;
       background-color: rgba(0, 0, 0, 0.9);
