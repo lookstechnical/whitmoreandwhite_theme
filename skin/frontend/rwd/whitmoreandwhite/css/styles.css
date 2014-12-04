@@ -10709,7 +10709,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
       border-right: none; } }
   @media only screen and (min-width: 53.125rem) {
     .products-grid--max-3-col .item:nth-child(2n+2) {
-      border: 1px dotted #ccc; } }
+      border-right: 1px dotted #ccc; } }
 
 @media only screen and (min-width: 40rem) {
   .products-grid--max-2-col .item {
