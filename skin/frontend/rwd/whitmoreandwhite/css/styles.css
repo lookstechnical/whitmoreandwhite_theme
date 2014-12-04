@@ -9793,7 +9793,7 @@ select:after {
     font-size: 1rem; }
 
 .checkout-onepage-success h1, .checkout-onepage-success h2, .checkout-onepage-success h3, .checkout_onepage_failure h1, .checkout_onepage_failure h2, .checkout_onepage_failure h3 {
-  line-height: 1.5rem; }
+  line-height: 1.5; }
 .checkout-onepage-success .breadcrumbs, .checkout_onepage_failure .breadcrumbs {
   margin-bottom: 20px; }
 .checkout-onepage-success .button, .checkout_onepage_failure .button {
