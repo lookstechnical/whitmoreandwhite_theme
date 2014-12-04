@@ -632,6 +632,7 @@
 				    padding:0px 15px;
 				    height:auto;
 				    text-align: center;
+				    float:left;
 					min-height:362px;
 					@include respond-to(tablet){
 					   min-height:297px;

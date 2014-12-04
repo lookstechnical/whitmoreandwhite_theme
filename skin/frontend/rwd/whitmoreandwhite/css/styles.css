@@ -8925,6 +8925,7 @@ select:after {
     padding: 0px 15px;
     height: auto;
     text-align: center;
+    float: left;
     min-height: 362px; }
     @media only screen and (min-width: 40rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
