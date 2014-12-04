@@ -624,19 +624,24 @@
 			.products-grid{
 				margin-bottom: 0px;
 				min-height: 362px;
+				 height:auto;
 				@include respond-to(tablet){
 				  height:auto;
 				}
 				.item{
 				    padding:0px 15px;
+				    height:auto;
+				    text-align: center;
 					min-height:362px;
 					@include respond-to(tablet){
 					   min-height:297px;
+					    height:auto;
 					  
 					}
 					
 					@include respond-to(desktop){
 					  min-height:361px;
+					   height:auto;
 					  
 					}
 		
