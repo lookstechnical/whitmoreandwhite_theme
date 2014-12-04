@@ -10146,15 +10146,15 @@ select:after {
       padding: 0px 15px 0px 0px; } }
   .customer-account .col-left .block-account .block-title, .customer-account-index .col-left .block-account .block-title {
     background: #00747b;
-    font-family: "proxima-nova-alt";
-    color: #050101;
-    font-size: 1.125rem;
-    font-weight: 300;
-    line-height: 1.667;
-    padding: 5px 10px;
+    background: #00747b;
     color: white;
+    font-family: "proxima-nova-alt";
+    padding: 10px;
     text-transform: uppercase;
-    padding: 5px 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
     letter-spacing: 0.16rem; }
     @media only screen and (min-width: 40rem) {
       .customer-account .col-left .block-account .block-title, .customer-account-index .col-left .block-account .block-title {

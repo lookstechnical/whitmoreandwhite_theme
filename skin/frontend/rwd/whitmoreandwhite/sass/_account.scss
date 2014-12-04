@@ -410,15 +410,15 @@
 			.block-title{
 				
 				background: $green;
-				font-family: $ProximaNova;
-				color:  #050101;
-				font-size: 1.125rem;				
-				font-weight: 300;
-				line-height: 1.667;
-				padding:5px 10px;
+				background: $green;
 				color:white;
+				font-family: $ProximaNova;
+				padding:10px;
 				text-transform: uppercase;
-			    padding: 5px 0px;
+				width:100%;
+				margin-bottom: 10px;
+				cursor: pointer;			    
+		        padding: 5px;
 				letter-spacing: 0.16rem;
 				
 				@include respond-to(tablet){
