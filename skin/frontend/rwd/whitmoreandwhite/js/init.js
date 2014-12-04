@@ -157,6 +157,14 @@ jQuery(document).ready(function($) {
 			        vertical:false
 			      }
 			    },
+			    {
+			      breakpoint: 640,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2,
+			        vertical:false
+			      }
+			    }
 		   ]
 	   });
 	   

@@ -8917,13 +8917,13 @@ select:after {
       height: auto; } }
   .catalog-product-view .box-up-sell .products-grid .item {
     padding: 0px 15px;
-    height: 230px; }
+    max-height: 362px; }
     @media only screen and (min-width: 40rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        height: 297px; } }
+        max-height: 297px; } }
     @media only screen and (min-width: 53.125rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        height: 361px; } }
+        max-height: 361px; } }
 
 .checkout-cart-index .col-main {
   padding: 0px;

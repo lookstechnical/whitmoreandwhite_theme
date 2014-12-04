@@ -621,14 +621,14 @@
 				}
 				.item{
 				    padding:0px 15px;
-					height:230px;
+					max-height:362px;
 					@include respond-to(tablet){
-					   height:297px;
+					   max-height:297px;
 					  
 					}
 					
 					@include respond-to(desktop){
-					  height:361px;
+					  max-height:361px;
 					  
 					}
 		
