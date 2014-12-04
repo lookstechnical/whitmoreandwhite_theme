@@ -134,6 +134,7 @@ Default layout, loads most of the pages
         <block type="core/text_list" name="additional.product.info" translate="label">
             <label>Additional Product Info</label>
         </block>
+        <remove name="social_blocks"/>
     </checkout_cart_index>
 
     <checkout_cart_configure translate="label">
