@@ -104,13 +104,15 @@
 				li{
 					display: block;
 					float:none;
-					
+					border-bottom: none
 					a{
 						font-family: $ProximaNova;
 						font-size: 0.813rem;
 						font-weight: 400;
 						line-height: 2.769; 
 						display: inline;
+						text-transform: none;
+						background: none;
 					}
 				}
 				

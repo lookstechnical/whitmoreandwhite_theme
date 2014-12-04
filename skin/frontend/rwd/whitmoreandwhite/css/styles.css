@@ -8108,13 +8108,15 @@ select:after {
       margin-left: 0px; }
       #sidr-main ol li ul li {
         display: block;
-        float: none; }
-        #sidr-main ol li ul li a {
-          font-family: "proxima-nova-alt";
-          font-size: 0.813rem;
-          font-weight: 400;
-          line-height: 2.769;
-          display: inline; }
+        float: none;
+        border-bottom: none a;
+          border-bottom-font-family: "proxima-nova-alt";
+          border-bottom-font-size: 0.813rem;
+          border-bottom-font-weight: 400;
+          border-bottom-line-height: 2.769;
+          border-bottom-display: inline;
+          border-bottom-text-transform: none;
+          border-bottom-background: none; }
 
 .banner {
   margin-bottom: 20px; }

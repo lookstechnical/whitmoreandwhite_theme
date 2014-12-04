@@ -193,7 +193,6 @@ jQuery(document).ready(function($) {
 	   });
 	   
 	   $('.sidr-class-nav-primary a').click(function(e){
-	   		alert($(this).parent().find('ul').length);
 	   		if($(this).parent().find('ul').length > 0){
 		   		e.preventDefault();
 		   		$(this).parent().find('ul').slideToggle();
