@@ -43,11 +43,11 @@
     <?php echo $this->getToolbarHtml() ?>
     <?php 
     
-    	switch($this->getMode()){
-	    	case 'grid':
+    	switch(strtolower($this->getMode())){
+	    	case 'grid3':
 	    		$_columnCount = 3;
 	    	break;
-	    	case 'list':
+	    	case 'grid4':
 	    		$_columnCount = 4;
 	    	break;
 	    	default:
