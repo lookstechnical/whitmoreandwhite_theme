@@ -9362,6 +9362,8 @@ select:after {
   margin-bottom: 20px;
   padding: 0px 0px;
   width: 100%; }
+  .checkout-cart-index .card-types p {
+    margin: 0px; }
   .checkout-cart-index .card-types img {
     margin-left: 10px; }
   @media only screen and (min-width: 40rem) {
