@@ -8566,6 +8566,28 @@ select:after {
           font-size: 1.5rem;
           font-weight: 400;
           line-height: 1.25; }
+      .catalog-product-view .product-view .product-essential .product-shop .price-from {
+        margin-bottom: 0px; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-from .label {
+          width: 37px;
+          display: inline-block; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-from .price {
+          font-size: 1rem; }
+      .catalog-product-view .product-view .product-essential .product-shop .price-as-configured label {
+        display: block; }
+      .catalog-product-view .product-view .product-essential .product-shop .bundle-option-select {
+        background: none;
+        width: 80%;
+        clear: both; }
+      .catalog-product-view .product-view .product-essential .product-shop label.required {
+        display: inline-block; }
+      .catalog-product-view .product-view .product-essential .product-shop .price-to {
+        margin-bottom: 0px; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-to .label {
+          width: 37px;
+          display: inline-block; }
+        .catalog-product-view .product-view .product-essential .product-shop .price-to .price {
+          font-size: 1rem; }
       .catalog-product-view .product-view .product-essential .product-shop .availability {
         font-family: "proxima-nova-alt";
         font-size: 0.75rem;
@@ -10875,6 +10897,24 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   display: none; }
 .category-food-hall .tour {
   margin-bottom: 40px; }
+.category-food-hall h1 {
+  font-family: "tablet-gothic-condensed";
+  color: #000000;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: -26px; }
+  .category-food-hall h1 span {
+    font-family: "kepler-std";
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    display: inline-block; }
 
 .cms-contact-us #contactForm .form-list {
   padding: 0px;
