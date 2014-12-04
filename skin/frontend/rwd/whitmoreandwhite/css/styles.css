@@ -9891,111 +9891,111 @@ select::-ms-expand {
   line-height: 0.6;
   margin-bottom: 30px; }
 
-.customer-account-login .breadcrumbs {
+.customer-account-login .breadcrumbs, .customer-account-forgotpassword .breadcrumbs {
   margin-bottom: 20px; }
-.customer-account-login .col-main {
+.customer-account-login .col-main, .customer-account-forgotpassword .col-main {
   width: 100%;
   padding: 0px; }
-  .customer-account-login .col-main .account-login {
+  .customer-account-login .col-main .account-login, .customer-account-forgotpassword .col-main .account-login {
     background: white;
     width: 100%;
     font-size: 0.75rem;
     font-family: "proxima-nova-alt";
     margin-bottom: 30px; }
     @media only screen and (min-width: 40rem) {
-      .customer-account-login .col-main .account-login {
+      .customer-account-login .col-main .account-login, .customer-account-forgotpassword .col-main .account-login {
         margin-bottom: 50px; } }
-    .customer-account-login .col-main .account-login .form-list {
+    .customer-account-login .col-main .account-login .form-list, .customer-account-forgotpassword .col-main .account-login .form-list {
       list-style: none;
       padding: 0;
       margin: 0;
       width: 297px; }
-    .customer-account-login .col-main .account-login .page-title h1 {
+    .customer-account-login .col-main .account-login .page-title h1, .customer-account-forgotpassword .col-main .account-login .page-title h1 {
       font-family: "tablet-gothic-condensed";
       font-size: 1.875rem;
       font-weight: 700;
       line-height: 0.6;
       margin-bottom: 60px;
       text-transform: uppercase; }
-    .customer-account-login .col-main .account-login h2 {
+    .customer-account-login .col-main .account-login h2, .customer-account-forgotpassword .col-main .account-login h2 {
       font-family: "tablet-gothic-condensed";
       font-size: 1.125rem;
       font-weight: 700;
       line-height: 0;
       text-transform: uppercase;
       padding-bottom: 20px; }
-    .customer-account-login .col-main .account-login .col-2 {
+    .customer-account-login .col-main .account-login .col-2, .customer-account-forgotpassword .col-main .account-login .col-2 {
       float: left;
       margin-bottom: 20px; }
       @media only screen and (min-width: 40rem) {
-        .customer-account-login .col-main .account-login .col-2 {
+        .customer-account-login .col-main .account-login .col-2, .customer-account-forgotpassword .col-main .account-login .col-2 {
           width: 50%;
           padding: 0px 10px 0px 40px; } }
       @media only screen and (min-width: 53.125rem) {
-        .customer-account-login .col-main .account-login .col-2 {
+        .customer-account-login .col-main .account-login .col-2, .customer-account-forgotpassword .col-main .account-login .col-2 {
           padding: 0px 10px 0px 40px; } }
-      .customer-account-login .col-main .account-login .col-2 .button {
+      .customer-account-login .col-main .account-login .col-2 .button, .customer-account-forgotpassword .col-main .account-login .col-2 .button {
         width: 190px;
         height: 42px;
         font-family: "tablet-gothic-condensed";
         font-size: 1.125rem;
         font-weight: 600;
         line-height: 0.4; }
-      .customer-account-login .col-main .account-login .col-2 .content {
+      .customer-account-login .col-main .account-login .col-2 .content, .customer-account-forgotpassword .col-main .account-login .col-2 .content {
         font-family: "proxima-nova-alt";
         font-size: 0.75rem;
         font-weight: 400;
         line-height: 1.5;
         margin-bottom: 15px; }
-        .customer-account-login .col-main .account-login .col-2 .content ul, .customer-account-login .col-main .account-login .col-2 .content li {
+        .customer-account-login .col-main .account-login .col-2 .content ul, .customer-account-login .col-main .account-login .col-2 .content li, .customer-account-forgotpassword .col-main .account-login .col-2 .content ul, .customer-account-forgotpassword .col-main .account-login .col-2 .content li {
           margin: 0px;
           padding: 0px;
           font-family: "proxima-nova-alt";
           font-size: 0.875rem;
           font-weight: 400;
           line-height: 1.286; }
-        .customer-account-login .col-main .account-login .col-2 .content ul {
+        .customer-account-login .col-main .account-login .col-2 .content ul, .customer-account-forgotpassword .col-main .account-login .col-2 .content ul {
           margin-left: 15px; }
-    .customer-account-login .col-main .account-login .col-1 {
+    .customer-account-login .col-main .account-login .col-1, .customer-account-forgotpassword .col-main .account-login .col-1 {
       float: left;
       margin-bottom: 20px; }
       @media only screen and (min-width: 40rem) {
-        .customer-account-login .col-main .account-login .col-1 {
+        .customer-account-login .col-main .account-login .col-1, .customer-account-forgotpassword .col-main .account-login .col-1 {
           width: 50%;
           border-right: 1px solid #ccc; } }
       @media only screen and (min-width: 53.125rem) {
-        .customer-account-login .col-main .account-login .col-1 {
+        .customer-account-login .col-main .account-login .col-1, .customer-account-forgotpassword .col-main .account-login .col-1 {
           padding: 0px 10px 0px 160px; } }
-      .customer-account-login .col-main .account-login .col-1 .buttons-set {
+      .customer-account-login .col-main .account-login .col-1 .buttons-set, .customer-account-forgotpassword .col-main .account-login .col-1 .buttons-set {
         margin-top: 15px; }
-      .customer-account-login .col-main .account-login .col-1 .form-instructions {
+      .customer-account-login .col-main .account-login .col-1 .form-instructions, .customer-account-forgotpassword .col-main .account-login .col-1 .form-instructions {
         display: none; }
-      .customer-account-login .col-main .account-login .col-1 .button {
+      .customer-account-login .col-main .account-login .col-1 .button, .customer-account-forgotpassword .col-main .account-login .col-1 .button {
         width: 150px;
         height: 42px;
         font-family: "tablet-gothic-condensed";
         font-size: 1.125rem;
         font-weight: 600;
         line-height: 0.4; }
-      .customer-account-login .col-main .account-login .col-1 .forgotten-link {
+      .customer-account-login .col-main .account-login .col-1 .forgotten-link, .customer-account-forgotpassword .col-main .account-login .col-1 .forgotten-link {
         color: #00747b;
         text-transform: uppercase;
         font-family: "proxima-nova-alt";
         font-size: 0.813rem;
         font-weight: 400;
         line-height: 1.385; }
-      .customer-account-login .col-main .account-login .col-1 input[type=text], .customer-account-login .col-main .account-login .col-1 input[type=password], .customer-account-login .col-main .account-login .col-1 input[type=email] {
+      .customer-account-login .col-main .account-login .col-1 input[type=text], .customer-account-login .col-main .account-login .col-1 input[type=password], .customer-account-login .col-main .account-login .col-1 input[type=email], .customer-account-forgotpassword .col-main .account-login .col-1 input[type=text], .customer-account-forgotpassword .col-main .account-login .col-1 input[type=password], .customer-account-forgotpassword .col-main .account-login .col-1 input[type=email] {
         width: 297px; }
-    .customer-account-login .col-main .account-login p.required {
+    .customer-account-login .col-main .account-login p.required, .customer-account-forgotpassword .col-main .account-login p.required {
       display: none; }
-    .customer-account-login .col-main .account-login .form-instructions {
+    .customer-account-login .col-main .account-login .form-instructions, .customer-account-forgotpassword .col-main .account-login .form-instructions {
       font-family: "proxima-nova-alt";
       font-size: 0.875rem;
       font-weight: 400;
       line-height: 2.143; }
-    .customer-account-login .col-main .account-login .remember-me-popup {
+    .customer-account-login .col-main .account-login .remember-me-popup, .customer-account-forgotpassword .col-main .account-login .remember-me-popup {
       display: none; }
-    .customer-account-login .col-main .account-login .button {
+    .customer-account-login .col-main .account-login .button, .customer-account-forgotpassword .col-main .account-login .button {
       background: #00747b;
       color: white;
       border: none;
@@ -10005,12 +10005,12 @@ select::-ms-expand {
       width: 125px;
       height: 47px;
       margin-right: 10px; }
-    .customer-account-login .col-main .account-login p.welcome {
+    .customer-account-login .col-main .account-login p.welcome, .customer-account-forgotpassword .col-main .account-login p.welcome {
       font-family: "kepler-std";
       font-size: 1.88rem;
       font-weight: 400;
       line-height: 0.6; }
-  .customer-account-login .col-main .account-login:after {
+  .customer-account-login .col-main .account-login:after, .customer-account-forgotpassword .col-main .account-login:after {
     clear: both;
     content: "";
     display: block; }
