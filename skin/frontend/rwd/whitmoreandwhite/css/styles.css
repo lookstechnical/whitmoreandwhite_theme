@@ -7158,8 +7158,8 @@ header {
         color: white;
         font-size: 28px;
         font-weight: 200;
-        margin-right: 0px;
-        margin-left: 20px; }
+        margin-right: 10px;
+        margin-left: 10px; }
       header .header-wrapper .left .search {
         position: relative;
         top: 10px;
@@ -7167,7 +7167,7 @@ header {
         font-size: 24px;
         font-weight: 200;
         display: inline-block;
-        padding: 0px 20px 0px 20px; }
+        padding: 0px 16px 0px 16px; }
       header .header-wrapper .left .search.active {
         background: #00747b; }
     header .header-wrapper .right {
@@ -7368,7 +7368,7 @@ header {
       header .mobile-items {
         display: none; } }
     header .mobile-items .mobile-account {
-      padding-right: 30px;
+      padding-right: 20px;
       display: inline-block; }
     header .mobile-items .mobile-cart {
       color: white;
@@ -7378,7 +7378,7 @@ header {
       height: 30px;
       text-align: center;
       line-height: 2rem;
-      margin-right: 20px;
+      margin-right: 10px;
       display: inline-block; }
 
 .mobile-search {
