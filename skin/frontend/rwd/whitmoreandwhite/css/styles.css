@@ -7178,7 +7178,7 @@ header {
       max-width: 499px; }
       @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .right {
-          width: 50%;
+          width: 80%;
           padding: 0px;
           position: relative;
           float: left; } }
@@ -7191,7 +7191,7 @@ header {
       @media only screen and (min-width: 53.125rem) {
         header .header-wrapper .middle {
           text-align: left;
-          width: 50%;
+          width: 369px;
           padding: 0px;
           position: relative;
           float: left; } }

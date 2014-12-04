@@ -56,7 +56,7 @@ header{
 			@include col(33.3%,0px);
 			max-width: 499px;
 			@include respond-to(desktop){
-				@include col(50%,0px);	
+				@include col(80%,0px);	
 				
 			}
 			
@@ -68,7 +68,7 @@ header{
 			 
 			 @include respond-to(desktop){
 			    text-align: left;
-			    @include col(50%,0px);
+			    @include col(369px,0px);
 			 }
 		}
 		
