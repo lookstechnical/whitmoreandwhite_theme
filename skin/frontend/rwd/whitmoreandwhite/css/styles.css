@@ -10423,11 +10423,13 @@ select:after {
   background: #00747b;
   color: white;
   font-family: "proxima-nova-alt";
+  font-size: 1.3rem;
   padding: 10px;
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  background: url(../images/mobile-filter-nav-arrow.png) no-repeat right 10px center; }
   @media only screen and (min-width: 40rem) {
     .block-layered-nav .mobile-toggle {
       display: none; } }
