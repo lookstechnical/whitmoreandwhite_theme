@@ -9911,7 +9911,8 @@ select::-ms-expand {
   font-family: "tablet-gothic-condensed";
   font-size: 1.125rem;
   font-weight: 600;
-  line-height: 0.4; }
+  line-height: 0.4;
+  text-transform: uppercase; }
 .customer-account-login .col-main, .customer-account-forgotpassword .col-main {
   width: 100%;
   padding: 0px; }
