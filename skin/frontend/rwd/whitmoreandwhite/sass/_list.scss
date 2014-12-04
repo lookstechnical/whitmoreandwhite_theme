@@ -501,14 +501,19 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 		}
 	}
 	.item:nth-child(4n+4){
+		border:1px dotted #ccc;
 		@include respond-to(desktop){
 			border-right:none;
 		}
 	}
 	
 	.item:nth-child(2n+2){
+		
 		@include respond-to(tablet){
 		    border-right:none;
+		}
+		@include respond-to(desktop){
+		    border:1px dotted #ccc;
 		}
 	}
 }
@@ -523,14 +528,19 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 		}
 	}
 	.item:nth-child(3n+3){
+		border:1px dotted #ccc;
 		@include respond-to(desktop){
 			border-right:none;
 		}
 	}
 	
 	.item:nth-child(2n+2){
+		border:1px dotted #ccc;
 		@include respond-to(tablet){
-		border-right:none;
+		   border-right:none;
+		}
+		@include respond-to(desktop){
+		    border:1px dotted #ccc;
 		}
 	}
 }
@@ -545,6 +555,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 		}
 	}
 	.item:nth-child(2n+2){
+		border:1px dotted #ccc;
 		border-right:none;
 	}
 	
