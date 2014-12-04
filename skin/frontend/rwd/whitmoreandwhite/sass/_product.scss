@@ -623,7 +623,7 @@
 	.box-up-sell{
 			.products-grid{
 				margin-bottom: 0px;
-				min-height: 362px;
+				max-height: 362px;
 				 height:auto;
 				@include respond-to(tablet){
 				  height:auto;
@@ -633,17 +633,14 @@
 				    height:auto;
 				    text-align: center;
 				    float:left;
-					min-height:362px;
+					height:362px;
 					@include respond-to(tablet){
-					   min-height:297px;
-					    height:auto;
+					   height:297px;
 					  
 					}
 					
 					@include respond-to(desktop){
-					  min-height:361px;
-					   height:auto;
-					  
+					  height:361px;					  
 					}
 		
 				}
