@@ -164,7 +164,6 @@
 	}
 	
 	.mobile-toggle{
-		background: $green;
 		color:white;
 		font-family: $ProximaNova;
 		font-size: 1.3rem;
@@ -173,7 +172,7 @@
 		width:100%;
 		margin-bottom: 10px;
 		cursor: pointer;
-		background: url(../images/mobile-filter-nav-arrow.png) no-repeat right 10px center ;
+		background: $green url(../images/mobile-filter-nav-arrow.png) no-repeat right 10px center ;
 		@include respond-to(tablet){
 		  display: none;;
 		}
