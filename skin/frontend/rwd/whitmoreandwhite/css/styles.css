@@ -10420,7 +10420,6 @@ select:after {
   .block-layered-nav .block-title strong {
     font-weight: 500; }
 .block-layered-nav .mobile-toggle {
-  background: #00747b;
   color: white;
   font-family: "proxima-nova-alt";
   font-size: 1.3rem;
@@ -10429,7 +10428,7 @@ select:after {
   width: 100%;
   margin-bottom: 10px;
   cursor: pointer;
-  background: url(../images/mobile-filter-nav-arrow.png) no-repeat right 10px center; }
+  background: #00747b url(../images/mobile-filter-nav-arrow.png) no-repeat right 10px center; }
   @media only screen and (min-width: 40rem) {
     .block-layered-nav .mobile-toggle {
       display: none; } }
