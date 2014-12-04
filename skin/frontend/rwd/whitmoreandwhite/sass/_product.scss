@@ -70,9 +70,16 @@
 				    	font-family: $ProximaNova;
 				    	font-size: 0.75rem;
 				    	text-transform: uppercase;
-				    	
-				    	
-
+					}
+					
+					.bundle-option-select{
+						background: none;
+						width:80%;
+						clear:both;
+					}
+					
+					.bundle-option-select:after{
+						display: none;
 					}
 				}
 				
@@ -165,11 +172,7 @@
 					}
 				}
 				
-				.bundle-option-select{
-					background: none;
-					width:80%;
-					clear:both;
-				}
+				
 				
 				label.required{
 					display: inline-block;

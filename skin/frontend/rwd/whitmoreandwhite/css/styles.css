@@ -8517,6 +8517,12 @@ select:after {
         font-family: "proxima-nova-alt";
         font-size: 0.75rem;
         text-transform: uppercase; }
+      .catalog-product-view .product-view .product-essential .product-shop .product-options .bundle-option-select {
+        background: none;
+        width: 80%;
+        clear: both; }
+      .catalog-product-view .product-view .product-essential .product-shop .product-options .bundle-option-select:after {
+        display: none; }
       .catalog-product-view .product-view .product-essential .product-shop .add-to-cart-buttons .button {
         background: #00747b;
         text-transform: uppercase;
@@ -8575,10 +8581,6 @@ select:after {
           font-size: 1rem; }
       .catalog-product-view .product-view .product-essential .product-shop .price-as-configured label {
         display: block; }
-      .catalog-product-view .product-view .product-essential .product-shop .bundle-option-select {
-        background: none;
-        width: 80%;
-        clear: both; }
       .catalog-product-view .product-view .product-essential .product-shop label.required {
         display: inline-block; }
       .catalog-product-view .product-view .product-essential .product-shop .price-to {
