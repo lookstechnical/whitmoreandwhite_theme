@@ -8111,6 +8111,15 @@ select:after {
           border-bottom-display: inline;
           border-bottom-text-transform: none;
           border-bottom-background: none; }
+    #sidr-main ol li .sidr-class-level1 {
+      border-bottom: none;
+      font-family: "proxima-nova-alt";
+      font-size: 0.813rem;
+      font-weight: 400;
+      line-height: 2.769;
+      display: inline;
+      text-transform: none;
+      background: none; }
 
 .banner {
   margin-bottom: 20px; }
