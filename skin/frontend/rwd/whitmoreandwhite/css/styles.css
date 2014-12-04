@@ -10458,6 +10458,8 @@ select:after {
   color: #00747b; }
 .block-layered-nav #narrow-by-list .active .level1 a {
   color: black; }
+.block-layered-nav #narrow-by-list .active .level1 a:hover {
+  color: #00747b; }
 .block-layered-nav #narrow-by-list .active ul {
   display: block; }
 
