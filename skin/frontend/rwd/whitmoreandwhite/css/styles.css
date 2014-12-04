@@ -10569,7 +10569,8 @@ select::-ms-expand {
       .toolbar .sorter .view-mode strong {
         background-color: #00747b; }
       .toolbar .sorter .view-mode a {
-        background-color: black; }
+        background-color: black;
+        margin-right: 0px; }
       .toolbar .sorter .view-mode a:hover {
         background-color: #00747b; }
       .toolbar .sorter .view-mode .list-grid {
