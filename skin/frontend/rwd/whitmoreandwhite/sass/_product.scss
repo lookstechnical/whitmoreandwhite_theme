@@ -620,6 +620,7 @@
 				  height:auto;
 				}
 				.item{
+				    padding:0px 15px;
 					height:230px;
 					@include respond-to(tablet){
 					   height:341px;

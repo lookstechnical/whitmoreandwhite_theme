@@ -8916,6 +8916,7 @@ select:after {
     .catalog-product-view .box-up-sell .products-grid {
       height: auto; } }
   .catalog-product-view .box-up-sell .products-grid .item {
+    padding: 0px 15px;
     height: 230px; }
     @media only screen and (min-width: 40rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
