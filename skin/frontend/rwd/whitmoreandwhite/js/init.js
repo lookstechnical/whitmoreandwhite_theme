@@ -193,8 +193,8 @@ jQuery(document).ready(function($) {
 			    {
 			      breakpoint: 640,
 			      settings: {
-			        slidesToShow: 2,
-			        slidesToScroll: 2
+			        slidesToShow: 1,
+			        slidesToScroll: 1
 			      }
 			    }
 		   ]
