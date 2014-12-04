@@ -10062,7 +10062,7 @@ select:after {
     .customer-account .col-main, .customer-account-index .col-main {
       width: 80%;
       max-width: 875px;
-      float: left;
+      float: right;
       position: relative; } }
   .customer-account .col-main .page-title h1, .customer-account-index .col-main .page-title h1 {
     text-transform: uppercase;
