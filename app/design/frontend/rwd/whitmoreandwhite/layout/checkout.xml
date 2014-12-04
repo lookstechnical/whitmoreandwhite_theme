@@ -135,6 +135,7 @@ Default layout, loads most of the pages
             <label>Additional Product Info</label>
         </block>
         <remove name="social_blocks"/>
+        <remove name="footer.newsletter"/>
     </checkout_cart_index>
 
     <checkout_cart_configure translate="label">
