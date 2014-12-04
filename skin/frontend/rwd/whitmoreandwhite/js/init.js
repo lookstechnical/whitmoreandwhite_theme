@@ -101,8 +101,8 @@ jQuery(document).ready(function($) {
 	$('.featured-slider ul').slick({
 		   slide: 'li',
 		   speed: 300,
-		   slidesToShow: 4,
-		   slidesToScroll: 4,
+		   slidesToShow: 1,
+		   slidesToScroll: 1,
   		   responsive:[
 			   {
 			      breakpoint: 1024,
@@ -123,7 +123,8 @@ jQuery(document).ready(function($) {
 			      breakpoint: 640,
 			      settings: {
 			        slidesToShow: 1,
-			        slidesToScroll: 1
+			        slidesToScroll: 1,
+			        infinite: true,
 			      }
 			    }
 		   ]
