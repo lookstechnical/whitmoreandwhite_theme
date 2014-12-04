@@ -8099,12 +8099,7 @@ select:after {
       text-transform: uppercase;
       background: url(../images/mobile-menu-arrow.png) no-repeat right center; }
     #sidr-main ol li ul {
-      display: none;
-      width: 239px;
-      position: relative;
-      text-align: left;
-      padding: 0px;
-      margin-left: 0px; }
+      display: none; }
       #sidr-main ol li ul li {
         display: block;
         float: none;

@@ -95,11 +95,7 @@
 			
 			ul{
 				display: none;
-				width: 239px;
-				position: relative;
-				text-align: left;
-				padding: 0px;
-				margin-left: 0px;
+				
 				li{
 					display: block;
 					float:none;
@@ -115,6 +111,17 @@
 					}
 				}
 				
+			}
+			
+			.sidr-class-level1{
+				border-bottom: none;
+				font-family: $ProximaNova;
+				font-size: 0.813rem;
+				font-weight: 400;
+				line-height: 2.769; 
+				display: inline;
+				text-transform: none;
+				background: none;
 			}
 		}
 	}
