@@ -294,7 +294,7 @@
 		}
 		.view-mode{
 			display: none;
-			@include respond-to(tablet){
+			@include respond-to(desktop){
 			  display: block;
 			}
 			@include col(183px,0px);
@@ -481,6 +481,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 .products-grid--max-4-col {
 	.item{
 		@include respond-to(tablet){
+		  @include col(50%,0px 0px);
+		}
+		@include respond-to(desktop){
 		  @include col(25%,0px 0px);
 		}
 	}
@@ -492,6 +495,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 .products-grid--max-3-col {
 	.item{
 		@include respond-to(tablet){
+		  @include col(50%,0px 0px);
+		}
+		@include respond-to(desktop){
 		  @include col(33.3%,0px 0px);
 		}
 	}
@@ -503,6 +509,9 @@ div.block-layered-nav.amshopby-collapse-enabled dt{
 .products-grid--max-2-col {
 	.item{
 		@include respond-to(tablet){
+		  @include col(50%,0px 0px);
+		}
+		@include respond-to(desktop){
 		  @include col(50%,0px 0px);
 		}
 	}
