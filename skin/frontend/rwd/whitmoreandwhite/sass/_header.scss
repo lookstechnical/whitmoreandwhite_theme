@@ -151,8 +151,9 @@ header{
 		
 		
 		#header-account{
-			width:285px;
 			float:left;
+			min-width: 270px;
+			max-width: 285px;
 			
 			
 		}

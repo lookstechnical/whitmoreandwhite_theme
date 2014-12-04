@@ -7246,8 +7246,9 @@ header {
       clear: both;
       display: block; }
     header .header-wrapper #header-account {
-      width: 285px;
-      float: left; }
+      float: left;
+      min-width: 270px;
+      max-width: 285px; }
     header .header-wrapper nav#nav {
       position: relative;
       float: left;
