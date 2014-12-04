@@ -16,6 +16,29 @@
 	}
 	
 	
+	.form-list{
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		li{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+	
+	.buttons-set{
+		.button{
+			background: $green;
+		    width: 150px;
+			height: 42px;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.125rem; 
+			font-weight: 600;
+			line-height: 0.4; 
+		}
+
+	}
 	.col-main{
 		width: 100%;
 	    padding: 0px;	
