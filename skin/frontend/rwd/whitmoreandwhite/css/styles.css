@@ -10354,6 +10354,23 @@ select:after {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.714; }
+  .products-grid .item .price-to {
+    margin-bottom: 0px; }
+  .products-grid .item .price-from {
+    margin-bottom: 0px; }
+  .products-grid .item .old-price {
+    width: 50%;
+    float: left; }
+    .products-grid .item .old-price .label {
+      display: none; }
+    .products-grid .item .old-price .price {
+      text-decoration: line-through;
+      color: #00747b; }
+  .products-grid .item .special-price {
+    width: 50%;
+    float: left; }
+    .products-grid .item .special-price .label {
+      display: none; }
   .products-grid .item .btn-cart {
     display: none; }
   .products-grid .item .add-to-links {

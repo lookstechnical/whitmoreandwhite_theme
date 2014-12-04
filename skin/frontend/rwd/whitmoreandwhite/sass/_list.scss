@@ -94,6 +94,34 @@
 			line-height: 1.714; 
 		}
 		
+		.price-to{
+			margin-bottom: 0px;
+		}
+		.price-from{
+			margin-bottom: 0px;
+		}
+		
+		.old-price{
+			width:50%;
+			float:left;
+			.label{
+				display: none;
+			}
+			
+			.price{
+				text-decoration: line-through;
+				color:$green;
+			}
+		}
+		
+		.special-price{
+			width:50%;
+			float:left;
+			.label{
+				display: none;
+			}
+		}
+		
 		.btn-cart{
 			display: none;
 		}
