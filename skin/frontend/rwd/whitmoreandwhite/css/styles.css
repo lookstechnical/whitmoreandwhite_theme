@@ -8086,7 +8086,8 @@ select:after {
     width: 100%;
     text-align: left;
     padding: 4px  10px;
-    height: auto; }
+    height: auto;
+    border-bottom: 1px solid white; }
     #sidr-main ol li a {
       padding-right: 26px;
       display: block;
