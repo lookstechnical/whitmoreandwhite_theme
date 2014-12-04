@@ -63,7 +63,10 @@
 					label.required{
 						display: inline-block;
 					}
-	
+					
+					.last{
+						width:80%;
+					}
 					
 					textarea{
 						width:100%;
@@ -160,7 +163,7 @@
 					
 					
 					.price-as-configured{
-						label{
+						.price-label{
 							display: block;
 						}
 					}

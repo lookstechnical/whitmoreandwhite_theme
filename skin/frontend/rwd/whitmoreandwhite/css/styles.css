@@ -8511,6 +8511,8 @@ select:after {
             float: right; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options label.required {
         display: inline-block; }
+      .catalog-product-view .product-view .product-essential .product-shop .product-options .last {
+        width: 80%; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options textarea {
         width: 100%; }
       .catalog-product-view .product-view .product-essential .product-shop .product-options select {
@@ -8574,7 +8576,7 @@ select:after {
           font-size: 1.5rem;
           font-weight: 400;
           line-height: 1.25; }
-        .catalog-product-view .product-view .product-essential .product-shop .price-info .price-as-configured label {
+        .catalog-product-view .product-view .product-essential .product-shop .price-info .price-as-configured .price-label {
           display: block; }
         .catalog-product-view .product-view .product-essential .product-shop .price-info .price-from {
           margin-bottom: 0px; }
