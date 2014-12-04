@@ -8666,6 +8666,8 @@ select:after {
           display: block; }
           .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs .current span {
             background: url(../images/up-arrow.png) no-repeat center right 10px; }
+          .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs .current .yotpo span {
+            background: none; }
     .catalog-product-view .product-view .product-essential .product-img-box {
       width: 100%;
       width: 100%;
