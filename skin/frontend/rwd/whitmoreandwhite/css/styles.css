@@ -10060,7 +10060,7 @@ select:after {
   padding: 0px; }
   @media only screen and (min-width: 40rem) {
     .customer-account .col-main, .customer-account-index .col-main {
-      width: 80%;
+      width: 75%;
       max-width: 875px;
       float: right;
       position: relative; } }
@@ -10120,7 +10120,7 @@ select:after {
   @media only screen and (min-width: 40rem) {
     .customer-account .col-left, .customer-account-index .col-left {
       padding: 0px 15px 0px 0px;
-      width: 20%;
+      width: 25%;
       float: left;
       position: relative; } }
   @media only screen and (min-width: 53.125rem) {
@@ -10154,7 +10154,7 @@ select:after {
     margin-bottom: 25px; }
   .customer-account .col-left .block-account ul, .customer-account-index .col-left .block-account ul {
     padding: 0px 0px 0px 10px;
-    margin: 0px; }
+    margin: 0px 0px 0px 8px; }
     .customer-account .col-left .block-account ul li, .customer-account-index .col-left .block-account ul li {
       list-style: none; }
       .customer-account .col-left .block-account ul li a, .customer-account-index .col-left .block-account ul li a {
