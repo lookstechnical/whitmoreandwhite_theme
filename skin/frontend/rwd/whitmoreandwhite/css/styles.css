@@ -10361,7 +10361,7 @@ select:after {
   .products-grid .item .old-price {
     width: 50%;
     float: left; }
-    .products-grid .item .old-price .label {
+    .products-grid .item .old-price .price-label {
       display: none; }
     .products-grid .item .old-price .price {
       text-decoration: line-through;
@@ -10369,7 +10369,7 @@ select:after {
   .products-grid .item .special-price {
     width: 50%;
     float: left; }
-    .products-grid .item .special-price .label {
+    .products-grid .item .special-price .price-label {
       display: none; }
   .products-grid .item .btn-cart {
     display: none; }
