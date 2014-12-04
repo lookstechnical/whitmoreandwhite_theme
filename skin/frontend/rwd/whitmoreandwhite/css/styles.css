@@ -8920,10 +8920,10 @@ select:after {
     height: 230px; }
     @media only screen and (min-width: 40rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        height: 341px; } }
+        height: 361px; } }
     @media only screen and (min-width: 53.125rem) {
       .catalog-product-view .box-up-sell .products-grid .item {
-        height: 341px; } }
+        height: 361px; } }
 
 .checkout-cart-index .col-main {
   padding: 0px;
