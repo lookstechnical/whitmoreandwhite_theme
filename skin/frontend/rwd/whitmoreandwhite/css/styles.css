@@ -7451,40 +7451,42 @@ header {
       font-size: 1rem;
       font-family: "proxima-nova-alt";
       text-transform: uppercase; }
-  #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-cart-link {
-    color: white;
-    background: black;
-    display: block;
-    text-align: center;
-    font-family: "tablet-gothic-condensed";
-    font-size: 1.06rem;
-    font-weight: 300;
-    letter-spacing: 0.16rem;
-    text-transform: uppercase;
-    width: 240px;
-    float: left;
-    margin-bottom: 15px;
-    line-height: 2.667em; }
-  #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-types {
-    padding: 0px;
-    margin: 0px; }
-    #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-types li {
+  #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions {
+    margin-bottom: 10px; }
+    #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-cart-link {
+      color: white;
+      background: black;
+      display: block;
+      text-align: center;
+      font-family: "tablet-gothic-condensed";
+      font-size: 1.06rem;
+      font-weight: 300;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+      width: 240px;
+      float: left;
+      margin-bottom: 15px;
+      line-height: 2.667em; }
+    #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-types {
       padding: 0px;
       margin: 0px; }
-  #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-button {
-    color: white;
-    background: #00747b;
-    display: block;
-    text-align: center;
-    font-family: "tablet-gothic-condensed";
-    font-size: 1.06rem;
-    font-weight: 300;
-    letter-spacing: 0.16rem;
-    text-transform: uppercase;
-    width: 240px;
-    float: left;
-    margin-bottom: 15px;
-    line-height: 2.667em; }
+      #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-types li {
+        padding: 0px;
+        margin: 0px; }
+    #sidr-right .sidr-class-minicart-wrapper .sidr-class-minicart-actions .sidr-class-checkout-button {
+      color: white;
+      background: #00747b;
+      display: block;
+      text-align: center;
+      font-family: "tablet-gothic-condensed";
+      font-size: 1.06rem;
+      font-weight: 300;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+      width: 240px;
+      float: left;
+      margin-bottom: 15px;
+      line-height: 2.667em; }
   #sidr-right .sidr-class-minicart-wrapper .sidr-class-block-subtitle {
     text-align: center; }
   #sidr-right .sidr-class-minicart-wrapper ul {
