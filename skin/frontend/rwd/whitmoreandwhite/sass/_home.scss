@@ -1,3 +1,10 @@
+a{
+	img:hover{
+		opacity: 0.8;
+	}
+}
+
+
 .banner{
 	margin-bottom:20px;
 	@include respond-to(tablet){
@@ -16,6 +23,10 @@
 		@include respond-to(desktop){
 		  height:536px;
 		}
+	}
+	
+	article:hover{
+		opacity: 0.8;
 	}
 	
 }
@@ -40,6 +51,10 @@
 		}
 		
 	}	
+	
+	h1{
+		line-height:1.25;
+	}
 	
 	.intro{
 		@include col(100%,0px 20px);
@@ -68,6 +83,12 @@
 			float:left;
 			margin-bottom: 15px;
 			@include ribbon(black, 2.667em, white, left-right);
+			
+		}
+		
+		.black-fancy-btn:hover{
+			background: lighten(#222,10%);
+			@include ribbon(lighten(#222,10%), 2.667em, white, left-right);
 		}
 		
 		.green-fancy-btn{
@@ -83,6 +104,10 @@
 			width:260px;
 			float:left;
 			@include ribbon($green, 2.667em, white, left-right);
+		}
+		.green-fancy-btn:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
 		}
 	}
 }
@@ -202,7 +227,10 @@
 	}
 	
 	
-	
+	img:hover{
+		opacity: 0.8;
+		
+	}
 		
 	article{
 		float:left;

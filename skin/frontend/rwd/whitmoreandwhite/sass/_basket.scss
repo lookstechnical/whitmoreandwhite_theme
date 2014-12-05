@@ -323,6 +323,14 @@
 					}
 				}
 				
+				
+				.button2:hover{
+					background: lighten(#222,10%);
+					@include ribbon(lighten(#222,10%), 2.667em, white, left-right);
+				}
+
+				
+				
 			}
 		}
 		
@@ -388,6 +396,12 @@
 					padding:8px 10px;
 					height: 37px
 				}
+				
+				.button:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+		}
+
 				
 			}
 		}

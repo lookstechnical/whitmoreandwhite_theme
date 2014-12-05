@@ -8117,6 +8117,9 @@ select::-ms-expand {
       text-transform: none;
       background: none; }
 
+a img:hover {
+  opacity: 0.8; }
+
 .banner {
   margin-bottom: 20px; }
   @media only screen and (min-width: 40rem) {
@@ -8133,6 +8136,8 @@ select::-ms-expand {
     @media only screen and (min-width: 53.125rem) {
       .banner article {
         height: 536px; } }
+  .banner article:hover {
+    opacity: 0.8; }
 
 .welcome:after {
   clear: both;
@@ -8168,6 +8173,8 @@ select::-ms-expand {
         position: relative;
         float: left;
         margin-bottom: 0px; } }
+  .welcome h1 {
+    line-height: 1.25; }
   .welcome .intro {
     width: 100%;
     padding: 0px 20px;
@@ -8228,6 +8235,40 @@ select::-ms-expand {
         right: -1px;
         top: 0px;
         background: black; }
+    .welcome .intro .black-fancy-btn:hover {
+      background: #3c3c3c;
+      padding-left-right: 2.667em;
+      text-align: center;
+      line-height: 2.667em;
+      padding-left: 10px;
+      position: relative;
+      padding-right: 10px; }
+      .welcome .intro .black-fancy-btn:hover:after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-left-color: white;
+        position: absolute;
+        left: -1px;
+        top: 0px;
+        background: #3c3c3c; }
+      .welcome .intro .black-fancy-btn:hover:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-right-color: white;
+        position: absolute;
+        right: -1px;
+        top: 0px;
+        background: #3c3c3c; }
     .welcome .intro .green-fancy-btn {
       color: white;
       background: #00747b;
@@ -8272,6 +8313,40 @@ select::-ms-expand {
         right: -1px;
         top: 0px;
         background: #00747b; }
+    .welcome .intro .green-fancy-btn:hover {
+      background: #00a4ae;
+      padding-left-right: 2.667em;
+      text-align: center;
+      line-height: 2.667em;
+      padding-left: 10px;
+      position: relative;
+      padding-right: 10px; }
+      .welcome .intro .green-fancy-btn:hover:after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-left-color: white;
+        position: absolute;
+        left: -1px;
+        top: 0px;
+        background: #00a4ae; }
+      .welcome .intro .green-fancy-btn:hover:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-right-color: white;
+        position: absolute;
+        right: -1px;
+        top: 0px;
+        background: #00a4ae; }
 
 .pick-of-the-week {
   width: 100%;
@@ -8385,6 +8460,8 @@ select::-ms-expand {
     vertical-align: top;
     font-size: 0;
     float: left; }
+  .promo-categories img:hover {
+    opacity: 0.8; }
   .promo-categories article {
     float: left;
     line-height: 0;
@@ -9199,6 +9276,40 @@ select::-ms-expand {
     @media only screen and (min-width: 40rem) {
       .checkout-cart-index .cart-forms .discount .button-wrapper .button2 {
         top: 0px; } }
+  .checkout-cart-index .cart-forms .discount .button-wrapper .button2:hover {
+    background: #3c3c3c;
+    padding-left-right: 2.667em;
+    text-align: center;
+    line-height: 2.667em;
+    padding-left: 10px;
+    position: relative;
+    padding-right: 10px; }
+    .checkout-cart-index .cart-forms .discount .button-wrapper .button2:hover:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-left-color: white;
+      position: absolute;
+      left: -1px;
+      top: 0px;
+      background: #3c3c3c; }
+    .checkout-cart-index .cart-forms .discount .button-wrapper .button2:hover:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-right-color: white;
+      position: absolute;
+      right: -1px;
+      top: 0px;
+      background: #3c3c3c; }
   .checkout-cart-index .cart-forms .aw_giftcard {
     position: relative;
     width: 100%;
@@ -9247,6 +9358,40 @@ select::-ms-expand {
     font-size: 0.75rem;
     padding: 8px 10px;
     height: 37px; }
+  .checkout-cart-index .cart-forms #aw_giftcard-form .buttons-set .button:hover {
+    background: #00a4ae;
+    padding-left-right: 2.667em;
+    text-align: center;
+    line-height: 2.667em;
+    padding-left: 10px;
+    position: relative;
+    padding-right: 10px; }
+    .checkout-cart-index .cart-forms #aw_giftcard-form .buttons-set .button:hover:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-left-color: white;
+      position: absolute;
+      left: -1px;
+      top: 0px;
+      background: #00a4ae; }
+    .checkout-cart-index .cart-forms #aw_giftcard-form .buttons-set .button:hover:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-right-color: white;
+      position: absolute;
+      right: -1px;
+      top: 0px;
+      background: #00a4ae; }
 .checkout-cart-index .cart-totals-wrapper {
   text-align: left;
   width: 100%;
@@ -9692,6 +9837,40 @@ select::-ms-expand {
     width: 125px;
     border: none;
     margin-right: 10px; }
+  .checkout-onepage-index #checkoutSteps .button:hover {
+    background: #00a4ae;
+    padding-left-right: 2.667em;
+    text-align: center;
+    line-height: 2.667em;
+    padding-left: 10px;
+    position: relative;
+    padding-right: 10px; }
+    .checkout-onepage-index #checkoutSteps .button:hover:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-left-color: white;
+      position: absolute;
+      left: -1px;
+      top: 0px;
+      background: #00a4ae; }
+    .checkout-onepage-index #checkoutSteps .button:hover:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-right-color: white;
+      position: absolute;
+      right: -1px;
+      top: 0px;
+      background: #00a4ae; }
 .checkout-onepage-index #checkout-step-shipping_method dd {
   margin: 0px;
   padding: 0px; }
@@ -9780,6 +9959,40 @@ select::-ms-expand {
   line-height: 0.889;
   margin-left: 0px;
   margin-right: 0px; }
+.checkout-onepage-index #review-buttons-container .btn-checkout:hover {
+  background: #00a4ae;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .checkout-onepage-index #review-buttons-container .btn-checkout:hover:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00a4ae; }
+  .checkout-onepage-index #review-buttons-container .btn-checkout:hover:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: #00a4ae; }
 .checkout-onepage-index #review-buttons-container a {
   color: #00747b;
   display: inline-block;
@@ -9821,6 +10034,40 @@ select::-ms-expand {
   width: 225px;
   border: none;
   margin-right: 10px; }
+.checkout-onepage-success .button:hover, .checkout_onepage_failure .button:hover {
+  background: #00a4ae;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .checkout-onepage-success .button:hover:after, .checkout_onepage_failure .button:hover:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00a4ae; }
+  .checkout-onepage-success .button:hover:before, .checkout_onepage_failure .button:hover:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: #00a4ae; }
 .checkout-onepage-success .col-left, .checkout_onepage_failure .col-left {
   display: none; }
   @media only screen and (min-width: 40rem) {
@@ -9913,6 +10160,40 @@ select::-ms-expand {
   font-weight: 600;
   line-height: 0.4;
   text-transform: uppercase; }
+.customer-account-login .buttons-set .button:hover, .customer-account-forgotpassword .buttons-set .button:hover {
+  background: #00a4ae;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .customer-account-login .buttons-set .button:hover:after, .customer-account-forgotpassword .buttons-set .button:hover:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00a4ae; }
+  .customer-account-login .buttons-set .button:hover:before, .customer-account-forgotpassword .buttons-set .button:hover:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: #00a4ae; }
 .customer-account-login .col-main, .customer-account-forgotpassword .col-main {
   width: 100%;
   padding: 0px; }
@@ -10025,6 +10306,40 @@ select::-ms-expand {
       width: 125px;
       height: 47px;
       margin-right: 10px; }
+    .customer-account-login .col-main .account-login .button:hover, .customer-account-forgotpassword .col-main .account-login .button:hover {
+      background: #00a4ae;
+      padding-left-right: 2.667em;
+      text-align: center;
+      line-height: 2.667em;
+      padding-left: 10px;
+      position: relative;
+      padding-right: 10px; }
+      .customer-account-login .col-main .account-login .button:hover:after, .customer-account-forgotpassword .col-main .account-login .button:hover:after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-left-color: white;
+        position: absolute;
+        left: -1px;
+        top: 0px;
+        background: #00a4ae; }
+      .customer-account-login .col-main .account-login .button:hover:before, .customer-account-forgotpassword .col-main .account-login .button:hover:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 1.3335em 0.889em;
+        border-color: transparent;
+        border-right-color: white;
+        position: absolute;
+        right: -1px;
+        top: 0px;
+        background: #00a4ae; }
     .customer-account-login .col-main .account-login p.welcome, .customer-account-forgotpassword .col-main .account-login p.welcome {
       font-family: "kepler-std";
       font-size: 1.88rem;
@@ -10076,6 +10391,40 @@ select::-ms-expand {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1; }
+  .customer-account-create .col-main .button:hover {
+    background: #00a4ae;
+    padding-left-right: 2.667em;
+    text-align: center;
+    line-height: 2.667em;
+    padding-left: 10px;
+    position: relative;
+    padding-right: 10px; }
+    .customer-account-create .col-main .button:hover:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-left-color: white;
+      position: absolute;
+      left: -1px;
+      top: 0px;
+      background: #00a4ae; }
+    .customer-account-create .col-main .button:hover:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-right-color: white;
+      position: absolute;
+      right: -1px;
+      top: 0px;
+      background: #00a4ae; }
 
 .customer-account .breadcrumbs, .customer-account-index .breadcrumbs {
   margin-bottom: 20px; }
@@ -10092,6 +10441,40 @@ select::-ms-expand {
   width: 185px;
   border: none;
   margin-right: 10px; }
+.customer-account .buttons-set .button:hover, .customer-account-index .buttons-set .button:hover {
+  background: #00a4ae;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .customer-account .buttons-set .button:hover:after, .customer-account-index .buttons-set .button:hover:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00a4ae; }
+  .customer-account .buttons-set .button:hover:before, .customer-account-index .buttons-set .button:hover:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: #00a4ae; }
 @media only screen and (min-width: 40rem) {
   .customer-account .col-1, .customer-account .col-2, .customer-account-index .col-1, .customer-account-index .col-2 {
     width: 50%;
@@ -11111,6 +11494,40 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     right: -1px;
     top: 0px;
     background: #00747b; }
+.cms-contact-us #contactForm .button:hover {
+  background: #00a4ae;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px; }
+  .cms-contact-us #contactForm .button:hover:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: #00a4ae; }
+  .cms-contact-us #contactForm .button:hover:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: #00a4ae; }
 .cms-contact-us #contactForm textarea {
   width: 100%;
   box-sizing: border-box;

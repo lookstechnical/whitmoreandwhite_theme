@@ -42,6 +42,11 @@
 			line-height: 0.4; 
 			text-transform: uppercase;
 		}
+		
+		.button:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+		}
 
 	}
 	.col-main{
@@ -112,6 +117,8 @@
 					font-weight: 600;
 					line-height: 0.4; 
 				}
+				
+				
 				
 				.content{
 					font-family: $ProximaNova;
@@ -205,6 +212,11 @@
 				margin-right:10px;
 			}
 			
+			.button:hover{
+				background: lighten($green,10%);
+				@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+			}
+					
 			p.welcome{
 				font-family: $KeplerStd;
 				font-size: 1.88rem; 
@@ -286,6 +298,11 @@
 			font-size: 1.125rem;			font-weight: 600;
 			line-height: 1;
 		}
+		
+		.button:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+		}
 	}	
 }
 
@@ -312,6 +329,11 @@
 				margin-right:10px;
 	
 		    }
+		    
+		    .button:hover{
+				background: lighten($green,10%);
+				@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+			}
 	    }
 	
 	.col-1,.col-2{

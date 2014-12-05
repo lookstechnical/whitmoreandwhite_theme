@@ -415,6 +415,10 @@
 			margin-right:10px;
 		}
 		
+		.button:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+		}
 		
 	}
 	
@@ -553,6 +557,12 @@
 				margin-right: 0px;
 			}
 			
+			.btn-checkout:hover{
+				background: lighten($green,10%);
+				@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+			}
+
+			
 			a{
 				color:$green;
 				display: inline-block;
@@ -623,6 +633,12 @@
 		border: none;
 		margin-right:10px;
 	}
+	
+	.button:hover{
+		background: lighten($green,10%);
+		@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+	}
+
 	
 		
 	.col-left{
