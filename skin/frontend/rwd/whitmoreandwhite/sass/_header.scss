@@ -33,8 +33,8 @@ header{
 				color: white;
 				font-size: 28px;
 				font-weight: 200;
-				margin-right: 10px;
-				margin-left:10px;
+				margin-right: 5px;
+				margin-left:5px;
 			}
 			.search{
 				position: relative;
@@ -43,7 +43,7 @@ header{
 				font-size: 24px;
 				font-weight: 200;
 				display: inline-block;
-				padding:0px 16px 0px 16px;
+				padding:0px 10px 0px 10px;
 			}
 			
 			.search.active{
@@ -330,7 +330,7 @@ header{
 			height: 30px;
 			text-align: center;
 			line-height: 2rem;
-			margin-right:10px;
+			margin-right:5px;
 			display: inline-block;
 		}
 	}

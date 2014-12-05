@@ -349,7 +349,11 @@
 					color:  #000000;
 					font-size: 0.75rem; /* Approximation due to font substitution */
 					font-weight: 400;
-					line-height: 2
+					line-height: 2;
+					display: none;
+					@include respond-to(tablet){
+					  display: block;
+					}
 				}
 				
 				.more-views:after{
