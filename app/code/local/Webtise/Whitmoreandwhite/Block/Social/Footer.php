@@ -35,6 +35,22 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 			}
 	}
 	
+	
+	public function getPinterestPins()
+	{
+		$rss = simplexml_load_file('http://www.pinterest.com/whitmorewhite/feed.rsslimit=6') ;       
+        return $rss;
+       
+	}
+	
+	
+	public function parsePinterestdescription($string)
+	{
+	    $regexp = "/<img[^>]+>/i";
+	    preg_match_all($regexp,$string, $result); 
+		return $result[0][0];
+	}
+	
 	public function getTweets()
 	{
 		$cache = Mage::app()->getCache();

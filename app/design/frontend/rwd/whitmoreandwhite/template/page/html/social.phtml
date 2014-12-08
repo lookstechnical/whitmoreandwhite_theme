@@ -5,12 +5,12 @@
 				<icon class="fa fa-instagram fa-2x"></icon><br/>
 				<a href="" class="nomobile">#whitmoreandwhite</a>
 	    	</header>
-			<?php $images = $this->getInstagramImages();  ?>
+			<?php $images = $this->getPinterestPins();  ?>
 			<ul class="nomobile">
-			<?php foreach($images as $image):?>
+			<?php foreach($images->channel->item as $image):?>
 			
 				<li class="">
-					<img src="<?php echo $image['low_res']?>" />
+					<?php echo $this->parsePinterestdescription($image->description); ?>
 				</li>
 			
 			<?php endforeach; ?>
