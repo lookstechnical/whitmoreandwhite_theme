@@ -7368,7 +7368,7 @@ header {
       header .mobile-items {
         display: none; } }
     header .mobile-items .mobile-account {
-      padding-right: 20px;
+      padding-right: 10px;
       display: inline-block; }
     header .mobile-items .mobile-cart {
       color: white;
