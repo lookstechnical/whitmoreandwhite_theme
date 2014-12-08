@@ -43,13 +43,12 @@ if(empty($_cartQty)) {
 <div class="minicart-wrapper">
 
     <p class="block-subtitle">
-        <?php echo $this->__('Recently added item(s)') ?>
         <a class="close skip-link-close" href="#" title="<?php echo $this->__('Close'); ?>">&times;</a>
     </p>
  <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="minicart-actions">
                 <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                    <?php echo $this->__('View Cart'); ?>
+                    <?php echo $this->__('View My Bag'); ?>
                 </a>
                 <ul class="checkout-types minicart">
                     <?php echo $this->getChildHtml('extra_actions') ?>
@@ -103,7 +102,7 @@ if(empty($_cartQty)) {
         <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="minicart-actions">
                 <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                    <?php echo $this->__('View Cart'); ?>
+                    <?php echo $this->__('View My Bag'); ?>
                 </a>
                 <ul class="checkout-types minicart">
                     <?php echo $this->getChildHtml('extra_actions') ?>
