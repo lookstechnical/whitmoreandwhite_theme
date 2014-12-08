@@ -9844,39 +9844,7 @@ a img:hover {
     border: none;
     margin-right: 10px; }
   .checkout-onepage-index #checkoutSteps .button:hover {
-    background: #00a4ae;
-    padding-left-right: 2.667em;
-    text-align: center;
-    line-height: 2.667em;
-    padding-left: 10px;
-    position: relative;
-    padding-right: 10px; }
-    .checkout-onepage-index #checkoutSteps .button:hover:after {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      border-style: solid;
-      border-width: 1.3335em 0.889em;
-      border-color: transparent;
-      border-left-color: white;
-      position: absolute;
-      left: -1px;
-      top: 0px;
-      background: #00a4ae; }
-    .checkout-onepage-index #checkoutSteps .button:hover:before {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      border-style: solid;
-      border-width: 1.3335em 0.889em;
-      border-color: transparent;
-      border-right-color: white;
-      position: absolute;
-      right: -1px;
-      top: 0px;
-      background: #00a4ae; }
+    background: #00a4ae; }
 .checkout-onepage-index #checkout-step-shipping_method dd {
   margin: 0px;
   padding: 0px; }
@@ -9966,39 +9934,7 @@ a img:hover {
   margin-left: 0px;
   margin-right: 0px; }
 .checkout-onepage-index #review-buttons-container .btn-checkout:hover {
-  background: #00a4ae;
-  padding-left-right: 2.667em;
-  text-align: center;
-  line-height: 2.667em;
-  padding-left: 10px;
-  position: relative;
-  padding-right: 10px; }
-  .checkout-onepage-index #review-buttons-container .btn-checkout:hover:after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    background: #00a4ae; }
-  .checkout-onepage-index #review-buttons-container .btn-checkout:hover:before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-right-color: white;
-    position: absolute;
-    right: -1px;
-    top: 0px;
-    background: #00a4ae; }
+  background: #00a4ae; }
 .checkout-onepage-index #review-buttons-container a {
   color: #00747b;
   display: inline-block;
@@ -10041,39 +9977,7 @@ a img:hover {
   border: none;
   margin-right: 10px; }
 .checkout-onepage-success .button:hover, .checkout_onepage_failure .button:hover {
-  background: #00a4ae;
-  padding-left-right: 2.667em;
-  text-align: center;
-  line-height: 2.667em;
-  padding-left: 10px;
-  position: relative;
-  padding-right: 10px; }
-  .checkout-onepage-success .button:hover:after, .checkout_onepage_failure .button:hover:after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    background: #00a4ae; }
-  .checkout-onepage-success .button:hover:before, .checkout_onepage_failure .button:hover:before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-right-color: white;
-    position: absolute;
-    right: -1px;
-    top: 0px;
-    background: #00a4ae; }
+  background: #00a4ae; }
 .checkout-onepage-success .col-left, .checkout_onepage_failure .col-left {
   display: none; }
   @media only screen and (min-width: 40rem) {
@@ -10167,39 +10071,7 @@ a img:hover {
   line-height: 0.4;
   text-transform: uppercase; }
 .customer-account-login .buttons-set .button:hover, .customer-account-forgotpassword .buttons-set .button:hover {
-  background: #00a4ae;
-  padding-left-right: 2.667em;
-  text-align: center;
-  line-height: 2.667em;
-  padding-left: 10px;
-  position: relative;
-  padding-right: 10px; }
-  .customer-account-login .buttons-set .button:hover:after, .customer-account-forgotpassword .buttons-set .button:hover:after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    background: #00a4ae; }
-  .customer-account-login .buttons-set .button:hover:before, .customer-account-forgotpassword .buttons-set .button:hover:before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-right-color: white;
-    position: absolute;
-    right: -1px;
-    top: 0px;
-    background: #00a4ae; }
+  background: #00a4ae; }
 .customer-account-login .col-main, .customer-account-forgotpassword .col-main {
   width: 100%;
   padding: 0px; }
@@ -10313,39 +10185,7 @@ a img:hover {
       height: 47px;
       margin-right: 10px; }
     .customer-account-login .col-main .account-login .button:hover, .customer-account-forgotpassword .col-main .account-login .button:hover {
-      background: #00a4ae;
-      padding-left-right: 2.667em;
-      text-align: center;
-      line-height: 2.667em;
-      padding-left: 10px;
-      position: relative;
-      padding-right: 10px; }
-      .customer-account-login .col-main .account-login .button:hover:after, .customer-account-forgotpassword .col-main .account-login .button:hover:after {
-        content: '';
-        display: block;
-        height: 0;
-        width: 0;
-        border-style: solid;
-        border-width: 1.3335em 0.889em;
-        border-color: transparent;
-        border-left-color: white;
-        position: absolute;
-        left: -1px;
-        top: 0px;
-        background: #00a4ae; }
-      .customer-account-login .col-main .account-login .button:hover:before, .customer-account-forgotpassword .col-main .account-login .button:hover:before {
-        content: '';
-        display: block;
-        height: 0;
-        width: 0;
-        border-style: solid;
-        border-width: 1.3335em 0.889em;
-        border-color: transparent;
-        border-right-color: white;
-        position: absolute;
-        right: -1px;
-        top: 0px;
-        background: #00a4ae; }
+      background: #00a4ae; }
     .customer-account-login .col-main .account-login p.welcome, .customer-account-forgotpassword .col-main .account-login p.welcome {
       font-family: "kepler-std";
       font-size: 1.88rem;
@@ -10398,39 +10238,7 @@ a img:hover {
     font-weight: 600;
     line-height: 1; }
   .customer-account-create .col-main .button:hover {
-    background: #00a4ae;
-    padding-left-right: 2.667em;
-    text-align: center;
-    line-height: 2.667em;
-    padding-left: 10px;
-    position: relative;
-    padding-right: 10px; }
-    .customer-account-create .col-main .button:hover:after {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      border-style: solid;
-      border-width: 1.3335em 0.889em;
-      border-color: transparent;
-      border-left-color: white;
-      position: absolute;
-      left: -1px;
-      top: 0px;
-      background: #00a4ae; }
-    .customer-account-create .col-main .button:hover:before {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      border-style: solid;
-      border-width: 1.3335em 0.889em;
-      border-color: transparent;
-      border-right-color: white;
-      position: absolute;
-      right: -1px;
-      top: 0px;
-      background: #00a4ae; }
+    background: #00a4ae; }
 
 .customer-account .breadcrumbs, .customer-account-index .breadcrumbs {
   margin-bottom: 20px; }
@@ -10448,39 +10256,7 @@ a img:hover {
   border: none;
   margin-right: 10px; }
 .customer-account .buttons-set .button:hover, .customer-account-index .buttons-set .button:hover {
-  background: #00a4ae;
-  padding-left-right: 2.667em;
-  text-align: center;
-  line-height: 2.667em;
-  padding-left: 10px;
-  position: relative;
-  padding-right: 10px; }
-  .customer-account .buttons-set .button:hover:after, .customer-account-index .buttons-set .button:hover:after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    background: #00a4ae; }
-  .customer-account .buttons-set .button:hover:before, .customer-account-index .buttons-set .button:hover:before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    border-style: solid;
-    border-width: 1.3335em 0.889em;
-    border-color: transparent;
-    border-right-color: white;
-    position: absolute;
-    right: -1px;
-    top: 0px;
-    background: #00a4ae; }
+  background: #00a4ae; }
 @media only screen and (min-width: 40rem) {
   .customer-account .col-1, .customer-account .col-2, .customer-account-index .col-1, .customer-account-index .col-2 {
     width: 50%;

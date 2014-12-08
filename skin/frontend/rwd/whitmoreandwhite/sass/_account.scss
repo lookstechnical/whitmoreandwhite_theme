@@ -45,7 +45,6 @@
 		
 		.button:hover{
 			background: lighten($green,10%);
-			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
 		}
 
 	}
@@ -214,7 +213,6 @@
 			
 			.button:hover{
 				background: lighten($green,10%);
-				@include ribbon(lighten($green,10%), 2.667em, white, left-right);
 			}
 					
 			p.welcome{
@@ -301,7 +299,6 @@
 		
 		.button:hover{
 			background: lighten($green,10%);
-			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
 		}
 	}	
 }
@@ -332,7 +329,6 @@
 		    
 		    .button:hover{
 				background: lighten($green,10%);
-				@include ribbon(lighten($green,10%), 2.667em, white, left-right);
 			}
 	    }
 	
