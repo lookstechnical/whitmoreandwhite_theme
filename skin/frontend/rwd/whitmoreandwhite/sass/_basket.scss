@@ -326,7 +326,7 @@
 				
 				.button2:hover{
 					background: lighten(#222,10%);
-					@include ribbon(lighten(#222,10%), 2.667em, white, left-right);
+					@include ribbon(lighten(#222,10%),2.1em,white,right);
 				}
 
 				
