@@ -518,6 +518,10 @@
 		
 	}
 	
+	.btn-continue:hover{
+		background: lighten(#222,10%);
+	}
+	
 	.btn-wishlist{
 		@include respond-to(tablet){
 		  left:205px;

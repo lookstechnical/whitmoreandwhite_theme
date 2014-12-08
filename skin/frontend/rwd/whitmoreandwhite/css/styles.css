@@ -7241,6 +7241,8 @@ header {
           font-weight: 200;
           font-style: italic;
           line-height: 2.686; }
+        header .header-wrapper .links ul li a:hover {
+          color: #00747b; }
     header .header-wrapper .links:after {
       content: "";
       clear: both;
@@ -9454,6 +9456,8 @@ a img:hover {
   width: 197px;
   position: relative;
   border: none; }
+.checkout-cart-index .btn-continue:hover {
+  background: #3c3c3c; }
 @media only screen and (min-width: 40rem) {
   .checkout-cart-index .btn-wishlist {
     left: 205px; } }
