@@ -38,7 +38,7 @@ class Webtise_Whitmoreandwhite_Block_Social_Footer extends Mage_Core_Block_Templ
 	
 	public function getPinterestPins()
 	{
-		$rss = simplexml_load_file('http://www.pinterest.com/whitmorewhite/feed.rsslimit=6') ;       
+		$rss = simplexml_load_file("http://www.pinterest.com/whitmorewhite/feed.rss?limit=6") ;       
         return $rss;
        
 	}
