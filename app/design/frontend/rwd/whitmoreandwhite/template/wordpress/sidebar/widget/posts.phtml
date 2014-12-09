@@ -18,7 +18,19 @@
 			<ul id="<?php echo $this->getListId() ?>">
 			<?php foreach($posts as $post): ?>
 				<li class="item">
+					<?php if ($featuredImage = $post->getFeaturedImage()): ?>
+						<div class="featured-image left">
+							<a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"><img src="<?php echo $featuredImage->getThumbnailImage() ?>" alt="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"/></a>
+						</div>
+					<?php endif; ?>
 					<a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->htmlEscape($post->getPostTitle()) ?>"><?php echo $this->htmlEscape($post->getPostTitle()) ?></a>
+					<p class="author details">
+						<?php if ($this->hasTags($post)): ?>
+							<?php echo stripslashes($this->__('This entry was posted in %s and tagged %s on %s<span class=\"by-author\"> by %s</span>.', $this->getCategoryString($post), $this->getTagString($post), $post->getPostDate(), $post->getAuthor()->getDisplayName())) ?>
+						<?php else: ?>
+							<?php echo stripslashes($this->__('<span class=\"by-author\">%s</span> / %s.', $post->getAuthor()->getDisplayName(), $post->getPostDate())) ?>
+						<?php endif; ?>
+					</p>
 				</li>
 			<?php endforeach; ?>
 			</ul>

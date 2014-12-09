@@ -9,12 +9,13 @@
 <?php $post = $this->getPost() ?>
 <?php if ($post): ?>
 <p class="post-meta details">
-<?php if ($this->hasTags($post)): ?>
-	<?php echo stripslashes($this->__('This entry was posted in %s and tagged %s on %s<span class=\"by-author\"> by %s</span>.', $this->getCategoryString($post), $this->getTagString($post), $post->getPostDate(), $post->getAuthor()->getDisplayName())) ?>
-<?php else: ?>
-	<?php echo stripslashes($this->__('This entry was posted in %s on %s<span class=\"by-author\"> by %s</span>.', $this->getCategoryString($post), $post->getPostDate(), $post->getAuthor()->getDisplayName())) ?>
-<?php endif; ?>
-<?php if ($this->canDisplayPreviousNextLinks()): ?>
+	<?php
+		$catImage = strtolower(str_replace(" ", "-", $this->getCategoryString($post)));
+		$catImage = str_replace("'", "", $catImage);
+	?>
+	<img src="/wp/wp-content/uploads/2014/12/<?php echo strip_tags($catImage) ?>.jpg" /><br />
+	<?php echo stripslashes($this->__('%s', $this->getCategoryString($post))) ?>
+<?php /* if ($this->canDisplayPreviousNextLinks()): ?>
 <span class="post-skips">
 	<?php if (($previous = $post->getPreviousPost()) !== false): ?>
 		<a href="<?php echo $previous->getPermalink() ?>" class="post-skip post-skip-previous" title="<?php echo $this->escapeHtml($previous->getPostTitle()) ?>">&larr; <?php echo $this->__('Previous Post') ?></a>
@@ -23,6 +24,6 @@
 		<a href="<?php echo $next->getPermalink() ?>" class="post-skip post-skip-next right" title="<?php echo $this->escapeHtml($next->getPostTitle()) ?>"><?php echo $this->__('Next Post') ?> &rarr;</a>
 	<?php endif; ?>
 </span>
-<?php endif; ?>
+<?php endif; */ ?>
 </p>
 <?php endif; ?>
