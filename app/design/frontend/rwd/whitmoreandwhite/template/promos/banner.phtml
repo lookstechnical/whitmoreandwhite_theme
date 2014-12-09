@@ -1,0 +1,11 @@
+<?php
+foreach($this->getCollection() as $promo): ?>
+
+
+<a href="<?php echo $promo->getData('link');?>"><div style="background:url('/media/promos/<?php echo $promo->getData('image');?>');background-size: cover;
+			background-position-x: center;
+			background-position-y: center;"></div></a>
+			
+			
+			
+<?php endforeach; ?>			
