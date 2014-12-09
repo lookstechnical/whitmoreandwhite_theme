@@ -50,10 +50,10 @@
             <div class="main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
 	                <div class="banner">
-		                <a href="http://whitmoreandwhite.webtisestaging.com/about-us/"><article style="background:url('/media/demo/banner.png');background-size: cover;
+		              <!--  <a href="http://whitmoreandwhite.webtisestaging.com/about-us/"><div style="background:url('/media/demo/banner.png');background-size: cover;
 			background-position-x: center;
-			background-position-y: center;"></article></a>
-			 <?php //echo  $this->getLayout()->createBlock('cms/block')->setBlockId('home-banners')->toHtml();?>
+			background-position-y: center;"></div></a>-->
+			 <?php echo  $this->getLayout()->createBlock('cms/block')->setBlockId('home-banners')->toHtml();?>
 	                </div>
 	                <div class="welcome">
 		                <?php echo $this->getChildHtml('global_messages') ?>
@@ -63,18 +63,18 @@
 		                <?php echo $this->getChildHtml('featured_slider'); ?>
 	                </div>
 	                <div class="promo-categories">
-	                    <?php //echo  $this->getLayout()->createBlock('cms/block')->setBlockId('home-promos')->toHtml();?>
-		                <div class="promo-column-one">
-			              	<article><a href="http://whitmoreandwhite.webtisestaging.com/food"><img src="/media/demo/food.png" alt="food" ></a></article>
-			              	<article><a href="http://whitmoreandwhite.webtisestaging.com/gifts"><img src="/media/demo/gifts.png" alt="gifts" ></a></article> 
+	                    <?php echo  $this->getLayout()->createBlock('cms/block')->setBlockId('home-promos')->toHtml();?>
+		                <!--<div class="promo-column-one">
+			              	<div><a href="http://whitmoreandwhite.webtisestaging.com/food"><img src="/media/demo/food.png" alt="food" ></a></div>
+			              	<div><a href="http://whitmoreandwhite.webtisestaging.com/gifts"><img src="/media/demo/gifts.png" alt="gifts" ></a></div> 
 		                </div>
 		                <div class="promo-column-two">
-			                <article><a href="http://whitmoreandwhite.webtisestaging.com/hampers"><img src="/media/demo/hampers.png" alt="hampers" width="577" height="738"></a></article>
+			                <div><a href="http://whitmoreandwhite.webtisestaging.com/hampers"><img src="/media/demo/hampers.png" alt="hampers" width="577" height="738"></a></article>
 		                </div>
 		                <div class="promo-column-three">
-			                <article><a href="http://whitmoreandwhite.webtisestaging.com/drink/wine"><img src="/media/demo/wine.png" alt="food" ></a></article>
-			              	<article><a href="http://whitmoreandwhite.webtisestaging.com/drink/spirits-liquors"><img src="/media/demo/spirits.png" alt="gifts" ></a></article> 
-		                </div>
+			                <div><a href="http://whitmoreandwhite.webtisestaging.com/drink/wine"><img src="/media/demo/wine.png" alt="food" ></a></div>
+			              	<div><a href="http://whitmoreandwhite.webtisestaging.com/drink/spirits-liquors"><img src="/media/demo/spirits.png" alt="gifts" ></a></div> 
+		                </div>-->
 	                </div>
 	                <div class="blog">
 		                

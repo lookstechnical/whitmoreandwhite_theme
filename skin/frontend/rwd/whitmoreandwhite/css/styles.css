@@ -8129,18 +8129,18 @@ a img:hover {
   @media only screen and (min-width: 40rem) {
     .banner {
       margin-bottom: 60px; } }
-  .banner article {
+  .banner div {
     height: 300px;
     background-size: cover;
     background-position-x: center;
     background-position-y: center; }
     @media only screen and (min-width: 40rem) {
-      .banner article {
+      .banner div {
         height: 449px; } }
     @media only screen and (min-width: 53.125rem) {
-      .banner article {
+      .banner div {
         height: 536px; } }
-  .banner article:hover {
+  .banner div:hover {
     opacity: 0.8; }
 
 .welcome:after {
@@ -8466,7 +8466,7 @@ a img:hover {
     float: left; }
   .promo-categories img:hover {
     opacity: 0.8; }
-  .promo-categories article {
+  .promo-categories div {
     float: left;
     line-height: 0;
     margin-bottom: 10px;
@@ -8510,17 +8510,17 @@ a img:hover {
     padding: 0px;
     position: relative;
     float: left; }
-    .promo-categories .promo-column-three article {
+    .promo-categories .promo-column-three div {
       width: 100%; }
       @media only screen and (min-width: 40rem) {
-        .promo-categories .promo-column-three article {
+        .promo-categories .promo-column-three div {
           width: 50%;
           padding: 0px;
           position: relative;
           float: left;
           padding: 0px 0px; } }
       @media only screen and (min-width: 53.125rem) {
-        .promo-categories .promo-column-three article {
+        .promo-categories .promo-column-three div {
           width: 100%;
           padding: 0px;
           position: relative;
