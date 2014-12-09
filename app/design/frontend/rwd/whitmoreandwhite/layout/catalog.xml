@@ -227,7 +227,10 @@ Product view
                     <action method="addToParentGroup"><group>detailed_info</group></action>
                     <action method="setTitle" translate="value"><value>Description</value></action>
                 </block>
-                
+                 <block type="catalog/product_view_attributes" name="product.attributes" as="additional" template="catalog/product/view/attributes.phtml">
+                    <action method="addToParentGroup"><group>detailed_info</group></action>
+                    <action method="setTitle" translate="value"><value>Additional Information</value></action>
+                </block>
                 <block type="core/template" name="product.deliveryandreturns" as="deliveryandreturns" template="catalog/product/view/deliveryandreturns.phtml">
                     <action method="addToParentGroup"><group>detailed_info</group></action>
                     <action method="setTitle" translate="value"><value>Delivery &amp; Returns</value></action>
