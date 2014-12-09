@@ -132,10 +132,12 @@
         <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
             <dl id="collateral-tabs" class="collateral-tabs">
                 <?php foreach ($detailedInfoGroup as $alias => $html):?>
+                <?php if(!empty($html)): ?>
                     <dt class="tab"><span><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></span></dt>
                     <dd class="tab-container">
                         <div class="tab-content"><?php echo $html ?></div>
                     </dd>
+                 <?php endif; ?>
                 <?php endforeach;?>
             </dl>
         <?php endif; ?>

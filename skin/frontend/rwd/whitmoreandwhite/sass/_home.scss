@@ -10,7 +10,7 @@ a{
 	@include respond-to(tablet){
 	  margin-bottom:60px;
 	}
-	article{
+	div{
 		height:300px;
 		background-size: cover;
 		background-position-x: center;
@@ -25,7 +25,7 @@ a{
 		}
 	}
 	
-	article:hover{
+	div:hover{
 		opacity: 0.8;
 	}
 	
@@ -232,7 +232,7 @@ a{
 		
 	}
 		
-	article{
+	div{
 		float:left;
 		line-height: 0;
 		margin-bottom: 10px;
@@ -262,7 +262,7 @@ a{
 	
 	.promo-column-three{
 		@include col(100%,0px);
-		article{
+		div{
 			width:100%;
 			@include respond-to(tablet){
 			  @include col(50%,0px);
