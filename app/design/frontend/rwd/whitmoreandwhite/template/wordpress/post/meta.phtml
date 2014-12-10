@@ -1,1 +1,29 @@
-../../../../../../../../../vendor/connect20/Fishpig_Wordpress_Integration/app/design/frontend/base/default/template/wordpress/post/meta.phtml
+<?php
+/**
+ * @category    Fishpig
+ * @package     Fishpig_Wordpress
+ * @license     http://fishpig.co.uk/license.txt
+ * @author      Ben Tideswell <help@fishpig.co.uk>
+ */
+?>
+<?php $post = $this->getPost() ?>
+<?php if ($post): ?>
+<p class="post-meta details">
+	<?php
+		$catImage = strtolower(str_replace(" ", "-", $this->getCategoryString($post)));
+		$catImage = str_replace("'", "", $catImage);
+	?>
+	<img src="/wp/wp-content/uploads/2014/12/<?php echo strip_tags($catImage) ?>.jpg" /><br />
+	<?php echo stripslashes($this->__('%s', $this->getCategoryString($post))) ?>
+<?php /* if ($this->canDisplayPreviousNextLinks()): ?>
+<span class="post-skips">
+	<?php if (($previous = $post->getPreviousPost()) !== false): ?>
+		<a href="<?php echo $previous->getPermalink() ?>" class="post-skip post-skip-previous" title="<?php echo $this->escapeHtml($previous->getPostTitle()) ?>">&larr; <?php echo $this->__('Previous Post') ?></a>
+	<?php endif; ?>
+	<?php if (($next = $post->getNextPost()) !== false): ?>
+		<a href="<?php echo $next->getPermalink() ?>" class="post-skip post-skip-next right" title="<?php echo $this->escapeHtml($next->getPostTitle()) ?>"><?php echo $this->__('Next Post') ?> &rarr;</a>
+	<?php endif; ?>
+</span>
+<?php endif; */ ?>
+</p>
+<?php endif; ?>

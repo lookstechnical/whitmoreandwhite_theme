@@ -1,1 +1,41 @@
-../../../../../../../../../vendor/connect20/Fishpig_Wordpress_Integration/app/design/frontend/base/default/template/wordpress/post/view.phtml
+<?php
+/**
+ * @category    Fishpig
+ * @package     Fishpig_Wordpress
+ * @license     http://fishpig.co.uk/license.txt
+ * @author      Ben Tideswell <help@fishpig.co.uk>
+ */
+?>
+<?php $post = $this->getPost() ?>
+<?php if ($post): ?>
+	<?php $helper = $this->helper('wordpress') ?>
+	<?php $author = $post->getAuthor() ?>
+	<div class="top-info">
+		<?php echo $this->getAfterPostContentHtml() ?>
+		<div class="page-title post-title">
+			<h1><?php echo $this->escapeHtml($post->getPostTitle()) ?></h1>
+		</div>
+		<p class="post-date when"><?php echo stripslashes($this->__('%s / %s', $post->getAuthor()->getDisplayName(), $post->getPostDate())) ?></p>
+	</div>
+	<div class="post-view">
+		<?php echo $this->getBeforePostContentHtml() ?>
+		<div class="post-entry entry std<?php if ($post->getFeaturedImage()): ?> post-entry-with-image<?php endif; ?>">
+			<?php if ($post->isViewableForVisitor()): ?>
+				<?php if ($featuredImage = $post->getFeaturedImage()): ?>
+					<div class="featured-image left"><img src="<?php echo $featuredImage->getFullSizeImage() ?>" alt="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"/></div>
+				<?php endif; ?>
+				<?php echo $post->getPostContent() ?>
+			<?php else: ?>
+				<?php echo $this->getPasswordProtectHtml() ?>
+			<?php endif; ?>
+		</div>
+		<div class="about-author">
+			<h2>About The Author</h2>
+			<span class="author-name"><?php echo $post->getAuthor()->getDisplayName(); ?></span>
+			<?php echo $post->getAuthor()->getMetaValue('description'); ?>
+			<br />
+			<h2>Comments</h2>
+		</div>
+			<?php echo $this->getCommentsHtml() ?>
+	</div>
+<?php endif; ?>

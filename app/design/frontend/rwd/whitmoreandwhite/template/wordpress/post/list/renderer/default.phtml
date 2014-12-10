@@ -1,1 +1,41 @@
-../../../../../../../../../../../vendor/connect20/Fishpig_Wordpress_Integration/app/design/frontend/base/default/template/wordpress/post/list/renderer/default.phtml
+<?php
+/**
+ * @category    Fishpig
+ * @package     Fishpig_Wordpress
+ * @license     http://fishpig.co.uk/license.txt
+ * @author      Ben Tideswell <help@fishpig.co.uk>
+ */
+?>
+<?php $post = $this->getPost() ?>
+<div class="post-list-item">
+	
+	<div class="post-entry entry<?php if ($post->getFeaturedImage): ?> post-entry-with-image<?php endif; ?>">
+		<?php if ($post->isViewableForVisitor()): ?>
+			<?php if ($featuredImage = $post->getFeaturedImage()): ?>
+				<div class="featured-image left">
+					<a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"><img src="<?php echo $featuredImage->getMediumImage() ?>" alt="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"/></a>
+				</div>
+			<?php endif; ?>
+			<?php echo $post->getCategoryTitle(); ?>
+			<?php echo $this->getAfterPostContentHtml() ?>
+			<h2><a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"><?php echo $this->escapeHtml($post->getPostTitle()) ?></a></h2>
+				<p class="author details">
+					<?php if ($this->hasTags($post)): ?>
+						<?php echo stripslashes($this->__('This entry was posted in %s and tagged %s on %s<span class=\"by-author\"> by %s</span>.', $this->getCategoryString($post), $this->getTagString($post), $post->getPostDate(), $post->getAuthor()->getDisplayName())) ?>
+					<?php else: ?>
+						<?php echo stripslashes($this->__('<span class=\"by-author\">%s</span> / %s.', $post->getAuthor()->getDisplayName(), $post->getPostDate())) ?>
+					<?php endif; ?>
+				</p>
+	<?php echo $this->getBeforePostContentHtml() ?>
+			<?php if ($this->displayExcerptInFeed() || $post->hasMoreTag()): ?>
+				<?php echo $post->getPostExcerpt() ?>
+			<?php else: ?>
+				<?php echo $post->getPostContent() ?>
+			<?php endif; ?>
+
+		<?php else: ?>
+			<?php echo $this->getPasswordProtectHtml($post) ?>
+		<?php endif; ?>
+	</div>
+	
+</div>
