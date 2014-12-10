@@ -332,6 +332,48 @@
 			.list-grid{
 				margin: 0px;
 			}
+			
+			.grid3,strong.grid3:hover{
+				background: url(../images/grid-icons.jpg) no-repeat -27px 0px;
+				width: 27px;
+				height: 27px;
+				overflow: none;
+				display: inline-block;
+				text-indent: -9999px;
+				vertical-align: bottom;
+			}
+			
+			.grid4,strong.grid4:hover{
+				background: url(../images/grid-icons.jpg) no-repeat 0px -27px;
+				width: 27px;
+				height: 27px;
+				overflow: none;
+				display: inline-block;
+				text-indent: -9999px;
+				vertical-align: bottom;
+			}
+			
+			.grid2,strong.grid2:hover{
+				background: url(../images/grid-icons.jpg) no-repeat -54px -27px;
+				width: 27px;
+				height: 27px;
+				overflow: none;
+				display: inline-block;
+				text-indent: -9999px;
+				vertical-align: bottom;			
+			}
+			
+			strong.grid2,.grid2:hover{
+				background: url(../images/grid-icons.jpg) no-repeat -54px 0px;
+			}
+			strong.grid3,.grid3:hover{
+				background: url(../images/grid-icons.jpg) no-repeat -27px -27px;
+			}
+
+			strong.grid4,.grid4:hover{
+				background: url(../images/grid-icons.jpg) no-repeat 0px 0px;
+			}
+
 		}
 
 	}

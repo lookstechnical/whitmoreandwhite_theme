@@ -6507,33 +6507,6 @@ th.hide-for-touch {
 .fa-meanpath:before {
   content: "\f20c"; }
 
-.grid-icon {
-  text-align: left;
-  text-indent: -9999px;
-  background-color: green;
-  background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
-  background-position: -1px -1px;
-  display: inline-block;
-  height: 23px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 23px; }
-  .grid-icon:hover {
-    background-color: blue; }
-  .grid-icon:first-of-type {
-    margin-left: 0; }
-  .grid-icon:last-of-type {
-    margin-right: 0; }
-
-.grid-icon-2 {
-  background-size: 12px 12px; }
-
-.grid-icon-3 {
-  background-size: 8px 8px; }
-
-.grid-icon-4 {
-  background-size: 6px 6px; }
-
 /**
  * Magento
  *
@@ -7537,6 +7510,16 @@ header {
           float: left;
           padding: 0px;
           margin: 0px; }
+
+#sidr-id-minicart-error-message {
+  background: #ff6666;
+  padding: 10px; }
+
+.sidr-class-skip-link-close {
+  display: none; }
+
+#sidr-id-minicart-success-message {
+  background: #00d4e1; }
 
 .footer {
   clear: both;
@@ -10732,6 +10715,36 @@ a img:hover {
         background-color: #00747b; }
       .toolbar .sorter .view-mode .list-grid {
         margin: 0px; }
+      .toolbar .sorter .view-mode .grid3, .toolbar .sorter .view-mode strong.grid3:hover {
+        background: url(../images/grid-icons.jpg) no-repeat -27px 0px;
+        width: 27px;
+        height: 27px;
+        overflow: none;
+        display: inline-block;
+        text-indent: -9999px;
+        vertical-align: bottom; }
+      .toolbar .sorter .view-mode .grid4, .toolbar .sorter .view-mode strong.grid4:hover {
+        background: url(../images/grid-icons.jpg) no-repeat 0px -27px;
+        width: 27px;
+        height: 27px;
+        overflow: none;
+        display: inline-block;
+        text-indent: -9999px;
+        vertical-align: bottom; }
+      .toolbar .sorter .view-mode .grid2, .toolbar .sorter .view-mode strong.grid2:hover {
+        background: url(../images/grid-icons.jpg) no-repeat -54px -27px;
+        width: 27px;
+        height: 27px;
+        overflow: none;
+        display: inline-block;
+        text-indent: -9999px;
+        vertical-align: bottom; }
+      .toolbar .sorter .view-mode strong.grid2, .toolbar .sorter .view-mode .grid2:hover {
+        background: url(../images/grid-icons.jpg) no-repeat -54px 0px; }
+      .toolbar .sorter .view-mode strong.grid3, .toolbar .sorter .view-mode .grid3:hover {
+        background: url(../images/grid-icons.jpg) no-repeat -27px -27px; }
+      .toolbar .sorter .view-mode strong.grid4, .toolbar .sorter .view-mode .grid4:hover {
+        background: url(../images/grid-icons.jpg) no-repeat 0px 0px; }
   .toolbar .pager:after {
     clear: both;
     content: "";

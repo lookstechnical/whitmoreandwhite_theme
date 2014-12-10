@@ -178,9 +178,18 @@
                                 var source = jQuery('<div>' + data.cart + '</div>');
                                 var cart = source.find('#header-cart').html();
                                 var count = source.find('.skip-cart .count').html();
+                                var message = data.message;
+                                var status = data.status;
+                               
                                 if(jQuery('.header-minicart')){
                                 	jQuery('#header-cart').html(cart);
                                 	jQuery('.skip-cart .count').html(count);
+                                	if(status == 'ERROR'){
+		                                jQuery('#minicart-error-message').html(message);
+	                                }
+	                                if(status == 'SUCCESS'){
+		                                jQuery('#minicart-success-message').html(message);
+	                                }
                                 	jQuery('.header-minicart').sidr({
 									   name: 'sidr-right',
 									   source: '#header-cart',
