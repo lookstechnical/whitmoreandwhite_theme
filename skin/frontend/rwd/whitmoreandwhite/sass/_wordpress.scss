@@ -131,3 +131,72 @@
 		}
 	}
 }
+
+.blog-home {
+	.block-recent-posts {
+		width: 63%;
+		margin: 0 auto;
+		.block-title {
+			text-align: center;
+			font-size: 1.8em;
+			font-family: "tablet-gothic-condensed";
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 30px;
+			.the-latest {
+				font-family: "kepler-std";
+				font-style: italic;
+				font-size: .5em;
+				display: block;
+				font-weight: lighter;
+				text-transform: none;
+			}
+		}
+		li.item {
+			clear: both;
+			margin-bottom: 20px;
+			h2 {
+				font-size: 2em;
+				margin-bottom: 10px;
+				a {
+					color: #000;
+				}
+			}
+			.featured-image {
+				margin-bottom: 20px;
+				margin-right: 10px;
+				img {
+					width: 450px;
+					max-width: 450px;
+				}
+			}
+			.read-more {
+				text-transform: uppercase;
+				a {
+					color: #000;
+				}
+			}
+		}
+	}
+	.black-fancy-btn {
+		color: white;
+      background: black;
+      display: block;
+      text-align: center;
+      font-family: "tablet-gothic-condensed";
+      font-size: 1.06rem;
+      font-weight: 300;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+      width: 260px;
+      margin-right: 20px;
+      float: left;
+      margin-bottom: 15px;
+      padding-left-right: 2.667em;
+      text-align: center;
+      line-height: 2.667em;
+      padding-left: 10px;
+      position: relative;
+      padding-right: 10px;
+	}
+}

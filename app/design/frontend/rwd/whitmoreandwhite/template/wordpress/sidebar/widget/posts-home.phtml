@@ -1,0 +1,47 @@
+<?php
+/**
+ * @category    Fishpig
+ * @package     Fishpig_Wordpress
+ * @license     http://fishpig.co.uk/license.txt
+ * @author      Ben Tideswell <help@fishpig.co.uk>
+ */
+?>
+<?php $posts = $this->getPosts() ?>
+<?php if (count($posts) > 0): ?>
+	<div class="block block-blog block-recent-posts">
+		<?php if ($title = $this->getTitle()): ?>
+			<div class="block-title">
+				<span class="the-latest">All the Latest</span>
+				<span><?php echo $this->__($title) ?></span>
+			</div>
+		<?php endif; ?>
+		<div class="block-content">
+			<ul id="<?php echo $this->getListId() ?>">
+			<?php foreach($posts as $post): ?>
+				<li class="item">
+					<?php if ($featuredImage = $post->getFeaturedImage()): ?>
+						<div class="featured-image left">
+							<a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"><img src="<?php echo $featuredImage->getFullSizeImage() ?>" alt="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"/></a>
+						</div>
+					<?php endif; ?>
+					<h2><a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->htmlEscape($post->getPostTitle()) ?>"><?php echo $this->htmlEscape($post->getPostTitle()) ?></a></h2>
+					<p class="author details">
+						<?php if ($this->hasTags($post)): ?>
+							<?php echo stripslashes($this->__('This entry was posted in %s and tagged %s on %s<span class=\"by-author\"> by %s</span>.', $this->getCategoryString($post), $this->getTagString($post), $post->getPostDate(), $post->getAuthor()->getDisplayName())) ?>
+						<?php else: ?>
+							<?php echo stripslashes($this->__('<span class=\"by-author\">%s</span> / %s.', $post->getAuthor()->getDisplayName(), $post->getPostDate())) ?>
+						<?php endif; ?>
+					</p>
+					<?php echo $post->getPostExcerpt() ?>
+					<span class="read-more"><a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>">Read More</a></span>
+				</li>
+				<hr />
+			<?php endforeach; ?>
+			</ul>
+			<div>
+				<a class="black-fancy-btn">More from the blog</a>
+			</div>
+			<script type="text/javascript">decorateList('<?php echo $this->getListId() ?>')</script>
+		</div>
+	</div>
+<?php endif; ?>
