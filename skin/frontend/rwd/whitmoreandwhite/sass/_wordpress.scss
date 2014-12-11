@@ -152,31 +152,35 @@
 				text-transform: none;
 			}
 		}
-		li.item {
-			clear: both;
-			margin-bottom: 20px;
-			h2 {
-				font-size: 2em;
-				margin-bottom: 10px;
-				a {
-					color: #000;
-				}
-			}
-			.featured-image {
+		ul {
+			list-style: none;
+			li.item {
+				clear: both;
 				margin-bottom: 20px;
-				margin-right: 10px;
-				img {
-					width: 450px;
-					max-width: 450px;
+				h2 {
+					font-size: 2em;
+					margin-bottom: 10px;
+					a {
+						color: #000;
+					}
 				}
-			}
-			.read-more {
-				text-transform: uppercase;
-				a {
-					color: #000;
+				.featured-image {
+					margin-bottom: 20px;
+					margin-right: 10px;
+					img {
+						width: 450px;
+						max-width: 450px;
+					}
+				}
+				.read-more {
+					text-transform: uppercase;
+					a {
+						color: #000;
+					}
 				}
 			}
 		}
+		
 	}
 	.black-fancy-btn {
 		color: white;
