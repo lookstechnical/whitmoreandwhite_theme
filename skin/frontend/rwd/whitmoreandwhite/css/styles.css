@@ -7481,7 +7481,8 @@ header {
           font-family: "proxima-nova-alt";
           color: black;
           font-size: 0.75rem;
-          text-transform: none; }
+          text-transform: none;
+          line-height: 16px; }
       #sidr-right .sidr-class-minicart-wrapper ul li .sidr-class-price {
         font-family: "proxima-nova-alt";
         color: black;
