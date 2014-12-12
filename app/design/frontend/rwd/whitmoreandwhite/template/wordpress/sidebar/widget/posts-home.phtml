@@ -10,9 +10,9 @@
 <?php if (count($posts) > 0): ?>
 	<div class="block block-blog block-recent-posts">
 		<?php if ($title = $this->getTitle()): ?>
-			<div class="block-title">
+			<div class="pick-of-the-week">
 				<span class="the-latest">All the Latest</span>
-				<span><?php echo $this->__($title) ?></span>
+				<h3><?php echo $this->__($title) ?></h3>
 			</div>
 		<?php endif; ?>
 		<div class="block-content">
@@ -39,7 +39,7 @@
 			<?php endforeach; ?>
 			</ul>
 			<div>
-				<a class="black-fancy-btn">More from the blog</a>
+				<a class="black-fancy-btn" href="/blog">More from the blog</a>
 			</div>
 			<script type="text/javascript">decorateList('<?php echo $this->getListId() ?>')</script>
 		</div>
