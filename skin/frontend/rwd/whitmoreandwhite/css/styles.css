@@ -8432,8 +8432,6 @@ a img:hover {
     .promo-categories {
       width: 1900px; } }
   .promo-categories img {
-    max-width: 100%;
-    width: 100%;
     vertical-align: top;
     font-size: 0;
     float: left; }
