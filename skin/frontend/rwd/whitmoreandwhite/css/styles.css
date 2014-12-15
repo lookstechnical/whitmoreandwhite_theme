@@ -8432,6 +8432,8 @@ a img:hover {
     .promo-categories {
       width: 1900px; } }
   .promo-categories img {
+    max-width: 100%;
+    width: 100%;
     vertical-align: top;
     font-size: 0;
     float: left; }
@@ -11443,6 +11445,41 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
         text-transform: uppercase; }
         .blog-home .block-recent-posts ul li.item .read-more a {
           color: #000; }
+.blog-home .all-the-latest {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0px 0px;
+  clear: both;
+  text-align: center; }
+  @media only screen and (max-width: 40rem) {
+    .blog-home .all-the-latest {
+      padding: 0px 10px; } }
+  @media only screen and (min-width: 40rem) {
+    .blog-home .all-the-latest {
+      padding: 0px 10px; } }
+  @media only screen and (min-width: 53.125rem) {
+    .blog-home .all-the-latest {
+      padding: 0px 10px; } }
+  @media only screen and (min-width: 1191px) {
+    .blog-home .all-the-latest {
+      width: 1191px; } }
+  .blog-home .all-the-latest span {
+    font-family: "kepler-std";
+    font-size: 1.125rem;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 2;
+    text-align: center; }
+  .blog-home .all-the-latest h3 {
+    font-family: "tablet-gothic-condensed";
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 0.5;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px; }
 .blog-home .black-fancy-btn {
   color: white;
   background: black;
