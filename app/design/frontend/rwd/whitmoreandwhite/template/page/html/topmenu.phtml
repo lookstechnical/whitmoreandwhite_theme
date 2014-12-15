@@ -36,9 +36,17 @@
 <?php if($_menu): ?>
     <nav id="nav">
         <ol class="nav-primary">
+        	<li class="first home"><a href="/" title="Home"></a></li>
             <?php echo $_menu ?>
             <?php echo $this->getChildHtml('additional_links') ?>
-
+			<li class="about-us-mobile"><a href="/about-us" title="About Us">About Us</a></li>
         </ol>
+        <div class="customer-service-mobile">
+        	<a class="my-account-mobile" href="/customer/account/">My Account</a>
+        	<span>Online Customer Service</span>
+        	To speak to one of our advisors, call or email using the links below.
+        	<a class="telephone-mobile" href="tel:0845 030 5171 ">Call for Assistance</a>
+        	Email for assistance <a href="mailto:weborders@whitmoreandwhite.co.uk">weborders@whitmoreandwhite.co.uk</a>
+        </div>
     </nav>
 <?php endif ?>
