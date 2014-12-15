@@ -86,6 +86,9 @@ a{
 			float:left;
 			margin-bottom: 15px;
 			@include ribbon(black, 2.667em, white, left-right);
+			@include respond-to(mobile){
+				margin: 0 auto !important;
+			}
 			
 		}
 		
@@ -107,6 +110,9 @@ a{
 			width:260px;
 			float:left;
 			@include ribbon($green, 2.667em, white, left-right);
+			@include respond-to(mobile){
+				margin: 0 auto !important;
+			}
 		}
 		.green-fancy-btn:hover{
 			background: lighten($green,10%);

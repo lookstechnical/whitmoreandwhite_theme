@@ -8254,6 +8254,9 @@ a img:hover {
         right: -1px;
         top: 0px;
         background: black; }
+      @media only screen and (max-width: 40rem) {
+        .welcome .intro .black-fancy-btn {
+          margin: 0 auto !important; } }
     .welcome .intro .black-fancy-btn:hover {
       background: #3c3c3c;
       padding-left-right: 2.667em;
@@ -8332,6 +8335,9 @@ a img:hover {
         right: -1px;
         top: 0px;
         background: #00747b; }
+      @media only screen and (max-width: 40rem) {
+        .welcome .intro .green-fancy-btn {
+          margin: 0 auto !important; } }
     .welcome .intro .green-fancy-btn:hover {
       background: #00a4ae;
       padding-left-right: 2.667em;
