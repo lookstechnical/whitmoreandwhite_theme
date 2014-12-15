@@ -27,7 +27,7 @@
 <div class="footer-container">
     <div class="footer">
         <?php echo $this->getChildHtml() ?>
-        <address class="copyright"><img src="<?php  echo $this->getSkinUrl('images/footer-logo.jpg'); ?>"/><?php echo $this->getCopyright() ?></address>
+        <address class="copyright"><img src="<?php  echo $this->getSkinUrl('images/footer-logo.jpg'); ?>"/><?php echo $this->getCopyright() ?> | eCommerce by <a href="http://www.webtise.com">Webtise</a></address>
         <div class="cards">
 	        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_card_logos')->tohtml(); ?>
         </div>
