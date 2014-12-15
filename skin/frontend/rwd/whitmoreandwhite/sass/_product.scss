@@ -89,6 +89,12 @@
 					.bundle-option-select:after{
 						display: none;
 					}
+					.options-list{
+						margin-left: 0 !important;
+						li {
+							list-style: none;
+						}
+					}
 				}
 				
 				.add-to-cart-buttons{
@@ -104,6 +110,9 @@
 						line-height: 1.667; 
 						padding: 0px;
 						margin-bottom: 0px;
+						&:hover {
+							background: lighten($green,10%);
+						}
 						
 					}
 				}
@@ -262,6 +271,9 @@
 				
 				.collateral-tabs{
 					clear:both;
+					@include respond-to(mobile){
+						text-align: center;
+					}
 					.tab{
 						clear:both;
 						padding:0px;
@@ -301,6 +313,11 @@
 							
 							h2{
 								display: none;
+							}
+							#product-attribute-specs-table {
+								label {
+									font-size: .875em;
+								}
 							}
 						}
 					}
