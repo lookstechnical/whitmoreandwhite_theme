@@ -7508,9 +7508,6 @@ header {
 .sidr-class-skip-link-close {
   display: none; }
 
-#sidr-id-minicart-success-message {
-  background: #00d4e1; }
-
 .footer {
   clear: both;
   width: 100%;
@@ -8726,6 +8723,8 @@ a img:hover {
             line-height: 1.667;
             text-transform: uppercase;
             background: url(../images/down-arrow.png) no-repeat center right 10px; }
+          .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs .tab:hover {
+            cursor: pointer; }
         .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs .tab-container {
           display: none;
           width: 100%;
@@ -9692,6 +9691,8 @@ a img:hover {
     margin: 0px;
     height: 49px;
     font-weight: 300; }
+    .checkout-onepage-index #checkoutSteps .step-title:hover {
+      cursor: pointer; }
   .checkout-onepage-index #checkoutSteps .step {
     padding: 20px; }
     .checkout-onepage-index #checkoutSteps .step ul {
