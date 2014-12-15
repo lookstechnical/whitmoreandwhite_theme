@@ -48,13 +48,13 @@ if(empty($_cartQty)) {
  <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="minicart-actions">
                 <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                    <?php echo $this->__('View My Bag'); ?>
+                    <?php echo $this->__('Secure Checkout'); ?>
                 </a>
                 <ul class="checkout-types minicart">
                     <?php echo $this->getChildHtml('extra_actions') ?>
                     <li>
-                        <a title="<?php echo $this->__('Checkout') ?>" class="button checkout-button" href="<?php echo $this->getCheckoutUrl() ?>">
-                            <?php echo $this->__('Checkout') ?>
+                        <a title="<?php echo $this->__('Checkout') ?>" class="button checkout-button" href="<?php //echo $this->getCheckoutUrl() ?>#" onclick="jQuery.sidr('close', 'sidr-right');">
+                            <?php echo $this->__('Continue Shopping') ?>
                         </a>
                     </li>
                 </ul>
@@ -102,13 +102,13 @@ if(empty($_cartQty)) {
         <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="minicart-actions">
                 <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                    <?php echo $this->__('View My Bag'); ?>
+                    <?php echo $this->__('Secure Checkout'); ?>
                 </a>
                 <ul class="checkout-types minicart">
                     <?php echo $this->getChildHtml('extra_actions') ?>
                     <li>
-                        <a title="<?php echo $this->__('Checkout') ?>" class="button checkout-button" href="<?php echo $this->getCheckoutUrl() ?>">
-                            <?php echo $this->__('Checkout') ?>
+                        <a title="<?php echo $this->__('Checkout') ?>" class="button checkout-button" href="<?php //echo $this->getCheckoutUrl() ?>#" onclick="jQuery.sidr('close', 'sidr-right');">
+                            <?php echo $this->__('Continue Shopping') ?>
                         </a>
                     </li>
                 </ul>
