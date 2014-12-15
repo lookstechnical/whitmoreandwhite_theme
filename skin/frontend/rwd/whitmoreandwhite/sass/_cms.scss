@@ -157,57 +157,58 @@
 }
 }
 
-.cms-contact-us{
+.cms-contact-us, .contacts-index-index{
+	h1 {line-height: 1em;}
 	#contactForm {
-	.form-list{
-		padding: 0px;
-		margin: 0px;
-		list-style: none;
-		text-align: left;
-	}
-	
-	label{
-		font-family: $ProximaNova;
-		color:  #949494;
-		font-size: 0.875rem; /* Approximation due to font substitution */
-		font-weight: 400;
-		line-height: 1.714; /* Approximation due to font substitution */
-		text-align: center
-	}
-	
-	.button{
-		margin-top: 25px;
-		color:white;
-		background: $green;
-		display: block;
-		text-align: center;
-		font-family: $TabletGothicCondensed;
-		font-size: 1.06rem;
-		font-weight: 300;
-		letter-spacing: 0.16rem;
-		text-transform: uppercase;
-		width:260px;
-		float:left;
-		height: 46px;
-		display:inline-block;
-		@include ribbon($green,2.667em, white, left-right);
-		line-height: 0.8em;
-	}
-	
-	.button:hover{
-		background: lighten($green,10%);
-		@include ribbon(lighten($green,10%), 2.667em, white, left-right);
-		line-height: 0.8em;
-	}
+		.form-list{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+			text-align: left;
+		}
+		
+		label{
+			font-family: $ProximaNova;
+			color:  #949494;
+			font-size: 0.875rem; /* Approximation due to font substitution */
+			font-weight: 400;
+			line-height: 1.714; /* Approximation due to font substitution */
+			text-align: center
+		}
+		
+		.button{
+			margin-top: 25px;
+			color:white;
+			background: $green;
+			display: block;
+			text-align: center;
+			font-family: $TabletGothicCondensed;
+			font-size: 1.06rem;
+			font-weight: 300;
+			letter-spacing: 0.16rem;
+			text-transform: uppercase;
+			width:260px;
+			float:left;
+			height: 46px;
+			display:inline-block;
+			@include ribbon($green,2.667em, white, left-right);
+			line-height: 0.8em;
+		}
+		
+		.button:hover{
+			background: lighten($green,10%);
+			@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+			line-height: 0.8em;
+		}
 
-	
-	textarea{
-		width:100%;
-		box-sizing: border-box;
-		padding:10px;
-		border: 1px solid #ccc;
-		height:170px;
-	}
+		
+		textarea{
+			width:100%;
+			box-sizing: border-box;
+			padding:10px;
+			border: 1px solid #ccc;
+			height:170px;
+		}
 	}
 }
 

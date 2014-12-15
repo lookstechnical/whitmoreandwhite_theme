@@ -11206,12 +11206,14 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     text-transform: none;
     display: inline-block; }
 
-.cms-contact-us #contactForm .form-list {
+.cms-contact-us h1, .contacts-index-index h1 {
+  line-height: 1em; }
+.cms-contact-us #contactForm .form-list, .contacts-index-index #contactForm .form-list {
   padding: 0px;
   margin: 0px;
   list-style: none;
   text-align: left; }
-.cms-contact-us #contactForm label {
+.cms-contact-us #contactForm label, .contacts-index-index #contactForm label {
   font-family: "proxima-nova-alt";
   color: #949494;
   font-size: 0.875rem;
@@ -11220,7 +11222,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   line-height: 1.714;
   /* Approximation due to font substitution */
   text-align: center; }
-.cms-contact-us #contactForm .button {
+.cms-contact-us #contactForm .button, .contacts-index-index #contactForm .button {
   margin-top: 25px;
   color: white;
   background: #00747b;
@@ -11242,7 +11244,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   position: relative;
   padding-right: 10px;
   line-height: 0.8em; }
-  .cms-contact-us #contactForm .button:after {
+  .cms-contact-us #contactForm .button:after, .contacts-index-index #contactForm .button:after {
     content: '';
     display: block;
     height: 0;
@@ -11255,7 +11257,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     left: -1px;
     top: 0px;
     background: #00747b; }
-  .cms-contact-us #contactForm .button:before {
+  .cms-contact-us #contactForm .button:before, .contacts-index-index #contactForm .button:before {
     content: '';
     display: block;
     height: 0;
@@ -11268,7 +11270,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     right: -1px;
     top: 0px;
     background: #00747b; }
-.cms-contact-us #contactForm .button:hover {
+.cms-contact-us #contactForm .button:hover, .contacts-index-index #contactForm .button:hover {
   background: #00a4ae;
   padding-left-right: 2.667em;
   text-align: center;
@@ -11277,7 +11279,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   position: relative;
   padding-right: 10px;
   line-height: 0.8em; }
-  .cms-contact-us #contactForm .button:hover:after {
+  .cms-contact-us #contactForm .button:hover:after, .contacts-index-index #contactForm .button:hover:after {
     content: '';
     display: block;
     height: 0;
@@ -11290,7 +11292,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     left: -1px;
     top: 0px;
     background: #00a4ae; }
-  .cms-contact-us #contactForm .button:hover:before {
+  .cms-contact-us #contactForm .button:hover:before, .contacts-index-index #contactForm .button:hover:before {
     content: '';
     display: block;
     height: 0;
@@ -11303,7 +11305,7 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     right: -1px;
     top: 0px;
     background: #00a4ae; }
-.cms-contact-us #contactForm textarea {
+.cms-contact-us #contactForm textarea, .contacts-index-index #contactForm textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;

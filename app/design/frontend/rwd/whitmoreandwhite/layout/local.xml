@@ -120,9 +120,9 @@
 			<action method="addCrumb"><crumbName>Newsletter Manage</crumbName><crumbInfo><label>Newsletter Manage</label><title>Newsletter Manage</title></crumbInfo></action>
 		</reference>
 	</newsletter_manage_index>
-	
-	
-	
-
-	
+	<contacts_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+    </contacts_index_index>
 </layout>
