@@ -99,7 +99,7 @@
 				  </action>
 				  <action method="addLink" translate="label title">
 				    <label>Contact Us</label>
-				    <url>contact-us</url>
+				    <url>contacts</url>
 				    <title>Contact Us</title>
 				    <prepare>true</prepare>
 				    <position>2</position>
