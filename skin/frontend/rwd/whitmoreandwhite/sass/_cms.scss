@@ -197,6 +197,7 @@
 	.button:hover{
 		background: lighten($green,10%);
 		@include ribbon(lighten($green,10%), 2.667em, white, left-right);
+		line-height: 0.8em;
 	}
 
 	
