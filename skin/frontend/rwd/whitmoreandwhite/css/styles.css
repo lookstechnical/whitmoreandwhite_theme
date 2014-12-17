@@ -8256,7 +8256,8 @@ a img:hover {
         background: black; }
       @media only screen and (max-width: 40rem) {
         .welcome .intro .black-fancy-btn {
-          margin: 0 auto !important; } }
+          margin: 0 auto !important;
+          float: none; } }
     .welcome .intro .black-fancy-btn:hover {
       background: #3c3c3c;
       padding-left-right: 2.667em;
@@ -8337,7 +8338,8 @@ a img:hover {
         background: #00747b; }
       @media only screen and (max-width: 40rem) {
         .welcome .intro .green-fancy-btn {
-          margin: 0 auto !important; } }
+          margin: 0 auto !important;
+          float: none; } }
     .welcome .intro .green-fancy-btn:hover {
       background: #00a4ae;
       padding-left-right: 2.667em;
@@ -8485,8 +8487,6 @@ a img:hover {
     vertical-align: top;
     font-size: 0;
     float: left; }
-  .promo-categories img:hover {
-    opacity: 0.8; }
   .promo-categories div {
     float: left;
     line-height: 0;
@@ -8502,7 +8502,8 @@ a img:hover {
         width: 50%;
         padding: 0px;
         position: relative;
-        float: left; } }
+        float: left;
+        padding-right: 5px !important; } }
     @media only screen and (min-width: 53.125rem) {
       .promo-categories .promo-column-one {
         width: 33.3%;
@@ -8519,7 +8520,8 @@ a img:hover {
         width: 50%;
         padding: 0px;
         position: relative;
-        float: left; } }
+        float: left;
+        padding-right: 5px !important; } }
     @media only screen and (min-width: 53.125rem) {
       .promo-categories .promo-column-two {
         width: 33.3%;

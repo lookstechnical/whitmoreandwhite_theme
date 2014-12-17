@@ -88,6 +88,7 @@ a{
 			@include ribbon(black, 2.667em, white, left-right);
 			@include respond-to(mobile){
 				margin: 0 auto !important;
+				float: none;
 			}
 			
 		}
@@ -112,6 +113,7 @@ a{
 			@include ribbon($green, 2.667em, white, left-right);
 			@include respond-to(mobile){
 				margin: 0 auto !important;
+				float: none;
 			}
 		}
 		.green-fancy-btn:hover{
@@ -236,10 +238,10 @@ a{
 	}
 	
 	
-	img:hover{
-		opacity: 0.8;
+	// img:hover{
+	// 	opacity: 0.8;
 		
-	}
+	// }
 		
 	div{
 		float:left;
@@ -252,6 +254,7 @@ a{
 		
 		@include respond-to(tablet){
 		  @include col(50%,0px);
+		  padding-right: 5px !important;
 		}
 		@include respond-to(desktop){
 		  @include col(33.3%,0px);
@@ -263,6 +266,7 @@ a{
 		
 		@include respond-to(tablet){
 		  @include col(50%,0px);
+		  padding-right: 5px !important;
 		}
 		@include respond-to(desktop){
 		  @include col(33.3%,0px);
