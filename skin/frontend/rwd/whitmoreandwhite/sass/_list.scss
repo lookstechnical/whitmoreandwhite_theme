@@ -190,6 +190,16 @@
 	.block-subtitle--filter{
 		display: none;
 	}
+
+	.currently-shopping {
+		display: none;
+	}
+
+	.clear-all {
+		text-transform: uppercase;
+		float: right;
+		letter-spacing: 2px;
+	}
 	
 	#narrow-by-list{
 		dt{
@@ -222,6 +232,11 @@
 				display:none;
 				width:100%;
 			}
+			&.active{
+				a{
+					color:$green;
+				}
+			}
 		}
 		
 		.level1{
@@ -233,22 +248,27 @@
 				line-height: 1.714;
 				text-transform: none;
 			}
+			&.active{
+				a{
+					color:$green;
+				}
+				.level2 {
+					a {
+						color: black;
+					}
+				}
+			}
+		}
+
+		.level2{
+			&.active{
+				a{
+					color:$green;
+				}
+			}
 		}
 		
 		.active{
-			a{
-				color:$green
-			}
-			
-			.level1{
-				a{
-					color: black;
-				}
-				a:hover{
-					color: $green;
-				}
-			}
-			
 			ul{
 				display: block;
 			}

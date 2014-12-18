@@ -38,9 +38,11 @@
         <strong><span><?php echo $this->__('Shop By ...') ?></span></strong>
     </div>
     <div class="block-content toggle-content">
-        <?php echo $this->getStateHtml() ?>
+        <div class="currently-shopping">
+            <?php echo $this->getStateHtml() ?>
+        </div>
         <?php if ($this->getLayer()->getState()->getFilters()): ?>
-            <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
+            <div class="actions clear-all"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All Filters') ?></a></div>
         <?php endif; ?>
         <?php if($this->canShowOptions()): ?>
             <p class="block-subtitle block-subtitle--filter"><?php echo $this->__('Filter') ?></p>
@@ -59,10 +61,6 @@
         <strong><span><?php echo $this->__('Filter By ...') ?></span></strong>
     </div>
     <div class="block-content toggle-content">
-        <?php echo $this->getStateHtml() ?>
-        <?php if ($this->getLayer()->getState()->getFilters()): ?>
-            <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
-        <?php endif; ?>
         <?php if($this->canShowOptions()): ?>
             <p class="block-subtitle block-subtitle--filter"><?php echo $this->__('Filter') ?></p>
             <dl id="narrow-by-list">
