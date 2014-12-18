@@ -9957,10 +9957,13 @@ a img:hover {
     font-weight: 300;
     line-height: 2; }
 .checkout-onepage-index #checkout-review-submit {
-  float: right; }
-  @media only screen and (min-width: 40rem) {
-    .checkout-onepage-index #checkout-review-submit {
-      width: 55%; } }
+  margin-top: 1em; }
+  .checkout-onepage-index #checkout-review-submit .agreement-content {
+    height: 200px;
+    overflow: auto; }
+    .checkout-onepage-index #checkout-review-submit .agreement-content .agree label {
+      font-size: 1.3em;
+      margin-left: 5px; }
 .checkout-onepage-index #review-buttons-container .btn-checkout {
   background-color: #00747b;
   width: 247px;

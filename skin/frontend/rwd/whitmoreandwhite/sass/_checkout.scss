@@ -535,10 +535,20 @@
 	}
 	
 	#checkout-review-submit{
-		float:right;
-		
-		@include respond-to(tablet){
-		  width:55%;
+		margin-top: 1em;
+		// float:right;
+		// @include respond-to(tablet){
+		//   width:55%;
+		// }
+		.agreement-content {
+			height: 200px;
+			overflow: auto;
+			.agree {
+				label {
+					font-size: 1.3em;
+					margin-left: 5px;
+				}
+			}
 		}
 	}
 	
