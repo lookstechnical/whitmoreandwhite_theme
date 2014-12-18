@@ -246,7 +246,13 @@ header{
 				li:last-child a{
 						padding-right: 0px;
 				}
+				
 			}
+			.close {
+					@include respond-to(desktop){
+						display: none;
+					}
+				}
 			.customer-service-mobile {
 				@include respond-to(desktop){
 					display: none;

@@ -7278,6 +7278,9 @@ header {
         header .header-wrapper nav#nav ol li:last-child a {
           padding-right: 0px; }
       @media only screen and (min-width: 53.125rem) {
+        header .header-wrapper nav#nav .close {
+          display: none; } }
+      @media only screen and (min-width: 53.125rem) {
         header .header-wrapper nav#nav .customer-service-mobile {
           display: none; } }
   header #header-cart {
@@ -8108,6 +8111,11 @@ select::-ms-expand {
       #sidr-main ol li.sidr-class-home a:before {
         font-family: 'FontAwesome';
         content: "\f015"; }
+#sidr-main .sidr-class-close {
+  float: right;
+  font-size: 25px;
+  padding: 5px;
+  color: #FFF; }
 #sidr-main .sidr-class-customer-service-mobile {
   margin-left: .5em;
   margin-top: 2em;
