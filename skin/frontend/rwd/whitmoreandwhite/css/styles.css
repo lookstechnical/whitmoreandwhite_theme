@@ -8821,6 +8821,10 @@ a img:hover {
             background: url(../images/up-arrow.png) no-repeat center right 10px; }
           .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs .current .yotpo span {
             background: none; }
+      .catalog-product-view .product-view .product-essential .product-shop .gift-card-info ul {
+        margin-left: 0; }
+        .catalog-product-view .product-view .product-essential .product-shop .gift-card-info ul li {
+          list-style: none; }
     .catalog-product-view .product-view .product-essential .product-img-box {
       width: 100%;
       width: 100%;
