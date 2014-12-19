@@ -1,5 +1,5 @@
 <div class="featured-slider">
-	<?php $products = $this->getProducts(); ?>
+	<?php $products = $this->getProducts()->addAttributeToSort('position'); ?>
 	<span>Our Favorites</span>
 	<h3>Pick of the week</h3>
 	<ul>
