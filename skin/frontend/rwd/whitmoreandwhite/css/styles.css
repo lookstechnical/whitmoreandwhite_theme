@@ -10596,7 +10596,7 @@ a img:hover {
   padding: 0px 10px;
   text-align: center;
   border-bottom: 1px dotted #ccc;
-  height: 341px;
+  height: 381px;
   overflow: hidden;
   padding: 15px 25px; }
   @media only screen and (min-width: 40rem) {
@@ -10645,14 +10645,14 @@ a img:hover {
     float: left; }
     .products-grid .item .special-price .price-label {
       display: none; }
-  .products-grid .item .btn-cart {
-    display: none; }
   .products-grid .item .add-to-links {
     display: none; }
   .products-grid .item .ratings {
     display: none; }
-  .products-grid .item .actions {
-    display: none; }
+  .products-grid .item .button {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    background-color: #00747b; }
 
 .block-layered-nav .block-title {
   font-family: "kepler-std";
