@@ -10221,6 +10221,8 @@ a img:hover {
       line-height: 2.143; }
     .customer-account-login .col-main .account-login .remember-me-popup, .customer-account-forgotpassword .col-main .account-login .remember-me-popup {
       display: none; }
+      .customer-account-login .col-main .account-login .remember-me-popup.show, .customer-account-forgotpassword .col-main .account-login .remember-me-popup.show {
+        display: block; }
     .customer-account-login .col-main .account-login .button, .customer-account-forgotpassword .col-main .account-login .button {
       background: #00747b;
       color: white;
@@ -10273,6 +10275,8 @@ a img:hover {
     display: none; }
   .customer-account-create .col-main .remember-me-popup {
     display: none; }
+    .customer-account-create .col-main .remember-me-popup.show {
+      display: block; }
   .customer-account-create .col-main .button {
     background: #00747b;
     color: white;
@@ -10490,6 +10494,8 @@ a img:hover {
   display: none; }
 .customer-account .remember-me-popup, .customer-account-index .remember-me-popup {
   display: none; }
+  .customer-account .remember-me-popup.show, .customer-account-index .remember-me-popup.show {
+    display: block; }
 .customer-account p.welcome, .customer-account-index p.welcome {
   font-family: "kepler-std";
   font-size: 1.88rem;
@@ -10550,6 +10556,9 @@ a img:hover {
     border-top: 1px solid #ccc;
     padding: 10px 0px;
     margin: 10px 0px; }
+
+.link-tip {
+  margin-left: 1em; }
 
 .catalog-category-view .breadcrumbs {
   padding: 20px 10px; }

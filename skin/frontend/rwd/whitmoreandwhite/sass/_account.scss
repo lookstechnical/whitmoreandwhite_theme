@@ -195,6 +195,9 @@
 			
 			.remember-me-popup{
 				display: none;
+				&.show {
+					display: block;
+				}
 			}
 			
 			
@@ -283,6 +286,9 @@
 		
 		.remember-me-popup{
 			display: none;
+			&.show {
+				display: block;
+			}
 		}
 		
 		.button{
@@ -587,6 +593,9 @@
 	
 	.remember-me-popup{
 		display: none;
+		&.show {
+			display: block;
+		}
 	}
 	
 	p.welcome{
@@ -675,4 +684,8 @@
 		padding:10px 0px;
 		margin:10px 0px;
 	}
+}
+
+.link-tip {
+	margin-left: 1em;
 }
