@@ -8146,7 +8146,8 @@ select::-ms-expand {
     margin-bottom: 5px; }
 
 a img:hover {
-  opacity: 0.8; }
+  opacity: 0.8;
+  -webkit-backface-visibility: hidden; }
 
 .banner {
   margin-bottom: 20px; }
