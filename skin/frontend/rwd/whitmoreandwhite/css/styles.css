@@ -9603,6 +9603,12 @@ a img:hover {
       width: 40%;
       margin-bottom: 0px; } }
 
+.success-msg {
+  background: #00747B;
+  color: #FFF;
+  padding: 5px 10px;
+  list-style: none; }
+
 .checkout-onepage-index .label[for="p_method_sagepaydirectpro"] {
   background-position-y: 5px; }
 .checkout-onepage-index .main-container {
