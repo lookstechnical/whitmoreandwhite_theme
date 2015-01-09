@@ -8670,6 +8670,10 @@ a img:hover {
         margin-left: 0 !important; }
         .catalog-product-view .product-view .product-essential .product-shop .product-options .options-list li {
           list-style: none; }
+          .catalog-product-view .product-view .product-essential .product-shop .product-options .options-list li .change-container-classname {
+            display: none; }
+          .catalog-product-view .product-view .product-essential .product-shop .product-options .options-list li .price-notice {
+            display: none; }
       .catalog-product-view .product-view .product-essential .product-shop .add-to-cart-buttons .button {
         background: #00747b;
         text-transform: uppercase;

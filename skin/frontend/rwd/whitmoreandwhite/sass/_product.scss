@@ -93,6 +93,12 @@
 						margin-left: 0 !important;
 						li {
 							list-style: none;
+							.change-container-classname {
+								display: none;
+							}
+							.price-notice {
+								display: none;
+							}
 						}
 					}
 				}
