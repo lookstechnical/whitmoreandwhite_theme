@@ -72,7 +72,7 @@
                 <?php if($_product->getTypeId() != 'ugiftcert'): ?>
                     <div class="price-info">
                         <?php echo $this->getPriceHtml($_product); ?>
-                        <?php echo $this->getChildHtml('bundle_prices') ?>
+                        <?php //echo $this->getChildHtml('bundle_prices') ?>
                         <?php echo $this->getTierPriceHtml() ?>
                     </div>
                 <?php endif; ?>
