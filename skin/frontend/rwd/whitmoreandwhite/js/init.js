@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 	   side: 'right'
 	});
 	
-	$('.header-minicart').sidr({
+	$('#header-cart').sidr({
 	   name: 'sidr-right',
 	   source: '#header-cart',
 	   side: 'right'
