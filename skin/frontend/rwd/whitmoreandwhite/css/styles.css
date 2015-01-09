@@ -10088,11 +10088,14 @@ a img:hover {
 
 .page-title h1 {
   font-family: "tablet-gothic-condensed";
-  font-size: 1.875rem;
+  font-size: 1.275rem;
   /* Approximation due to font substitution */
   font-weight: 600;
   line-height: 0.6;
   margin-bottom: 30px; }
+  @media only screen and (min-width: 40rem) {
+    .page-title h1 {
+      font-size: 1.875rem; } }
 
 .customer-account-login .breadcrumbs, .customer-account-forgotpassword .breadcrumbs {
   margin-bottom: 20px; }
@@ -10660,7 +10663,8 @@ a img:hover {
   .products-grid .item .button {
     padding-top: .3rem;
     padding-bottom: .3rem;
-    background-color: #00747b; }
+    background-color: #00747b;
+    font-size: 12px; }
 
 .block-layered-nav .block-title {
   font-family: "kepler-std";
