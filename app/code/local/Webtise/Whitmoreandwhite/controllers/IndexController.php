@@ -47,7 +47,7 @@ class Webtise_Whitmoreandwhite_IndexController extends Mage_Checkout_CartControl
                 );
  
                 if (!$cart->getQuote()->getHasError()){
-                    $message = $this->__('%s was added to your shopping cart.', Mage::helper('core')->escapeHtml($product->getName()));
+                    $message = $this->__('%s was added to your shopping bag.', Mage::helper('core')->escapeHtml($product->getName()));
                     $response['status'] = 'SUCCESS';
                     $response['message'] = $message;
                     //New Code Here
