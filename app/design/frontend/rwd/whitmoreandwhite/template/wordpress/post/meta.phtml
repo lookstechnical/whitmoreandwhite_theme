@@ -10,10 +10,18 @@
 <?php if ($post): ?>
 <p class="post-meta details">
 	<?php
-		$catImage = strtolower(str_replace(" ", "-", $this->getCategoryString($post)));
-		$catImage = str_replace("'", "", $catImage);
+		$catNames = explode(',', $this->getCategoryString($post));
+		foreach ($catNames as $catName) {
+			$catName = trim($catName);
+			$catName = strtolower(str_replace(" ", "-", $catName));
+			$catName = str_replace("!", "", $catName);
+			$catName = str_replace("'", "", $catName);
+			$catName = str_replace("&amp;", "-", $catName);
+			echo '<img src="/wp/wp-content/uploads/2014/12/'. strip_tags($catName) .'.jpg" />' ;
+		}
+		
 	?>
-	<img src="/wp/wp-content/uploads/2014/12/<?php echo strip_tags($catImage) ?>.jpg" /><br />
+	<br />
 	<?php echo stripslashes($this->__('%s', $this->getCategoryString($post))) ?>
 <?php /* if ($this->canDisplayPreviousNextLinks()): ?>
 <span class="post-skips">
