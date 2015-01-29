@@ -1,9 +1,15 @@
 .is-blog {
 	.col-right {
 		width: 35%;
+		@include respond-to(mobile){
+				width: 100%;
+			}
 	}
 	.col-main {
 		width: 65%;
+		@include respond-to(mobile){
+				width: 100%;
+			}
 		.post-list {
 			.post-list-item {
 				border-bottom: 1px solid #e0e0e0;
@@ -229,5 +235,10 @@
       padding-left: 10px;
       position: relative;
       padding-right: 10px;
+      @include ribbon(black, 2.667em, white, left-right);
+      &:hover{
+			background: lighten(#222,10%);
+			@include ribbon(lighten(#222,10%), 2.667em, white, left-right);
+		}
 	}
 }

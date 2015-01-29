@@ -7381,16 +7381,16 @@ header {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
   .mobile-search button {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 36px;
     text-align: left;
     text-indent: -9999px;
     padding: 0px;
     margin: 0px;
     background: black url(../images/search.png) no-repeat center center;
     position: absolute;
-    right: -5px;
-    top: -2px; }
+    right: 15px;
+    top: 15px; }
   .mobile-search button:hover {
     background: black url(../images/search.png) no-repeat center center; }
   .mobile-search ::-webkit-input-placeholder {
@@ -7639,8 +7639,29 @@ header {
         @media only screen and (min-width: 40rem) {
           .footer .block-subscribe .block-content button {
             top: 0px; } }
+        .footer .block-subscribe .block-content button:hover {
+          background: #00a4ae;
+          padding-right: 2.2em;
+          height: 2.2em;
+          line-height: 2.2em;
+          padding-left: 10px; }
+          .footer .block-subscribe .block-content button:hover:before {
+            content: '';
+            display: block;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 1.1em 0.73333em;
+            border-color: transparent;
+            border-right-color: white;
+            position: absolute;
+            right: -1px;
+            background: #00a4ae;
+            top: 0px; }
       .footer .block-subscribe .block-content .form-subscribe-header {
         margin-bottom: 7px; }
+      .footer .block-subscribe .block-content .validation-advice {
+        float: left; }
   .footer .block-subscribe:after {
     clear: both;
     content: "";
@@ -8269,7 +8290,7 @@ a img:hover {
         background: black; }
       @media only screen and (max-width: 40rem) {
         .welcome .intro .black-fancy-btn {
-          margin: 0 auto !important;
+          margin: 10px auto !important;
           float: none; } }
     .welcome .intro .black-fancy-btn:hover {
       background: #3c3c3c;
@@ -8779,6 +8800,8 @@ a img:hover {
           width: 60px;
           border: 1px solid #ccc;
           padding: 5px; }
+        .catalog-product-view .product-view .product-essential .product-shop .add-to-cart .qty-wrapper input {
+          width: inherit; }
       .catalog-product-view .product-view .product-essential .product-shop .toggle-tabs {
         display: none; }
       .catalog-product-view .product-view .product-essential .product-shop .collateral-tabs {
@@ -11441,8 +11464,14 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
 
 .is-blog .col-right {
   width: 35%; }
+  @media only screen and (max-width: 40rem) {
+    .is-blog .col-right {
+      width: 100%; } }
 .is-blog .col-main {
   width: 65%; }
+  @media only screen and (max-width: 40rem) {
+    .is-blog .col-main {
+      width: 100%; } }
   .is-blog .col-main .post-list .post-list-item {
     border-bottom: 1px solid #e0e0e0; }
     .is-blog .col-main .post-list .post-list-item .post-entry h2 {
@@ -11618,4 +11647,70 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
   line-height: 2.667em;
   padding-left: 10px;
   position: relative;
+  padding-right: 10px;
+  padding-left-right: 2.667em;
+  text-align: center;
+  line-height: 2.667em;
+  padding-left: 10px;
+  position: relative;
   padding-right: 10px; }
+  .blog-home .black-fancy-btn:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background: black; }
+  .blog-home .black-fancy-btn:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1.3335em 0.889em;
+    border-color: transparent;
+    border-right-color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: black; }
+  .blog-home .black-fancy-btn:hover {
+    background: #3c3c3c;
+    padding-left-right: 2.667em;
+    text-align: center;
+    line-height: 2.667em;
+    padding-left: 10px;
+    position: relative;
+    padding-right: 10px; }
+    .blog-home .black-fancy-btn:hover:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-left-color: white;
+      position: absolute;
+      left: -1px;
+      top: 0px;
+      background: #3c3c3c; }
+    .blog-home .black-fancy-btn:hover:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 1.3335em 0.889em;
+      border-color: transparent;
+      border-right-color: white;
+      position: absolute;
+      right: -1px;
+      top: 0px;
+      background: #3c3c3c; }

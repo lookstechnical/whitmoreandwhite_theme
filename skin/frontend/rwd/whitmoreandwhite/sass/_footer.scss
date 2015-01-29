@@ -94,20 +94,20 @@
 				@include respond-to(tablet){
 				  top:0px;
 				}
+				&:hover{
+					background: lighten($green,10%);
+					@include ribbon(lighten($green,10%), 2.2em, white, right);
+				}
 				
 			}
-			
-			
 			
 			.form-subscribe-header{
 				margin-bottom: 7px;
 			}
 			
-			
-			
-						
-		
-
+			.validation-advice {
+				float: left;
+			}
 		}
 	}
 	
