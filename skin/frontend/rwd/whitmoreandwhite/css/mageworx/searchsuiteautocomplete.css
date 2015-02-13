@@ -1,0 +1,243 @@
+/**
+ * MageWorx
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageWorx EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.mageworx.com/LICENSE-1.0.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.mageworx.com/ for more information
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SearchSuite
+ * @copyright  Copyright (c) 2014 MageWorx (http://www.mageworx.com/)
+ * @license    http://www.mageworx.com/LICENSE-1.0.html
+ */
+
+/**
+ * Search Suite extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SearchSuiteAutocomplete
+ * @author     MageWorx Dev Team
+ */
+a:focus { outline: none; }
+.highlight {
+    color: #FF2F00 !important;
+    font-weight: bold;
+}
+.reset-button{
+    position: absolute;
+    border: 0px;
+    width: 16px;
+    background-color: transparent;
+    padding: 0px 6px 6px 2px;
+    z-index: 100;
+    color: #DE5400;
+    font-size: 10pt;
+    cursor: pointer;
+    left: 0;
+    vertical-align: middle;
+}
+@-moz-document url-prefix() 
+{
+    .reset-button{margin-top: 0px;}
+}
+input.spinner, input.spinner:focus {
+    background-repeat: no-repeat !important;
+    background-position: right center;
+    background-image: url(images/spinner.gif) !important;
+}
+.s_separator{
+    border-top: 1px solid #AAA;
+}
+.s_separator:first-child{
+    border-top: none;
+}
+#search_autocomplete{
+    top: 32px !important;
+    z-index: 999;
+    position: absolute;
+}
+#search_autocomplete > ul {
+    display: none;
+}
+.searchautocomplete-container{
+    float: right;
+    width: 0px;
+    margin-top: 6px;
+}
+.search-container .span_item{
+    padding-left: 4px;
+}
+.searchautocomplete-search{
+    width: 430px;
+    font: 11px Arial,Helvetica,sans-serif;
+    padding-top: 10px;
+    background: #FAFAFA;
+    display: block;
+    font-size: 11px;
+    position: relative;
+    padding: 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.searchautocomplete-search:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    border-left: 10px solid rgba(255, 255, 255, 0);
+    border-right: 10px solid rgba(255, 255, 255, 0);
+    border-bottom: 10px solid #fafafa;
+    right: 15px;
+}
+.search-header {
+    margin: 0;
+    text-align: left;
+    padding: 0px 0px 0px 5px;
+    height: 25px;   
+    line-height: 25px;
+    font-weight: bold;
+    color: #999999;
+    font-size: 15px;
+    letter-spacing: 0px;
+    clear: both;
+}
+.s_item,.s_category,.s_suggest{
+    padding-left: 10px;
+    padding-right: 5px;  
+    padding-top: 5px;
+}
+.s_item:hover{
+    background-color: #eee;
+    cursor:default;
+}
+.s_item a:link,
+.s_item a:hover,
+.s_item a:visited {    
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.s_icon{
+    float: left;
+    height: auto;
+    display: table-cell;
+    margin-right: 5px;
+}
+.s_details{
+    text-align: left;
+    display: table-cell;
+    width: 420px;
+}
+.s_item:after{
+    display: block;
+    clear: both;
+    height: 0px;
+    content: '';
+}
+.s_description{
+    font-size: 11px;
+}
+.s_item_name{
+    font-weight: bold;
+    height: auto !important;
+    min-height: 15px;
+    height: 15px;
+}
+.s_item_name > span{
+    float: left;
+}
+.s_review{
+    clear: both;
+}
+.s_ratings {
+    font-size: 11px;
+    line-height: 1.25;
+    margin: 7px 0;
+    width: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.s_item_name .a_review {
+    color: #1E7EC8 !important;
+}
+.s_sku {
+    font-size: 10px;
+}
+.searchautocomplete-search .s_button button.button span {
+    background: none repeat scroll 0 0 #F18200;
+    /*    border: 1px solid #DE5400;*/
+    color: white;
+    display: block;
+    font: bold 12px/19px Arial,Helvetica,sans-serif;
+    height: 19px;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+.s_category {
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+}
+.s_category a{
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.resultbox-b {
+    height: 16px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 13px;
+    padding-right: 5px;
+}
+.resultbox-b a,
+.resultbox-b a:link, 
+.resultbox-b a:visited, 
+.resultbox-b a:hover {
+    color: #999999;
+    text-decoration: none;
+}
+.search-results{
+    text-align: left;
+    /*border-bottom: 1px #ccc dotted;*/
+}
+.search-results:first-child{
+
+}
+.resultbox-b,.search-results{
+    background-color: #fff;
+    display: block;
+}
+.search-container-suggest div{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*fix magento style*/
+#searchautocomplete-search-1 ul{
+    background: none;
+    border: 0;
+}
+#searchautocomplete-search-1 ul li{
+    padding: 0;
+    border: 0;
+}
+/*#searchautocomplete-search-1 button,#searchautocomplete-search-1 button span{
+    background-image: none;
+}*/
+/**/
+#search::-ms-clear {
+    display: none !important;
+}
