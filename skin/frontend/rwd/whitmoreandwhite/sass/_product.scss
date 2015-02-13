@@ -59,6 +59,10 @@
 						}
 						
 					}
+
+					dd {
+						margin-bottom: 0;
+					}
 					
 					label.required{
 						display: inline-block;
@@ -91,6 +95,7 @@
 					}
 					.options-list{
 						margin-left: 0 !important;
+						margin-bottom: 0;
 						li {
 							list-style: none;
 							.change-container-classname {
