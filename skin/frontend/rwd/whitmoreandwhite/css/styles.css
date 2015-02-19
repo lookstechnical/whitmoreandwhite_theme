@@ -11283,14 +11283,14 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
 
 .cms-header {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 180px; }
   @media only screen and (min-width: 40rem) {
     .cms-header {
-      width: 60%;
+      width: 100%;
       margin: 0 auto 40px; } }
   @media only screen and (min-width: 53.125rem) {
     .cms-header {
-      width: 48%; } }
+      width: 80%; } }
   .cms-header p {
     font-family: "proxima-nova-alt";
     font-size: 0.875rem;
@@ -11299,6 +11299,17 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     line-height: 1.714;
     /* Approximation due to font substitution */
     text-align: center; }
+  .cms-header .third {
+    border-right: none; }
+    @media only screen and (min-width: 40rem) {
+      .cms-header .third {
+        border-right: 1px solid black;
+        min-height: 140px; } }
+    @media only screen and (min-width: 53.125rem) {
+      .cms-header .third {
+        min-height: 115px; } }
+  .cms-header .last {
+    border-right: none; }
 
 .cms-gallery {
   height: 544px;
