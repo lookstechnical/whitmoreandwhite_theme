@@ -7054,25 +7054,29 @@ a {
   .half:last-of-type {
     padding-right: 0px; } }
 
-.third {
+.third, .quarter {
   width: 100%;
   padding: 0px;
   text-align: center; }
   @media only screen and (min-width: 40rem) {
-    .third {
+    .third, .quarter {
       text-align: left;
       float: left;
       width: 33.3%;
       padding: 0px 15px; } }
-  .third img {
+  .third img, .quarter img {
     margin-bottom: 30px; }
 
 @media only screen and (min-width: 40rem) {
-  .third:first-of-type {
+  .quarter {
+    width: 25%; } }
+
+@media only screen and (min-width: 40rem) {
+  .third:first-of-type, .quarter:first-of-type {
     padding-left: 0px; } }
 
 @media only screen and (min-width: 40rem) {
-  .third:last-of-type {
+  .third:last-of-type, .quarter:last-of-type {
     padding-right: 0px; } }
 
 header {
@@ -11299,14 +11303,14 @@ div.block-layered-nav.amshopby-collapse-enabled dt {
     line-height: 1.714;
     /* Approximation due to font substitution */
     text-align: center; }
-  .cms-header .third {
+  .cms-header .third, .cms-header .quarter {
     border-right: none; }
     @media only screen and (min-width: 40rem) {
-      .cms-header .third {
+      .cms-header .third, .cms-header .quarter {
         border-right: 1px solid black;
         min-height: 140px; } }
     @media only screen and (min-width: 53.125rem) {
-      .cms-header .third {
+      .cms-header .third, .cms-header .quarter {
         min-height: 115px; } }
   .cms-header .last {
     border-right: none; }
