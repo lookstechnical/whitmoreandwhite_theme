@@ -140,7 +140,7 @@ a{
     }
 }	
 
-.third{
+.third, .quarter{
 	width:100%;
 	padding:0px;
 	text-align: center;
@@ -160,12 +160,18 @@ a{
 	}
 }
 
-.third:first-of-type{
+.quarter {
+	@include respond-to(tablet){
+		width: 25%;
+	}
+}
+
+.third:first-of-type, .quarter:first-of-type{
 	@include respond-to(tablet){
     	padding-left: 0px;
     }
 }
-.third:last-of-type{
+.third:last-of-type, .quarter:last-of-type{
 	@include respond-to(tablet){
     	padding-right: 0px
     }

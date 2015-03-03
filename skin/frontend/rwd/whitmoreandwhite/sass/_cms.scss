@@ -83,7 +83,7 @@
 		line-height: 1.714; /* Approximation due to font substitution */
 		text-align: center;
 	}
-	.third {
+	.third, .quarter {
 		border-right: none;
 		@include respond-to(tablet){
 			border-right: 1px solid black;
